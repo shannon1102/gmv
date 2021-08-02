@@ -1,0 +1,132 @@
+2021-08-02T17:28:54+07:00 error: 'uncaughtException: PostService is not defined\n' +
+  'ReferenceError: PostService is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/postService/postService.js:47:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:5:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-02T17:29:00+07:00 error: 'uncaughtException: PostService is not defined\n' +
+  'ReferenceError: PostService is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/postService/postService.js:47:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:5:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-02T17:29:11+07:00 error: 'uncaughtException: PostService is not defined\n' +
+  'ReferenceError: PostService is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/postService/postService.js:47:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:5:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-02T17:29:36+07:00 error: 'uncaughtException: PostService is not defined\n' +
+  'ReferenceError: PostService is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/postService/postService.js:47:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:5:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-02T17:30:23+07:00 error: 'uncaughtException: PostService is not defined\n' +
+  'ReferenceError: PostService is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/postService/postService.js:47:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:5:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-02T17:30:52+07:00 error: 'uncaughtException: PostService is not defined\n' +
+  'ReferenceError: PostService is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/postService/postService.js:47:18)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:5:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-02T17:30:55+07:00 error: "uncaughtException: Cannot read property 'host' of undefined\n" +
+  "TypeError: Cannot read property 'host' of undefined\n" +
+  '    at new MysqlDB (/home/dalang/GMV/SourceCode/backend/models/mysql.js:12:30)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:8:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:12:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-02T17:30:56+07:00 error: "uncaughtException: Cannot read property 'host' of undefined\n" +
+  "TypeError: Cannot read property 'host' of undefined\n" +
+  '    at new MysqlDB (/home/dalang/GMV/SourceCode/backend/models/mysql.js:12:30)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:8:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:12:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-02T17:31:48+07:00 error: "uncaughtException: Cannot read property 'host' of undefined\n" +
+  "TypeError: Cannot read property 'host' of undefined\n" +
+  '    at new MysqlDB (/home/dalang/GMV/SourceCode/backend/models/mysql.js:12:30)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:8:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:12:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-02T17:32:54+07:00 error: "uncaughtException: Cannot read property 'host' of undefined\n" +
+  "TypeError: Cannot read property 'host' of undefined\n" +
+  '    at new MysqlDB (/home/dalang/GMV/SourceCode/backend/models/mysql.js:12:30)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:8:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:12:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-02T17:33:31+07:00 error: "uncaughtException: Cannot read property 'host' of undefined\n" +
+  "TypeError: Cannot read property 'host' of undefined\n" +
+  '    at new MysqlDB (/home/dalang/GMV/SourceCode/backend/models/mysql.js:12:30)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:8:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:12:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'

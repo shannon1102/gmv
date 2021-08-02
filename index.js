@@ -1,6 +1,6 @@
 'use strict'
 const {app} = require('./server');
-
-app.listen(5000, () => {
-    console.log(`Server listen on port 5000`)
+const config = require('./config')
+app.listen(config.serverSettings.port, () => {
+    console.log(`Server listen on port ${config.serverSettings.port}`)
 })

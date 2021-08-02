@@ -8,11 +8,22 @@ const swaggerUi = require('swagger-ui-express')
 const app = express();
 const backendRoute = express.Router();
 
-const indexApi = require('./api/index')
-backendRoute.use('/', indexApi)
+const indexApi = require('./apis/index');
+const postApi = require('./apis/post/postApi');
 
-app.use('/backend', backendRoute)
-const swaggerDocument = require('./swagger.json')
+
+backendRoute.use('/', indexApi);
+backendRoute.use('/post',postApi);
+
+
+
+
+app.use('/api', backendRoute);
+
+
+
+
+const swaggerDocument = require('./swagger.json');
 backendRoute.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 
