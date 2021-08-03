@@ -396,6 +396,71 @@
             }
           }
         },
+        "/product/get-by-catergory/{name}": {
+          "get": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "catergory name",
+                "in": "query",
+                "description": "Catergory Name",
+                "required": true
+              },
+              {
+                "name": "productsPerPage",
+                "in": "query",
+                "description": "Max products can be display in one page",
+                "required": false
+              },
+              {
+                "name": "pageNumber",
+                "in": "query",
+                "description": "Page number",
+                "required": false
+              },
+              {
+                "name": "orderType",
+                "in": "query",
+                "description": "Order type to display: 1-oldest 2-newest ",
+                "required": false
+              },
+              {
+                "name": "search",
+                "in": "query",
+                "description": "for search request for Front End",
+                "required": false
+              }
+            ],
+            "tags": [
+              "Product Api"
+            ],
+            "summary": "Get Products By Catergory",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/product"
+                  }
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
+        }
+        ,
         "/product/{id}": {
           "get": {
             "consumes": [
@@ -721,185 +786,83 @@
                     }
                   }
                 }
-              },
-              "post": {
-                "consumes": [
-                  "application/json"
-                ],
-                "produces": [
-                  "application/json"
-                ],
-                "parameters": [
-                  {
-                    "name": "body",
-                    "in": "body",
-                    "require": true,
-                    "schema": {
-                      "type": "object",
-                      "properties": {
-                        "product_id": {
-                            "type": "integer"
-                          }
-        
-                      }
-                    }
-                  }
-                ],
-                "tags": [
-                  "Hot-Product Api"
-                ],
-                "summary": "Create Hot-Product",
-                "description": "",
-                "responses": {
-                  "200": {
-                    "description": "success",
-                    "schema": {
-                      "type": "object",
-                      "properties": {
-                        "message": {
-                          "type": "string"
-                        },
-                        "insertedId": {
-                          "type": "integer"
-                        }
-                      }
-                    }
-                  },
-                  "500": {
-                    "description": "error",
-                    "schema": {
-                      "$ref": "#/definitions/error"
-                    }
-                  }
-                }
               }
-
         },
-
-
-        "/hot-products/{id}": {
-            "get": {
-              "consumes": [
-                "application/json"
-              ],
-              "produces": [
-                "application/json"
-              ],
-              "parameters": [
-                {
-                  "name": "id",
-                  "type": "integer",
-                  "in": "path",
-                  "required": true
-                }
-              ],
-              "tags": [
-                "Hot-Product Api"
-              ],
-              "summary": "Get Hot-Product by Id",
-              "description": "",
-              "responses": {
-                "200": {
-                  "description": "success",
-                  "schema": {
-                    "$ref": "#/definitions/product"
-                  }
-                },
-                "500": {
-                  "description": "error",
-                  "schema": {
-                    "$ref": "#/definitions/error"
-                  }
-                }
+        "/hot-product/unset/{product_id}" : {
+          "get": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "product_id",
+                "type": "integer",
+                "in": "path",
+                "required": true
               }
-            },
-            "put": {
-              "consumes": [
-                "application/json"
-              ],
-              "produces": [
-                "application/json"
-              ],
-              "parameters": [
-                {
-                  "name": "id",
-                  "type": "integer",
-                  "in": "path",
-                  "description": "ID of post",
-                  "required": true
-                },
-                {
-                  "name": "body",
-                  "in": "body",
-                  "required": true,
-                  "schema": {
-                    "type": "object",
-                    "properties": {
-                      "product_id": {
-                          "type": "integer"
-                        }
-                    }
-                  }
+            ],
+            "tags": [
+              "Hot-Product Api"
+            ],
+            "summary": "Remove hot-product by ID",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "$ref": "#/definitions/success"
                 }
-              ],
-              "tags": [
-                "Hot-Product Api"
-              ],
-              "summary": "Update Hot-Product by ID",
-              "description": "",
-              "responses": {
-                "200": {
-                  "description": "success",
-                  "schema": {
-                    "$ref": "#/definitions/success"
-                  }
-                },
-                "500": {
-                  "description": "error",
-                  "schema": {
-                    "$ref": "#/definitions/error"
-                  }
-                }
-              }
-            },
-
-            "delete": {
-              "consumes": [
-                "application/json"
-              ],
-              "produces": [
-                "application/json"
-              ],
-              "parameters": [
-                {
-                  "name": "id",
-                  "type": "integer",
-                  "in": "path",
-                  "required": true
-                }
-              ],
-              "tags": [
-                "Hot-Product Api"
-              ],
-              "summary": "Delete hot-product by ID",
-              "description": "",
-              "responses": {
-                "200": {
-                  "description": "success",
-                  "schema": {
-                    "$ref": "#/definitions/success"
-                  }
-                },
-                "500": {
-                  "description": "error",
-                  "schema": {
-                    "$ref": "#/definitions/error"
-                  }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
                 }
               }
             }
-  
-          },
+          }
+        },
+        "/hot-product/set/{product_id}" : {
+          "get": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "product_id",
+                "type": "integer",
+                "in": "path",
+                "required": true
+              }
+            ],
+            "tags": [
+              "Hot-Product Api"
+            ],
+            "summary": "Add hot-product by ID",
+            "description": "",
+            "responses": {
+              "200": {  
+                "description": "success",
+                "schema": {
+                  "$ref": "#/definitions/success"
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
+        },
+
         "/main-catergory/": {
           "get": {
             "consumes": [
@@ -1144,6 +1107,7 @@
           }
         },
 
+    
         "/main-catergorys/byProductId/{id}": {
           "get": {
             "consumes": [
@@ -1170,6 +1134,250 @@
                 "description": "success",
                 "schema": {
                   "$ref": "#/definitions/main-catergory"
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
+        },
+
+        "/catergory/": {
+          "get": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "catergoryPerPage",
+                "in": "query",
+                "description": "Max catergory can be display in one page",
+                "required": false
+              },
+              {
+                "name": "pageNumber",
+                "in": "query",
+                "description": "Page number",
+                "required": false
+              },
+              {
+                "name": "orderType",
+                "in": "query",
+                "description": "Order type to display: 1-oldest 2-newest ",
+                "required": false
+              }
+            ],
+            "tags": [
+              "Catergory Api"
+            ],
+            "summary": "Get Catergory",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/catergory"
+                  }
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          },
+          "post": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "body",
+                "in": "body",
+                "require": true,
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "content": {
+                      "type": "string"
+                    },
+                    "image_url":{
+                      "type":"string"
+                    },
+                    "product_id": {
+                      "type": "integer"
+                    }
+    
+                  }
+                }
+              }
+            ],
+            "tags": [
+              "Catergory Api"
+            ],
+            "summary": "Create Catergory",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "insertedId": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
+        },
+
+        "/catergory/{id}": {
+          "get": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "id",
+                "type": "integer",
+                "in": "path",
+                "required": true
+              }
+            ],
+            "tags": [
+              "Catergory Api"
+            ],
+            "summary": "Get Catergory by Id",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "$ref": "#/definitions/catergory"
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          },
+          "put": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "id",
+                "type": "integer",
+                "in": "path",
+                "description": "ID of post",
+                "required": true
+              },
+              {
+                "name": "body",
+                "in": "body",
+                "required": true,
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "content": {
+                      "type": "string"
+                    },
+                    "product_id": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            ],
+            "tags": [
+              "Catergory Api"
+            ],
+            "summary": "Update Catergory by ID",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "$ref": "#/definitions/success"
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          },
+          "delete": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "id",
+                "type": "integer",
+                "in": "path",
+                "required": true
+              }
+            ],
+            "tags": [
+              "Catergory Api"
+            ],
+            "summary": "Delete Catergory by ID",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "$ref": "#/definitions/success"
                 }
               },
               "500": {

@@ -20,11 +20,13 @@ const backendRoute = express.Router();
 const indexApi = require('./apis/index');
 const postApi = require('./apis/post/postApi');
 const productApi = require('./apis/product/productApi');
+const hotProductApi = require('./apis/hot_product/hotProductApi');
+
 
 backendRoute.use('/', indexApi);
 backendRoute.use('/post',postApi);
 backendRoute.use('/product',productApi);
-
+backendRoute.use('/hot-product',hotProductApi);
 
 
 
