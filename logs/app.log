@@ -130,3 +130,470 @@
   '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
   '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:12:17)\n' +
   '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-03T09:32:48+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:32:50+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:32:51+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:33:04+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:33:28+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:33:28+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:33:31+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:33:33+07:00 error: 'uncaughtException: ProductService is not a constructor\n' +
+  'TypeError: ProductService is not a constructor\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:7:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:13:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:37:01+07:00 error: "500 - Cannot read property 'pageNumber' of undefined - /api/product/?productsPerPage=12&pageNumber=1&orderType=1 -GET - ::1"
+2021-08-03T09:37:03+07:00 error: "500 - Cannot read property 'pageNumber' of undefined - /api/product/?productsPerPage=12&pageNumber=1&orderType=1 -GET - ::1"
+2021-08-03T09:37:03+07:00 error: "500 - Cannot read property 'pageNumber' of undefined - /api/product/?productsPerPage=12&pageNumber=1&orderType=1 -GET - ::1"
+2021-08-03T09:50:52+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:51:55+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:52:17+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:53:04+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:56:52+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T09:56:57+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:02:06+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:02:09+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:02:10+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:02:42+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:02:54+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:06:22+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:06:24+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:06:27+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:07:28+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:07:50+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:12:36+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:14:07+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:15:38+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:17:18+07:00 error: "uncaughtException: Identifier 'listImage' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/productService/productService.js:50\n' +
+  '            let listImage = Object.assign(listImage)\n' +
+  '                ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'listImage' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:4:24)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:19:20+07:00 error: 'uncaughtException: checkRequiredFieldInBody is not a function\n' +
+  'TypeError: checkRequiredFieldInBody is not a function\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/product/productApi.js:33:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:15:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:20:28+07:00 error: "500 - Cannot read property 'pageNumber' of undefined - /api/product/?productsPerPage=12&pageNumber=1&orderType=1 -GET - ::1"
+2021-08-03T10:33:22+07:00 error: "500 - Cannot read property 'hasOwnProperty' of undefined - /api/product/ -POST - ::1"
+2021-08-03T10:33:41+07:00 error: "500 - Cannot read property 'hasOwnProperty' of undefined - /api/product/ -POST - ::1"
+2021-08-03T10:37:14+07:00 error: 'uncaughtException: bodyParser is not defined\n' +
+  'ReferenceError: bodyParser is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:11:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/index.js:2:15)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:38:53+07:00 error: 'uncaughtException: bodyParser is not defined\n' +
+  'ReferenceError: bodyParser is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:11:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/index.js:2:15)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-03T10:39:42+07:00 info: '::1 - - [03/Aug/2021:03:39:42 +0000] "POST /api/product/ HTTP/1.1" 500 41 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:39:57+07:00 info: '::1 - - [03/Aug/2021:03:39:57 +0000] "POST /api/product/ HTTP/1.1" 500 41 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:40:12+07:00 error: "[productService][createProduct] errors:  ER_BAD_FIELD_ERROR: Unknown column 'category_id' in 'field list'"
+2021-08-03T10:40:12+07:00 info: '::1 - - [03/Aug/2021:03:40:12 +0000] "POST /api/product/ HTTP/1.1" 500 436 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:42:34+07:00 error: "[productService][createProduct] errors:  ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1"
+2021-08-03T10:42:34+07:00 info: '::1 - - [03/Aug/2021:03:42:34 +0000] "POST /api/product/ HTTP/1.1" 500 449 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:42:36+07:00 error: "[productService][createProduct] errors:  ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1"
+2021-08-03T10:42:36+07:00 info: '::1 - - [03/Aug/2021:03:42:36 +0000] "POST /api/product/ HTTP/1.1" 500 449 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:42:43+07:00 error: "[productService][createProduct] errors:  ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1"
+2021-08-03T10:42:43+07:00 info: '::1 - - [03/Aug/2021:03:42:43 +0000] "POST /api/product/ HTTP/1.1" 500 449 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:44:03+07:00 error: "[productService][createProduct] errors:  ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1"
+2021-08-03T10:44:03+07:00 info: '::1 - - [03/Aug/2021:03:44:03 +0000] "POST /api/product/ HTTP/1.1" 500 449 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:46:40+07:00 error: "[productService][createProduct] errors:  ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1"
+2021-08-03T10:46:40+07:00 info: '::1 - - [03/Aug/2021:03:46:40 +0000] "POST /api/product/ HTTP/1.1" 500 446 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:50:17+07:00 info: '::1 - - [03/Aug/2021:03:50:17 +0000] "POST /api/product/ HTTP/1.1" 200 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:50:28+07:00 error: "500 - Cannot read property 'pageNumber' of undefined - /api/product/ -GET - ::1"
+2021-08-03T10:50:28+07:00 info: '::1 - - [03/Aug/2021:03:50:28 +0000] "GET /api/product/ HTTP/1.1" 500 2 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:52:54+07:00 info: '::1 - - [03/Aug/2021:03:52:54 +0000] "GET /api/product/ HTTP/1.1" 200 641 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:53:34+07:00 error: '[productService][getProductById] errors: '
+2021-08-03T10:53:34+07:00 info: '::1 - - [03/Aug/2021:03:53:34 +0000] "GET /api/product/1 HTTP/1.1" 500 16 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:54:24+07:00 info: '::1 - - [03/Aug/2021:03:54:24 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:54:38+07:00 error: '[productService][getProductById] errors: '
+2021-08-03T10:54:38+07:00 info: '::1 - - [03/Aug/2021:03:54:38 +0000] "GET /api/product/1 HTTP/1.1" 500 16 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:54:47+07:00 error: '[productService][getProductById] errors: '
+2021-08-03T10:54:47+07:00 info: '::1 - - [03/Aug/2021:03:54:47 +0000] "GET /api/product/1 HTTP/1.1" 500 16 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:54:49+07:00 error: '[productService][getProductById] errors: '
+2021-08-03T10:54:49+07:00 info: '::1 - - [03/Aug/2021:03:54:49 +0000] "GET /api/product/1 HTTP/1.1" 500 16 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:55:36+07:00 info: '::1 - - [03/Aug/2021:03:55:36 +0000] "GET /api/product/1 HTTP/1.1" 200 334 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:56:54+07:00 info: '::1 - - [03/Aug/2021:03:56:54 +0000] "GET /api/product/1 HTTP/1.1" 200 343 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:56:56+07:00 info: '::1 - - [03/Aug/2021:03:56:56 +0000] "GET /api/product/1 HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:58:13+07:00 info: '::1 - - [03/Aug/2021:03:58:13 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:58:13+07:00 info: '::1 - - [03/Aug/2021:03:58:13 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:58:13+07:00 info: '::1 - - [03/Aug/2021:03:58:13 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:58:13+07:00 info: '::1 - - [03/Aug/2021:03:58:13 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:58:13+07:00 info: '::1 - - [03/Aug/2021:03:58:13 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 47419 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:58:14+07:00 info: '::1 - - [03/Aug/2021:03:58:14 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T10:59:25+07:00 info: '::1 - - [03/Aug/2021:03:59:25 +0000] "GET /api/product/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:02:19+07:00 error: "[productService][updateProduct] errors:  ER_NO_SUCH_TABLE: Table 'gmvdb.products' doesn't exist"
+2021-08-03T11:02:19+07:00 info: '::1 - - [03/Aug/2021:04:02:19 +0000] "PUT /api/product/2 HTTP/1.1" 500 500 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:02:39+07:00 error: "[productService][updateProduct] errors:  ER_BAD_FIELD_ERROR: Unknown column 'category' in 'field list'"
+2021-08-03T11:02:39+07:00 info: '::1 - - [03/Aug/2021:04:02:39 +0000] "PUT /api/product/2 HTTP/1.1" 500 506 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:02:53+07:00 error: "[productService][updateProduct] errors:  ER_BAD_FIELD_ERROR: Unknown column 'catergory' in 'field list'"
+2021-08-03T11:02:53+07:00 info: '::1 - - [03/Aug/2021:04:02:53 +0000] "PUT /api/product/2 HTTP/1.1" 500 508 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:03:08+07:00 info: '::1 - - [03/Aug/2021:04:03:08 +0000] "PUT /api/product/2 HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:03:35+07:00 error: "[productService][deleteProduct] errors:  ER_NO_SUCH_TABLE: Table 'gmvdb.products' doesn't exist"
+2021-08-03T11:03:35+07:00 info: '::1 - - [03/Aug/2021:04:03:35 +0000] "DELETE /api/product/2 HTTP/1.1" 500 50 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:04:00+07:00 info: '::1 - - [03/Aug/2021:04:04:00 +0000] "DELETE /api/product/2 HTTP/1.1" 200 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:04:12+07:00 info: '::1 - - [03/Aug/2021:04:04:12 +0000] "DELETE /api/product/2 HTTP/1.1" 500 41 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:28:43+07:00 info: '::1 - - [03/Aug/2021:04:28:43 +0000] "GET /api/product/ HTTP/1.1" 200 320 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'

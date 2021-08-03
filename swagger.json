@@ -14,12 +14,12 @@
         }
     },
     "host": "localhost:5000",
-    "basePath": "/backend",
+    "basePath": "/api",
     "schemes": [
         "http"
     ],
     "paths": {
-        "/posts/": {
+        "/post/": {
           "get": {
             "consumes": [
               "application/json"
@@ -127,7 +127,7 @@
             }
           }
         },
-        "/posts/{id}": {
+        "/post/{id}": {
           "get": {
             "consumes": [
               "application/json"
@@ -254,7 +254,7 @@
             }
           }
         },
-        "/products/": {
+        "/product/": {
           "get": {
             "consumes": [
               "application/json"
@@ -326,9 +326,6 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": {
-                        "type": "integer"
-                      },
                       "title": {
                         "type": "string"
                       },
@@ -350,7 +347,7 @@
                       "material": {
                           "type": "string"
                       },
-                      "category_id" : {
+                      "catergory_id" : {
                         "type": "integer"
                       }
     
@@ -387,7 +384,7 @@
             }
           }
         },
-        "/products/{id}": {
+        "/product/{id}": {
           "get": {
             "consumes": [
               "application/json"
@@ -445,9 +442,6 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": {
-                        "type": "integer"
-                      },
                       "title": {
                         "type": "string"
                       },
@@ -469,7 +463,7 @@
                       "material": {
                           "type": "string"
                       },
-                      "category_id" : {
+                      "catergory_id" : {
                         "type": "integer"
                       }
                   }
@@ -534,7 +528,7 @@
 
         },
 
-        "/products/update-image/{product_id}":{
+        "/product/update-image/{product_id}":{
             "put": {
                 "consumes": [
                   "application/json"
@@ -1745,7 +1739,7 @@
               "material": {
                   "type": "string"
               },
-              "category_id" : {
+              "catergory_id" : {
                 "$ref": "#/definitions/catergory"
               },
               "created_at": {

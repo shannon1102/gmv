@@ -1,7 +1,7 @@
 'use strict'
 
 const express = require('express')
-const MysqlDB = require('../../db/mysql')
+const MysqlDB = require('../../models/mysql')
 // const PostService = require('../../services/postService/postService')
 
 const postApi = express.Router()
