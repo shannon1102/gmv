@@ -597,3 +597,21 @@
 2021-08-03T11:04:00+07:00 info: '::1 - - [03/Aug/2021:04:04:00 +0000] "DELETE /api/product/2 HTTP/1.1" 200 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
 2021-08-03T11:04:12+07:00 info: '::1 - - [03/Aug/2021:04:04:12 +0000] "DELETE /api/product/2 HTTP/1.1" 500 41 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
 2021-08-03T11:28:43+07:00 info: '::1 - - [03/Aug/2021:04:28:43 +0000] "GET /api/product/ HTTP/1.1" 200 320 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"\n'
+2021-08-03T11:32:16+07:00 error: "uncaughtException: Cannot find module 'dotenv'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module 'dotenv'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:10:1)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'

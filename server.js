@@ -7,6 +7,8 @@ const swaggerUi = require('swagger-ui-express')
 const logger = require('./logger')
 const bodyParser = require('body-parser')
 
+require('dotenv').config({path: path.join(__dirname, '.env')})
+
 const app = express();
 app.use(bodyParser.json())
 app.use(morgan('combined', {

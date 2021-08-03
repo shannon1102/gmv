@@ -3,10 +3,10 @@ const env = process.env.NODE_ENV || 'development' // dev or prod
 
 const development = {
     dbSettings: {
-        host: 'localhost',
-        user: 'duyle',
-        password: 'duyle95',
-        database: 'gmvdb',
+        host: process.env.SQL_HOST,
+        user: process.env.SQL_USER,
+        password: process.env.SQL_PASS,
+        database: process.env.SQL_DBNAME,
 
         pool: {
             max: 5,
