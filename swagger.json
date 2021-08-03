@@ -88,11 +88,17 @@
                     "title": {
                       "type": "string"
                     },
+                    "image":{
+                      "type":"string"
+                    },
                     "description": {
                       "type": "string"
                     },
                     "content": {
                       "type": "string"
+                    },
+                    "catergory_id": {
+                      "type":"integer"
                     }
                   }
                 }
@@ -188,11 +194,17 @@
                     "title": {
                       "type": "string"
                     },
+                    "image":{
+                      "type":"string"
+                    },
                     "description": {
                       "type": "string"
                     },
                     "content": {
                       "type": "string"
+                    },
+                    "catergory_id": {
+                      "type":"integer"
                     }
                   }
                 }
@@ -589,6 +601,69 @@
 
             }
         },
+
+        "/product/upload-image/{product_id}":{
+          "post": {
+              "consumes": [
+                "application/json"
+              ],
+              "produces": [
+                "application/json"
+              ],
+              "parameters": [
+                {
+                  "name": "product_id",
+                  "type": "integer",
+                  "in": "path",
+                  "description": "ID of product",
+                  "required": true
+                },
+                {
+                  "name": "body",
+                  "in": "body",
+                  "required": true,
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                        "url_image1": {
+                          "type": "string"
+                        },
+                        "url_image2": {
+                          "type": "string"
+                        },
+                        "url_image3": {
+                            "type": "string"
+                        },
+                        "url_image4": {
+                          "type":"string"
+                        }
+                    }
+                  }
+                }
+              ],
+              "tags": [
+                "Product Api"
+              ],
+              "summary": "Updload Product Image by Product_ID",
+              "description": "",
+              "responses": {
+                "200": {
+                  "description": "success",
+                  "schema": {
+                    "$ref": "#/definitions/success"
+                  }
+                },
+                "500": {
+                  "description": "error",
+                  "schema": {
+                    "$ref": "#/definitions/error"
+                  }
+                }
+              }
+
+          }
+      },
+
 
         "/hot-product/" : {
             "get": {

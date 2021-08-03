@@ -27,7 +27,7 @@ class ProductService {
             `SELECT p.* FROM product as p
             WHERE p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')}
-            ORDER BY p.create_at ${orderByDb}
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
             console.log(query)
@@ -132,28 +132,45 @@ class ProductService {
             }
         })
     }
-    // updateProductImage(product_id,listImage){
-    //     return new Promise(async (resolve,reject)=>{
-    //         const query = `UPDATE product_image
-    //         SET url_image1 = ${mysql.escape(listImage['url'])},
-    //         description = ${mysql.escape(description)},
-    //         model_number = ${mysql.escape(model_number)},
-    //         main_image_url= ${mysql.escape(main_image_url)},
-    //         price = ${mysql.escape(price)},
-    //         material= ${mysql.escape(material)},
-    //         size= ${mysql.escape(size)},
-    //         catergory_id = ${mysql.escape(catergory_id)}
-    //         WHERE id = ${mysql.escape(id)}
-    //         `
-    //         const [err, result] = await to(this.mysqlDb.poolQuery(query))
-    //         if (err) {
-    //             logger.error(`[productService][updateProduct] errors: `, err)
-    //             return reject(err)
-    //         }
-    //         return resolve(result)
-    //     })
-    // }
+    updateProductImage(product_id,url_image1,url_image2,url_image3,url_image4) {
+        console.log("Vao update");
+        return new Promise(async (resolve,reject)=>{
+            const query = `UPDATE product_image
+            SET url_image1 = ${mysql.escape(url_image1)},
+            url_image2 = ${mysql.escape(url_image2)},
+            url_image3 = ${mysql.escape(url_image3)},
+            url_image4 = ${mysql.escape(url_image4)}
+            WHERE product_id = ${mysql.escape(product_id)}
+            `
+           
+            const [err, result] = await to(this.mysqlDb.poolQuery(query))
+            console.log(result);
+            if (err) {
+                logger.error(`[productService][updateProductImage] errors: `, err)
+                return reject(err)
+            }
+            if(result.affectedRows == 0) {
+                return reject(`Not found product with id ${product_id}`);
+            }
+            
+            return resolve(`Upload product-image with id ${product_id} sucessfully`);   
+        })
+    }
+    uploadProductImage(product_id,url_image1,url_image2,url_image3,url_image4){
+        return new Promise(async (resolve,reject)=>{
+            const query = `INSERT INTO product_image (product_id,url_image1,url_image2,url_image3,url_image4) 
+            VALUES (${mysql.escape(product_id)},${mysql.escape(url_image1)},${mysql.escape(url_image2)},${mysql.escape(url_image3)},${mysql.escape(url_image4)})
+            `
+            console.log(query);
+            const [err, result] = await to(this.mysqlDb.poolQuery(query))
+            console.log(result);
+            if (err) {
+                logger.error(`[productService][updateProductImage] errors: `, err)
+                return reject(err)
+            }
+            return  resolve(`Upload product-image with id ${product_id} sucessfully`)
+        })
+    }
 }
-
 
 module.exports = ProductService;

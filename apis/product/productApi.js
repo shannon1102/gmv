@@ -46,7 +46,7 @@ productApi.post('/',checkRequiredFieldInBody(['title','description','model_numbe
         return res.status(500).json({message : err})
     })  
 })
-productApi.put('/:id',checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
+productApi.post('/upload-product-image:id',checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
     let {id} = req.params
     let {title,description,model_number,main_image_url,price,material,size, catergory_id} = req.body
     console.log(description)
@@ -73,37 +73,34 @@ productApi.delete('/:id', (req,res,next)=>{
         return res.status(500).json({message : err})
     })  
 })
-// productApi.put('/:id', (req,res,next)=>{
-//     let {id} = req.params
-//     let {url_image1,url_image2,url_image3,url_image4} = req.body
-//     let list_image = []
-//     if(url_image1) {
-//         list_image.push(url_image1);
-//     }
-//     if(url_image2) {
-//         list_image.push(url_image2);
-//     }
-//     if(url_image3) {
-//         list_image.push(url_image3);
-//     }
-//     if(url_image4) {
-//         list_image.push(url_image4);
-//     }
-//     console.log(list_image)
-
-//     productService
-//     .updateProductImage(id,list_image)
-//     .then(result=>{
-//         res.status(200).json({
-//             message: 'Update product sucessfully',
-//             product: result
-//             })
-//         })
-//     .catch(err=>{
-//         return res.status(500).json({message : err})
-//     })  
-// })
-
-
+productApi.post('/upload-image/:product_id', (req,res,next)=>{
+    let {product_id} = req.params
+    let {url_image1,url_image2,url_image3,url_image4} = req.body
+    productService
+    .uploadProductImage(product_id,url_image1,url_image2,url_image3,url_image4)
+    .then(result=>{
+        res.status(200).json({
+            message: result,
+          })
+        })
+    .catch(err=>{
+        return res.status(500).json({message : err})
+    })  
+})
+productApi.put('/update-image/:product_id', (req,res,next)=>{
+    console.log("ALOOOOOOOOOO");
+    let {product_id} = req.params
+    let {url_image1,url_image2,url_image3,url_image4} = req.body
+    productService
+    .updateProductImage(product_id,url_image1,url_image2,url_image3,url_image4)
+    .then(result=>{
+        res.status(200).json({  
+            message: result,
+            })
+        })
+    .catch(err=>{
+        return res.status(500).json({message : err})
+    })  
+})
 
 module.exports = productApi;
