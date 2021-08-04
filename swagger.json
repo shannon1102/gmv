@@ -932,14 +932,11 @@
                     "name": {
                       "type": "string"
                     },
-                    "content": {
+                    "description": {
                       "type": "string"
                     },
-                    "image_url":{
-                      "type":"string"
-                    },
-                    "product_id": {
-                      "type": "integer"
+                    "url_image": {
+                      "type": "string"
                     }
     
                   }
@@ -1040,11 +1037,8 @@
                     "description": {
                       "type": "string"
                     },
-                    "content": {
+                    "url_image": {
                       "type": "string"
-                    },
-                    "product_id": {
-                      "type": "integer"
                     }
                   }
                 }
@@ -1095,45 +1089,6 @@
                 "description": "success",
                 "schema": {
                   "$ref": "#/definitions/success"
-                }
-              },
-              "500": {
-                "description": "error",
-                "schema": {
-                  "$ref": "#/definitions/error"
-                }
-              }
-            }
-          }
-        },
-
-    
-        "/main-catergorys/byProductId/{id}": {
-          "get": {
-            "consumes": [
-              "application/json"
-            ],
-            "produces": [
-              "application/json"
-            ],
-            "parameters": [
-              {
-                "name": "id",
-                "type": "integer",
-                "in": "path",
-                "required": true
-              }
-            ],
-            "tags": [
-              "Main-Catergory Api"
-            ],
-            "summary": "Get Main-Catergory by Product_Id",
-            "description": "",
-            "responses": {
-              "200": {
-                "description": "success",
-                "schema": {
-                  "$ref": "#/definitions/main-catergory"
                 }
               },
               "500": {
@@ -1215,16 +1170,9 @@
                     "name": {
                       "type": "string"
                     },
-                    "content": {
-                      "type": "string"
-                    },
-                    "image_url":{
-                      "type":"string"
-                    },
-                    "product_id": {
+                    "main_catergory_id": {
                       "type": "integer"
                     }
-    
                   }
                 }
               }
@@ -1307,7 +1255,7 @@
                 "name": "id",
                 "type": "integer",
                 "in": "path",
-                "description": "ID of post",
+                "description": "ID of catergory",
                 "required": true
               },
               {
@@ -1320,13 +1268,7 @@
                     "name": {
                       "type": "string"
                     },
-                    "description": {
-                      "type": "string"
-                    },
-                    "content": {
-                      "type": "string"
-                    },
-                    "product_id": {
+                    "main_catergory_id": {
                       "type": "integer"
                     }
                   }

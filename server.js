@@ -21,13 +21,16 @@ const indexApi = require('./apis/index');
 const postApi = require('./apis/post/postApi');
 const productApi = require('./apis/product/productApi');
 const hotProductApi = require('./apis/hot_product/hotProductApi');
+const catergoryApi = require('./apis/catergory/catergoryApi');
+const mainCatergoryApi = require('./apis/main_catergory/mainCatergoryApi');
 
 
 backendRoute.use('/', indexApi);
 backendRoute.use('/post',postApi);
 backendRoute.use('/product',productApi);
 backendRoute.use('/hot-product',hotProductApi);
-
+backendRoute.use('/catergory',catergoryApi);
+backendRoute.use('/main-catergory',mainCatergoryApi);
 
 
 app.use('/api', backendRoute);

@@ -20,6 +20,19 @@ productApi.get('/', (req,res,next) => {
     })
 
 })
+productApi.get('/get-by-catergory/:catergory_name', (req,res,next) => {
+    let catergory_name = req.params
+    let {productPerPage,pageNumber,orderType,search} = req.query;
+    productService
+    .getProductsByCatergory(catergory_name,productPerPage,pageNumber,orderType,search)
+    .then(listProduct => {
+        res.status(200).json(listProduct)
+    })
+    .catch(err=>{
+        return res.status(500).json({message: err})
+    })
+
+})
 productApi.get('/:id',(req,res,next)=>{
     let {id} = req.params
     console.log(id)
