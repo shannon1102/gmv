@@ -23,7 +23,7 @@ const productApi = require('./apis/product/productApi');
 const hotProductApi = require('./apis/hot_product/hotProductApi');
 const catergoryApi = require('./apis/catergory/catergoryApi');
 const mainCatergoryApi = require('./apis/main_catergory/mainCatergoryApi');
-
+const inquiryApi = require('./apis/inquiry/inquiryApi');
 
 backendRoute.use('/', indexApi);
 backendRoute.use('/post',postApi);
@@ -31,7 +31,7 @@ backendRoute.use('/product',productApi);
 backendRoute.use('/hot-product',hotProductApi);
 backendRoute.use('/catergory',catergoryApi);
 backendRoute.use('/main-catergory',mainCatergoryApi);
-
+backendRoute.use('/inquiry',inquiryApi);
 
 app.use('/api', backendRoute);
 
@@ -39,6 +39,7 @@ app.use('/api', backendRoute);
 
 
 const swaggerDocument = require('./swagger.json');
+
 backendRoute.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 
