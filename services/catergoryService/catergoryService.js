@@ -1,7 +1,8 @@
 'use strict'
 const mysql = require('mysql');
 const logger = require('../../logger');
-const {to} = require('../../helper/to');
+const { to } = require('../../helper/to');
+const { query } = require('winston');
 class CatergoryService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
@@ -42,19 +43,25 @@ class CatergoryService {
     }
     getCatergoryById(id) {
         return new Promise(async (resolve, reject) => {
-            const query = `
+            try {  
+                const query2 = `
                 SELECT * FROM catergory WHERE id = ${mysql.escape(id)}
-            `
+                `
+                const [err, catergoryResult] = await to(this.mysqlDb.poolQuery(query2))
+                if (err) {
+                    logger.error(`[CatergoryService][getCatergoryById] errors: `, err)
+                    return reject(err?.sqlMessage ? err.sqlMessage : err)
+                }
+                if (!catergoryResult.length) {
+                    return reject(`catergory with id ${id} not found`)
+                }
+                return resolve(catergoryResult[0])
 
-            const [err, catergoryResult] = await to(this.mysqlDb.poolQuery(query))
-            if (err) {
-                logger.error(`[CatergoryService][getCatergoryById] errors: `, err)
-                return reject(err?.sqlMessage ? err.sqlMessage : err)
+            } catch (error) {
+                console.log(error);
+                reject(error)
             }
-            if (!catergoryResult.length) {
-                return reject(`catergory with id ${id} not found`)
-            }
-            return resolve(catergoryResult[0])
+
         })
     }
     getCatergoryByName(name) {
@@ -71,7 +78,7 @@ class CatergoryService {
             return resolve(catergoryResult)
         })
     }
-    createCatergory(name,main_catergory_id) {
+    createCatergory(name, main_catergory_id) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 INSERT INTO catergory(name,main_catergory_id)
@@ -86,7 +93,7 @@ class CatergoryService {
             return resolve(result?.insertId)
         })
     }
-    updateCatergory(id,name,main_catergory_id) {
+    updateCatergory(id, name, main_catergory_id) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE catergory SET 
@@ -102,7 +109,7 @@ class CatergoryService {
             if (result.affectedRows === 0) {
                 return reject(`Catergory with id ${id} not found`)
             }
-            
+
             return resolve(result)
         })
     }
@@ -117,8 +124,7 @@ class CatergoryService {
                 if (result.affectedRows === 0) {
                     return reject(`catergory with id ${id} not found`)
                 }
-
-                return resolve()
+                return resolve(`delete successfully`);
             } catch (err) {
                 logger.error(`[CatergoryService][deleteCatergory] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)

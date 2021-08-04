@@ -396,7 +396,7 @@
             }
           }
         },
-        "/product/get-by-catergory/{name}": {
+        "/product/get-by-catergory-id/{catergory_id}": {
           "get": {
             "consumes": [
               "application/json"
@@ -406,9 +406,74 @@
             ],
             "parameters": [
               {
-                "name": "catergory name",
+                "name": "catergory_id",
+                "type": "integer",
+                "in": "path",
+                "required": true
+              },
+              {
+                "name": "productsPerPage",
                 "in": "query",
-                "description": "Catergory Name",
+                "description": "Max products can be display in one page",
+                "required": false
+              },
+              {
+                "name": "pageNumber",
+                "in": "query",
+                "description": "Page number",
+                "required": false
+              },
+              {
+                "name": "orderType",
+                "in": "query",
+                "description": "Order type to display: 1-oldest 2-newest ",
+                "required": false
+              },
+              {
+                "name": "search",
+                "in": "query",
+                "description": "for search request for Front End",
+                "required": false
+              }
+            ],
+            "tags": [
+              "Product Api"
+            ],
+            "summary": "Get Products By Catergory",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/product"
+                  }
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
+        },
+        "/product/get-by-catergory-name/{name}": {
+          "get": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "name",
+                "type": "string",
+                "in": "path",
+                "description":"catergory_name",
                 "required": true
               },
               {

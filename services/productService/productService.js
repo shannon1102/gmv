@@ -41,7 +41,7 @@ class ProductService {
 
         });
     }
-    getProductsByCatergory(){
+    getProductsByCatergoryId(catergory_id,productPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
@@ -57,8 +57,9 @@ class ProductService {
             }
             const query = 
             `SELECT p.* FROM product as p
-            WHERE p.title LIKE ${mysql.escape('%'+search+'%')}
-            OR p.description LIKE ${mysql.escape('%'+search+'%')}
+            WHERE p.catergory_id = ${mysql.escape(catergory_id)}
+            AND ( p.title LIKE ${mysql.escape('%'+search+'%')}
+            OR p.description LIKE ${mysql.escape('%'+search+'%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
@@ -74,6 +75,45 @@ class ProductService {
         });
 
     }
+
+    getProductsByCatergoryName(name,productPerPage,pageNumber,orderType,search){
+        return new Promise(
+            async (resolve,reject) => {
+            let offsetDb = 0, orderByDb;
+            orderType = orderType ? orderType : 2
+            pageNumber = pageNumber ? pageNumber : 1
+            productPerPage = productPerPage ? productPerPage :10
+            offsetDb =  productPerPage * (pageNumber -1)
+            search = search ? search : ""
+            if (orderType == orderTypeSetting.ASC) {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
+            const query = 
+            `SELECT p.* FROM product as p
+            JOIN catergory ON p.catergory_id = catergory.id 
+            WHERE catergory.name = ${mysql.escape(name)}
+            AND (p.title LIKE ${mysql.escape('%'+search+'%')}
+            OR p.description LIKE ${mysql.escape('%'+search+'%')})
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+            LIMIT ${productPerPage}
+            OFFSET ${mysql.escape(offsetDb)}`
+            console.log(query)
+            let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
+            if(err) {
+                logger.error(`[productService][getProducts] errors : `,err)
+                return reject(err)
+            } else {
+                 return resolve(listProduct)
+            }
+
+        });
+
+    }
+
+
+
     getProductById(id) {
         return new Promise(async (resolve, reject) => {
             const query = `

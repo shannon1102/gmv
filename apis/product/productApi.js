@@ -20,11 +20,29 @@ productApi.get('/', (req,res,next) => {
     })
 
 })
-productApi.get('/get-by-catergory/:catergory_name', (req,res,next) => {
-    let catergory_name = req.params
+productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
+    
+    let {catergory_id} = req.params
+    console.log(catergory_id);
     let {productPerPage,pageNumber,orderType,search} = req.query;
     productService
-    .getProductsByCatergory(catergory_name,productPerPage,pageNumber,orderType,search)
+    .getProductsByCatergoryId(catergory_id,productPerPage,pageNumber,orderType,search)
+    .then(listProduct => {
+        res.status(200).json(listProduct)
+    })
+    .catch(err=>{
+        return res.status(500).json({message: err})
+    })
+
+})
+
+productApi.get('/get-by-catergory-name/:name', (req,res,next) => {
+    
+    let {name} = req.params
+    console.log(name);
+    let {productPerPage,pageNumber,orderType,search} = req.query;
+    productService
+    .getProductsByCatergoryName(name,productPerPage,pageNumber,orderType,search)
     .then(listProduct => {
         res.status(200).json(listProduct)
     })
@@ -59,7 +77,7 @@ productApi.post('/',checkRequiredFieldInBody(['title','description','model_numbe
         return res.status(500).json({message : err})
     })  
 })
-productApi.post('/upload-product-image:id',checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
+productApi.post('/upload-product-image/:id',checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
     let {id} = req.params
     let {title,description,model_number,main_image_url,price,material,size, catergory_id} = req.body
     console.log(description)
