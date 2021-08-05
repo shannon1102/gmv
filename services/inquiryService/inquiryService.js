@@ -2,6 +2,10 @@
 const mysql = require('mysql');
 const logger = require('../../logger');
 const {to} = require('../../helper/to');
+const nodemailer = require("nodemailer");
+
+const emailService = require("../sendEmailService/sendEmailService");
+
 class InquiryService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
@@ -84,6 +88,30 @@ class InquiryService {
                 console.log(err);
                 logger.error(`[inquiryService][createinquiry] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
+            }
+            try{
+            const payload = {
+
+                customer_name : customer_name ? customer_name : "No Information",
+                email: email ? email : "No information",
+                phone: phone,
+                message: message,
+                product_id: product_id ? product_id : -1,
+                quantity: quantity ? quantity : 1 ,
+
+            }
+            
+            console.log(payload);
+            await emailService.sendEmail('gmvmailer@gmail.com',payload);
+            if(err) {
+                reject(result1);
+            }
+            // resolve(result1);
+
+            console.log("sendEmail successfully");
+            }catch(err){
+                console.log(`Send mail failure: ${err}`);
+
             }
             return resolve(result?.insertId)
         })

@@ -1,4 +1,5 @@
 'use strict'
+
 const env = process.env.NODE_ENV || 'development' // dev or prod
 
 const development = {
@@ -22,7 +23,13 @@ const development = {
     orderTypeSetting: {
         ASC:1,
         DESC:2
+    },
+    adminEmail: {
+        account: process.env.RECV_EMAIL,
+        password: process.env.RECV_PASSWORD
+
     }
+
 }
 
 const production = {
@@ -46,6 +53,11 @@ const production = {
     orderTypeSetting: {
         ASC:1,
         DESC:2
+    },
+    adminGMVEmail: {
+        account: process.env.RECV_EMAIL,
+        password: process.env.RECV_PASSWORD
+
     }
 }
 
