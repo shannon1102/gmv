@@ -34,7 +34,7 @@ backendRoute.use('/catergory',catergoryApi);
 backendRoute.use('/main-catergory',mainCatergoryApi);
 backendRoute.use('/inquiry',inquiryApi);
 backendRoute.use('/user',userApi);
-
+    
 app.use('/api', backendRoute);
 
 
