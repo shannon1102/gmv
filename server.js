@@ -24,6 +24,7 @@ const hotProductApi = require('./apis/hot_product/hotProductApi');
 const catergoryApi = require('./apis/catergory/catergoryApi');
 const mainCatergoryApi = require('./apis/main_catergory/mainCatergoryApi');
 const inquiryApi = require('./apis/inquiry/inquiryApi');
+const userApi = require('./apis/auth/userApi');
 
 backendRoute.use('/', indexApi);
 backendRoute.use('/post',postApi);
@@ -32,6 +33,7 @@ backendRoute.use('/hot-product',hotProductApi);
 backendRoute.use('/catergory',catergoryApi);
 backendRoute.use('/main-catergory',mainCatergoryApi);
 backendRoute.use('/inquiry',inquiryApi);
+backendRoute.use('/user',userApi);
 
 app.use('/api', backendRoute);
 

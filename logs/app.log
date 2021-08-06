@@ -1975,3 +1975,369 @@
 2021-08-05T23:51:04+07:00 info: '::1 - - [05/Aug/2021:16:51:04 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 52141 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
 2021-08-05T23:51:04+07:00 info: '::1 - - [05/Aug/2021:16:51:04 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
 2021-08-05T23:51:05+07:00 info: '::1 - - [05/Aug/2021:16:51:05 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:34:20+07:00 info: '::1 - - [05/Aug/2021:17:34:20 +0000] "GET /api/inquiry/ HTTP/1.1" 200 4933 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:35:21+07:00 info: '::1 - - [05/Aug/2021:17:35:21 +0000] "POST /api/inquiry/ HTTP/1.1" 200 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:51:09+07:00 info: '::1 - - [05/Aug/2021:17:51:09 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:51:09+07:00 info: '::1 - - [05/Aug/2021:17:51:09 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:51:09+07:00 info: '::1 - - [05/Aug/2021:17:51:09 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:51:09+07:00 info: '::1 - - [05/Aug/2021:17:51:09 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:51:09+07:00 info: '::1 - - [05/Aug/2021:17:51:09 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:52:11+07:00 info: '::1 - - [05/Aug/2021:17:52:11 +0000] "POST /api/inquiry/ HTTP/1.1" 200 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T00:53:46+07:00 info: '::1 - - [05/Aug/2021:17:53:46 +0000] "POST /api/inquiry/ HTTP/1.1" 200 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:28:34+07:00 info: '::1 - - [06/Aug/2021:02:28:34 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:28:34+07:00 info: '::1 - - [06/Aug/2021:02:28:34 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:28:34+07:00 info: '::1 - - [06/Aug/2021:02:28:34 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:28:34+07:00 info: '::1 - - [06/Aug/2021:02:28:34 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:28:34+07:00 info: '::1 - - [06/Aug/2021:02:28:34 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:28:44+07:00 error: '[inquiryService][createinquiry] errors:  ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`gmvdb`.`inquiry`, CONSTRAINT `inquiry_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`))'
+2021-08-06T09:28:44+07:00 info: '::1 - - [06/Aug/2021:02:28:44 +0000] "POST /api/inquiry/ HTTP/1.1" 500 182 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T09:29:09+07:00 info: '::1 - - [06/Aug/2021:02:29:09 +0000] "POST /api/inquiry/ HTTP/1.1" 200 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:03:07+07:00 info: '::1 - - [06/Aug/2021:04:03:07 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:03:07+07:00 info: '::1 - - [06/Aug/2021:04:03:07 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:03:07+07:00 info: '::1 - - [06/Aug/2021:04:03:07 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:03:07+07:00 info: '::1 - - [06/Aug/2021:04:03:07 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:03:07+07:00 info: '::1 - - [06/Aug/2021:04:03:07 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 56231 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:03:23+07:00 info: '::1 - - [06/Aug/2021:04:03:23 +0000] "POST /api/user/signup HTTP/1.1" 404 155 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:04:28+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:22\n' +
+  '        await userService.checkEmailAndUsername(req.body.mail, req.body.username)\n' +
+  '        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:27:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:04:29+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:22\n' +
+  '        await userService.checkEmailAndUsername(req.body.mail, req.body.username)\n' +
+  '        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:27:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:04:34+07:00 error: 'uncaughtException: await is only valid in async function\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:22\n' +
+  '        await userService.checkEmailAndUsername(req.body.mail, req.body.username)\n' +
+  '        ^^^^^\n' +
+  '\n' +
+  'SyntaxError: await is only valid in async function\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:27:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:05:46+07:00 error: 'uncaughtException: Invalid left-hand side in assignment\n' +
+  '/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:13\n' +
+  '    jwt.verify(token,process.env.SECRECT_KEY,(err,decoded)= {\n' +
+  '                                             ^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Invalid left-hand side in assignment\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:5:25)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:05:52+07:00 error: 'uncaughtException: Invalid left-hand side in assignment\n' +
+  '/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:13\n' +
+  '    jwt.verify(token,process.env.SECRECT_KEY,(err,decoded)= {\n' +
+  '                                             ^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Invalid left-hand side in assignment\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:5:25)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:07:04+07:00 error: "uncaughtException: Cannot find module '../../services/userService'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../../services/userService'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:11:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-06T11:07:35+07:00 error: "uncaughtException: Cannot find module '../config/logger'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/services/userService/userService.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../config/logger'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/services/userService/userService.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/userService/userService.js:2:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-06T11:07:38+07:00 error: "uncaughtException: Cannot find module '../config/logger'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/services/userService/userService.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../config/logger'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/services/userService/userService.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/services/userService/userService.js:2:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-06T11:08:06+07:00 error: 'uncaughtException: username is not defined\n' +
+  'ReferenceError: username is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:15:51)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:27:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:09:56+07:00 error: 'uncaughtException: Router.use() requires a middleware function but got a Object\n' +
+  'TypeError: Router.use() requires a middleware function but got a Object\n' +
+  '    at Function.use (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:458:13)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:36:14)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/index.js:2:15)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-06T11:10:40+07:00 error: 'uncaughtException: Router.use() requires a middleware function but got a Object\n' +
+  'TypeError: Router.use() requires a middleware function but got a Object\n' +
+  '    at Function.use (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:458:13)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:36:14)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/index.js:2:15)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)'
+2021-08-06T11:11:09+07:00 info: '::1 - - [06/Aug/2021:04:11:09 +0000] "POST /api/user/signup HTTP/1.1" 500 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:08+07:00 info: '::1 - - [06/Aug/2021:04:12:08 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:08+07:00 info: '::1 - - [06/Aug/2021:04:12:08 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:08+07:00 info: '::1 - - [06/Aug/2021:04:12:08 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:08+07:00 info: '::1 - - [06/Aug/2021:04:12:08 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:08+07:00 info: '::1 - - [06/Aug/2021:04:12:08 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 56320 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:09+07:00 info: '::1 - - [06/Aug/2021:04:12:09 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:20+07:00 info: '::1 - - [06/Aug/2021:04:12:20 +0000] "POST /api/user/signup HTTP/1.1" 500 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:32+07:00 info: '::1 - - [06/Aug/2021:04:12:32 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:32+07:00 info: '::1 - - [06/Aug/2021:04:12:32 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:32+07:00 info: '::1 - - [06/Aug/2021:04:12:32 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:32+07:00 info: '::1 - - [06/Aug/2021:04:12:32 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 56321 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:32+07:00 info: '::1 - - [06/Aug/2021:04:12:32 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:32+07:00 info: '::1 - - [06/Aug/2021:04:12:32 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:12:39+07:00 info: '::1 - - [06/Aug/2021:04:12:39 +0000] "POST /api/user/signup HTTP/1.1" 500 36 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:13:07+07:00 info: '::1 - - [06/Aug/2021:04:13:07 +0000] "POST /api/user/signup HTTP/1.1" 500 36 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:13:56+07:00 info: '::1 - - [06/Aug/2021:04:13:56 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:12+07:00 info: '::1 - - [06/Aug/2021:04:14:12 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:18+07:00 info: '::1 - - [06/Aug/2021:04:14:18 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:24+07:00 info: '::1 - - [06/Aug/2021:04:14:24 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:26+07:00 info: '::1 - - [06/Aug/2021:04:14:26 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:27+07:00 info: '::1 - - [06/Aug/2021:04:14:27 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:27+07:00 info: '::1 - - [06/Aug/2021:04:14:27 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:27+07:00 info: '::1 - - [06/Aug/2021:04:14:27 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:27+07:00 info: '::1 - - [06/Aug/2021:04:14:27 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:27+07:00 info: '::1 - - [06/Aug/2021:04:14:27 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:14:33+07:00 info: '::1 - - [06/Aug/2021:04:14:33 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:17:43+07:00 info: '::1 - - [06/Aug/2021:04:17:43 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:18:12+07:00 info: '::1 - - [06/Aug/2021:04:18:12 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:19:00+07:00 info: '::1 - - [06/Aug/2021:04:19:00 +0000] "POST /api/user/signup HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:19:55+07:00 error: "ER_BAD_NULL_ERROR: Column 'password' cannot be null"
+2021-08-06T11:19:55+07:00 info: '::1 - - [06/Aug/2021:04:19:55 +0000] "POST /api/user/signup HTTP/1.1" 501 87 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:20:41+07:00 error: 'uncaughtException: Unexpected identifier\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:32\n' +
+  '        username: req.body.username,\n' +
+  '        ^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Unexpected identifier\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:27:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:32:20+07:00 info: '::1 - - [06/Aug/2021:04:32:20 +0000] "GET /api/inquiry/ HTTP/1.1" 200 5736 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:32:32+07:00 info: '::1 - - [06/Aug/2021:04:32:32 +0000] "GET /api/user/ HTTP/1.1" 404 148 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:32:58+07:00 info: '::1 - - [06/Aug/2021:04:32:58 +0000] "GET /api/user/ HTTP/1.1" 404 148 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "POST /api/user/signup HTTP/1.1" - - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 54947 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:27+07:00 info: '::1 - - [06/Aug/2021:04:36:27 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:36:38+07:00 info: '::1 - - [06/Aug/2021:04:36:38 +0000] "POST /api/user/login HTTP/1.1" 500 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:37:02+07:00 info: '::1 - - [06/Aug/2021:04:37:02 +0000] "POST /api/user/login HTTP/1.1" 500 48 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:40:27+07:00 error: "ER_BAD_NULL_ERROR: Column 'password' cannot be null"
+2021-08-06T11:40:27+07:00 info: '::1 - - [06/Aug/2021:04:40:27 +0000] "POST /api/user/signup HTTP/1.1" 501 87 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:41:11+07:00 error: "ER_BAD_NULL_ERROR: Column 'password' cannot be null"
+2021-08-06T11:41:11+07:00 info: '::1 - - [06/Aug/2021:04:41:11 +0000] "POST /api/user/signup HTTP/1.1" 501 87 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:41:43+07:00 info: '::1 - - [06/Aug/2021:04:41:43 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:05+07:00 error: "ER_BAD_NULL_ERROR: Column 'password' cannot be null"
+2021-08-06T11:42:05+07:00 info: '::1 - - [06/Aug/2021:04:42:05 +0000] "POST /api/user/signup HTTP/1.1" 501 87 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:23+07:00 info: '::1 - - [06/Aug/2021:04:42:23 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:25+07:00 info: '::1 - - [06/Aug/2021:04:42:25 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:27+07:00 info: '::1 - - [06/Aug/2021:04:42:27 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:29+07:00 info: '::1 - - [06/Aug/2021:04:42:29 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:29+07:00 info: '::1 - - [06/Aug/2021:04:42:29 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:30+07:00 info: '::1 - - [06/Aug/2021:04:42:30 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:42:34+07:00 info: '::1 - - [06/Aug/2021:04:42:34 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:45:32+07:00 info: '::1 - - [06/Aug/2021:04:45:32 +0000] "POST /api/user/signup HTTP/1.1" 200 217 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:45:36+07:00 info: '::1 - - [06/Aug/2021:04:45:36 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:45:39+07:00 info: '::1 - - [06/Aug/2021:04:45:39 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:50:30+07:00 error: '[userService][checkEmail] err: ReferenceError: email is not defined'
+2021-08-06T11:50:30+07:00 info: '::1 - - [06/Aug/2021:04:50:30 +0000] "POST /api/user/signup HTTP/1.1" 501 65 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:51:32+07:00 info: '::1 - - [06/Aug/2021:04:51:32 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:51:39+07:00 info: '::1 - - [06/Aug/2021:04:51:39 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:51:42+07:00 info: '::1 - - [06/Aug/2021:04:51:42 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:52:27+07:00 info: '::1 - - [06/Aug/2021:04:52:27 +0000] "POST /api/user/signup HTTP/1.1" 501 45 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:52:49+07:00 info: '::1 - - [06/Aug/2021:04:52:49 +0000] "POST /api/user/signup HTTP/1.1" 501 45 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:53:29+07:00 info: '::1 - - [06/Aug/2021:04:53:29 +0000] "POST /api/user/signup HTTP/1.1" 501 45 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:56:20+07:00 info: '::1 - - [06/Aug/2021:04:56:20 +0000] "POST /api/user/signup HTTP/1.1" 500 30 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:59:08+07:00 error: 'uncaughtException: Unexpected number\n' +
+  '/home/dalang/GMV/SourceCode/backend/services/userService/userService.js:49\n' +
+  '                } else if (user2.length ===s 1) {\n' +
+  '                                             ^\n' +
+  '\n' +
+  'SyntaxError: Unexpected number\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:11:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:59:11+07:00 error: 'uncaughtException: Unexpected number\n' +
+  '/home/dalang/GMV/SourceCode/backend/services/userService/userService.js:49\n' +
+  '                } else if (user2.length ===s 1) {\n' +
+  '                                             ^\n' +
+  '\n' +
+  'SyntaxError: Unexpected number\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:11:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T11:59:28+07:00 info: '::1 - - [06/Aug/2021:04:59:28 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:59:32+07:00 info: '::1 - - [06/Aug/2021:04:59:32 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:59:33+07:00 info: '::1 - - [06/Aug/2021:04:59:33 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:59:34+07:00 info: '::1 - - [06/Aug/2021:04:59:34 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:59:35+07:00 info: '::1 - - [06/Aug/2021:04:59:35 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T11:59:35+07:00 info: '::1 - - [06/Aug/2021:04:59:35 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:00:05+07:00 info: '::1 - - [06/Aug/2021:05:00:05 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:03:19+07:00 error: "uncaughtException: Identifier 'err' has already been declared\n" +
+  '/home/dalang/GMV/SourceCode/backend/services/userService/userService.js:24\n' +
+  '                const [err,user2] = to(this.mysqlDb.poolQuery(query2))\n' +
+  '                       ^\n' +
+  '\n' +
+  "SyntaxError: Identifier 'err' has already been declared\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:11:21)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T12:04:03+07:00 info: '::1 - - [06/Aug/2021:05:04:03 +0000] "POST /api/user/signup HTTP/1.1" 501 45 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:04:55+07:00 error: '[userService][checkEmail] err: TypeError: to is not a function or its return value is not iterable'
+2021-08-06T12:04:55+07:00 info: '::1 - - [06/Aug/2021:05:04:55 +0000] "POST /api/user/signup HTTP/1.1" 501 96 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:05:24+07:00 error: '[userService][checkEmail] err: TypeError: to is not a function or its return value is not iterable'
+2021-08-06T12:05:24+07:00 info: '::1 - - [06/Aug/2021:05:05:24 +0000] "POST /api/user/signup HTTP/1.1" 501 96 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:12:11+07:00 info: '::1 - - [06/Aug/2021:05:12:11 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:12:15+07:00 info: '::1 - - [06/Aug/2021:05:12:15 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:12:19+07:00 info: '::1 - - [06/Aug/2021:05:12:19 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:12:40+07:00 info: '::1 - - [06/Aug/2021:05:12:40 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:13:47+07:00 info: '::1 - - [06/Aug/2021:05:13:47 +0000] "POST /api/user/signup HTTP/1.1" 200 219 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:13:50+07:00 info: '::1 - - [06/Aug/2021:05:13:50 +0000] "POST /api/user/signup HTTP/1.1" 501 58 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:14:59+07:00 info: '::1 - - [06/Aug/2021:05:14:59 +0000] "POST /api/user/login HTTP/1.1" 500 48 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:15:35+07:00 error: "[userService][login] err: Error: ER_BAD_FIELD_ERROR: Unknown column 'mail' in 'where clause'"
+2021-08-06T12:15:35+07:00 info: '::1 - - [06/Aug/2021:05:15:35 +0000] "POST /api/user/login HTTP/1.1" 500 304 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:16:27+07:00 info: '::1 - - [06/Aug/2021:05:16:27 +0000] "POST /api/user/login HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:16:38+07:00 info: '::1 - - [06/Aug/2021:05:16:38 +0000] "POST /api/user/login HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:18:02+07:00 info: '::1 - - [06/Aug/2021:05:18:02 +0000] "POST /api/user/login HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:20:06+07:00 info: '::1 - - [06/Aug/2021:05:20:06 +0000] "POST /api/user/signup HTTP/1.1" 501 58 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:20:12+07:00 info: '::1 - - [06/Aug/2021:05:20:12 +0000] "POST /api/user/login HTTP/1.1" 200 223 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:20:25+07:00 info: '::1 - - [06/Aug/2021:05:20:25 +0000] "POST /api/user/signup HTTP/1.1" 501 48 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:20:31+07:00 info: '::1 - - [06/Aug/2021:05:20:31 +0000] "POST /api/user/signup HTTP/1.1" 200 221 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T12:20:50+07:00 info: '::1 - - [06/Aug/2021:05:20:50 +0000] "POST /api/user/login HTTP/1.1" 200 225 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'

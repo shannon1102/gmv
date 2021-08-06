@@ -19,7 +19,7 @@ let sendEmail = async (receiverEmail,payload)=>{
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '"Fred Foo" <gmvmailer@.com>', // sender address
+    from: '"Vanday" <gmvmailer@gmail.com>', // sender address
     //to: "receiverEmail", // list of receivers
     to: "vanictk62@gmail.com",
     subject: "GVM website have new inquiry", // Subject line
@@ -41,5 +41,5 @@ let sendEmail = async (receiverEmail,payload)=>{
 }
 
 module.exports = {
-    sendEmail: sendEmail
+    sendEmail
 }

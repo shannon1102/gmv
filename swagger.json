@@ -1847,8 +1847,124 @@
               }
             }
           }
+        },
+     
+        "/user/signup":{
+          "post": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "body",
+                "in": "body",
+                "require": true,
+                "schema": {
+                  "type": "object",
+                  "properties": {
+  
+                      "email": {
+                        "type": "string"
+                      },
+                      "username": {
+                        "type":"string"
+                      },
+                      "password": {
+                          "type": "string"
+                      }
+                  }
+                }
+              }
+            ],
+            "tags": [
+              "User Api"
+            ],
+            "summary": "Create New User",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "insertedId": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
+        },
+        "/user/login":{
+          "post": {
+            "consumes": [
+              "application/json"
+            ],
+            "produces": [
+              "application/json"
+            ],
+            "parameters": [
+              {
+                "name": "body",
+                "in": "body",
+                "require": true,
+                "schema": {
+                  "type": "object",
+                  "properties": {
+        
+                      "email": {
+                        "type": "string"
+                      },
+         
+                      "password": {
+                          "type": "string"
+                      }
+                  }
+                }
+              }
+            ],
+            "tags": [
+              "User Api"
+            ],
+            "summary": "Login User",
+            "description": "",
+            "responses": {
+              "200": {
+                "description": "success",
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    },
+                    "insertedId": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "500": {
+                "description": "error",
+                "schema": {
+                  "$ref": "#/definitions/error"
+                }
+              }
+            }
+          }
         }
-
       },
     "definitions" : {
         "post": {
