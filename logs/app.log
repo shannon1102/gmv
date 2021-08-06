@@ -2344,3 +2344,352 @@
 2021-08-06T12:23:18+07:00 info: '::1 - - [06/Aug/2021:05:23:18 +0000] "POST /api/user/login HTTP/1.1" 200 211 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
 2021-08-06T12:23:19+07:00 info: '::1 - - [06/Aug/2021:05:23:19 +0000] "POST /api/user/login HTTP/1.1" 200 211 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
 2021-08-06T12:23:20+07:00 info: '::1 - - [06/Aug/2021:05:23:20 +0000] "POST /api/user/login HTTP/1.1" 200 211 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T14:59:30+07:00 info: '::1 - - [06/Aug/2021:07:59:30 +0000] "POST /api/api-docs/login HTTP/1.1" 200 3104 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T14:59:43+07:00 info: '::1 - - [06/Aug/2021:07:59:43 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T14:59:43+07:00 info: '::1 - - [06/Aug/2021:07:59:43 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T14:59:43+07:00 info: '::1 - - [06/Aug/2021:07:59:43 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T14:59:43+07:00 info: '::1 - - [06/Aug/2021:07:59:43 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T14:59:43+07:00 info: '::1 - - [06/Aug/2021:07:59:43 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T15:00:01+07:00 info: '::1 - - [06/Aug/2021:08:00:01 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:01:53+07:00 info: '::1 - - [06/Aug/2021:08:01:53 +0000] "POST /api/inquiry HTTP/1.1" 500 45 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:02:05+07:00 info: '::1 - - [06/Aug/2021:08:02:05 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:02:16+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Object]\n' +
+  'Error: Route.get() requires a callback function but got a [object Object]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/inquiry/inquiryApi.js:40:12)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:26:20)'
+2021-08-06T15:03:00+07:00 info: '::1 - - [06/Aug/2021:08:03:00 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:03:36+07:00 info: '::1 - - [06/Aug/2021:08:03:36 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:04:01+07:00 info: '::1 - - [06/Aug/2021:08:04:01 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:04:22+07:00 info: '::1 - - [06/Aug/2021:08:04:22 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:04:53+07:00 error: 'uncaughtException: Malformed arrow function parameter list\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/inquiry/inquiryApi.js:12\n' +
+  "inquiryApi.get('/',verifyToken (req,res,next) => {\n" +
+  '                   ^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Malformed arrow function parameter list\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:26:20)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T15:05:05+07:00 error: 'Token is missing'
+2021-08-06T15:05:05+07:00 info: '::1 - - [06/Aug/2021:08:05:05 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:05:35+07:00 info: '::1 - - [06/Aug/2021:08:05:35 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:06:06+07:00 error: 'Token is missing'
+2021-08-06T15:06:06+07:00 info: '::1 - - [06/Aug/2021:08:06:06 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:06:21+07:00 error: 'Token is missing'
+2021-08-06T15:06:21+07:00 info: '::1 - - [06/Aug/2021:08:06:21 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:06:23+07:00 error: 'Token is missing'
+2021-08-06T15:06:23+07:00 info: '::1 - - [06/Aug/2021:08:06:23 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:09:45+07:00 error: '500 - logger.err is not a function - /api/inquiry -GET - ::1'
+2021-08-06T15:09:45+07:00 info: '::1 - - [06/Aug/2021:08:09:45 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:10:40+07:00 info: '::1 - - [06/Aug/2021:08:10:40 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:11:23+07:00 info: '::1 - - [06/Aug/2021:08:11:23 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:16:02+07:00 info: '::1 - - [06/Aug/2021:08:16:02 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:16:24+07:00 error: '500 - logger.err is not a function - /api/inquiry -GET - ::1'
+2021-08-06T15:16:24+07:00 info: '::1 - - [06/Aug/2021:08:16:24 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:16:36+07:00 error: '500 - logger.err is not a function - /api/inquiry -GET - ::1'
+2021-08-06T15:16:36+07:00 info: '::1 - - [06/Aug/2021:08:16:36 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:17:15+07:00 error: '500 - logger.err is not a function - /api/inquiry -GET - ::1'
+2021-08-06T15:17:15+07:00 info: '::1 - - [06/Aug/2021:08:17:15 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:19:09+07:00 error: '500 - logger.err is not a function - /api/inquiry -GET - ::1'
+2021-08-06T15:19:09+07:00 info: '::1 - - [06/Aug/2021:08:19:09 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:20:05+07:00 error: '500 - logger.err is not a function - /api/inquiry -GET - ::1'
+2021-08-06T15:20:05+07:00 info: '::1 - - [06/Aug/2021:08:20:05 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:20:25+07:00 error: 'Failed to authenticate token'
+2021-08-06T15:20:25+07:00 info: '::1 - - [06/Aug/2021:08:20:25 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:20:59+07:00 info: '::1 - - [06/Aug/2021:08:20:59 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:21:16+07:00 error: 'Failed to authenticate token'
+2021-08-06T15:21:16+07:00 info: '::1 - - [06/Aug/2021:08:21:16 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:22:50+07:00 error: 'Failed to authenticate token'
+2021-08-06T15:22:50+07:00 info: '::1 - - [06/Aug/2021:08:22:50 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:23:25+07:00 info: '::1 - - [06/Aug/2021:08:23:25 +0000] "POST /api/user/signup HTTP/1.1" 200 216 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:23:58+07:00 info: '::1 - - [06/Aug/2021:08:23:58 +0000] "POST /api/user/login HTTP/1.1" 200 206 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:24:14+07:00 error: 'Failed to authenticate token'
+2021-08-06T15:24:14+07:00 info: '::1 - - [06/Aug/2021:08:24:14 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:24:54+07:00 error: 'Failed to authenticate token:s{err}'
+2021-08-06T15:24:54+07:00 info: '::1 - - [06/Aug/2021:08:24:54 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:25:06+07:00 error: 'Failed to authenticate token: JsonWebTokenError: invalid token'
+2021-08-06T15:25:06+07:00 info: '::1 - - [06/Aug/2021:08:25:06 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:35:30+07:00 error: 'Token is missing'
+2021-08-06T15:35:30+07:00 info: '::1 - - [06/Aug/2021:08:35:30 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:35:47+07:00 error: 'Token is missing'
+2021-08-06T15:35:47+07:00 info: '::1 - - [06/Aug/2021:08:35:47 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:36:01+07:00 error: 'Token is missing'
+2021-08-06T15:36:01+07:00 info: '::1 - - [06/Aug/2021:08:36:01 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:36:21+07:00 error: 'Token is missing'
+2021-08-06T15:36:22+07:00 info: '::1 - - [06/Aug/2021:08:36:22 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:36:35+07:00 error: 'Failed to authenticate token: JsonWebTokenError: invalid token'
+2021-08-06T15:36:35+07:00 info: '::1 - - [06/Aug/2021:08:36:35 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:37:45+07:00 error: '500 - userId is not defined - /api/inquiry -GET - ::1'
+2021-08-06T15:37:45+07:00 info: '::1 - - [06/Aug/2021:08:37:45 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:38:41+07:00 error: '500 - userId is not defined - /api/inquiry -GET - ::1'
+2021-08-06T15:38:41+07:00 info: '::1 - - [06/Aug/2021:08:38:41 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:39:10+07:00 error: '500 - userId is not defined - /api/inquiry -GET - ::1'
+2021-08-06T15:39:10+07:00 info: '::1 - - [06/Aug/2021:08:39:10 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:39:41+07:00 error: '500 - userId is not defined - /api/inquiry -GET - ::1'
+2021-08-06T15:39:41+07:00 info: '::1 - - [06/Aug/2021:08:39:41 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:40:45+07:00 info: '::1 - - [06/Aug/2021:08:40:45 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:41:44+07:00 info: '::1 - - [06/Aug/2021:08:41:44 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T15:59:41+07:00 info: '::1 - - [06/Aug/2021:08:59:41 +0000] "GET /api/user/information HTTP/1.1" 200 123 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:25:38+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:104:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:26:39+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:104:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:27:57+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:104:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:28:48+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:104:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:29:29+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:104:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:31:31+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:104:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:32:08+07:00 error: 'uncaughtException: Route.get() requires a callback function but got a [object Undefined]\n' +
+  'Error: Route.get() requires a callback function but got a [object Undefined]\n' +
+  '    at Route.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/route.js:202:15)\n' +
+  '    at Function.proto.<computed> [as get] (/home/dalang/GMV/SourceCode/backend/node_modules/express/lib/router/index.js:510:19)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:115:9)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:3:17)'
+2021-08-06T16:33:50+07:00 info: '::1 - - [06/Aug/2021:09:33:50 +0000] "GET /api/user/information HTTP/1.1" 404 159 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:34:11+07:00 info: '::1 - - [06/Aug/2021:09:34:11 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:34:21+07:00 error: "500 - Cannot read property 'split' of undefined - /api/inquiry -GET - ::1"
+2021-08-06T16:34:21+07:00 info: '::1 - - [06/Aug/2021:09:34:21 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:35:24+07:00 error: "500 - Cannot read property 'split' of undefined - /api/inquiry -GET - ::1"
+2021-08-06T16:35:24+07:00 info: '::1 - - [06/Aug/2021:09:35:24 +0000] "GET /api/inquiry HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:35:58+07:00 error: 'Token is missing'
+2021-08-06T16:35:58+07:00 info: '::1 - - [06/Aug/2021:09:35:58 +0000] "GET /api/inquiry HTTP/1.1" 401 31 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:36:03+07:00 error: 'Failed to authenticate token: JsonWebTokenError: jwt malformed'
+2021-08-06T16:36:03+07:00 info: '::1 - - [06/Aug/2021:09:36:03 +0000] "GET /api/inquiry HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:36:21+07:00 info: '::1 - - [06/Aug/2021:09:36:21 +0000] "POST /api/user/login HTTP/1.1" 200 206 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:37:01+07:00 info: '::1 - - [06/Aug/2021:09:37:01 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:39:38+07:00 info: '::1 - - [06/Aug/2021:09:39:38 +0000] "GET /api/inquiry HTTP/1.1" - - "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:40:43+07:00 error: 'uncaughtException: required is not defined\n' +
+  'ReferenceError: required is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:5:15)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/inquiry/inquiryApi.js:9:33)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T16:40:55+07:00 error: 'uncaughtException: required is not defined\n' +
+  'ReferenceError: required is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/middleware/verifyToken.js:5:15)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/inquiry/inquiryApi.js:9:33)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T16:42:03+07:00 error: "Bad request.You don't have permission"
+2021-08-06T16:42:03+07:00 info: '::1 - - [06/Aug/2021:09:42:03 +0000] "GET /api/inquiry HTTP/1.1" 401 43 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:42:50+07:00 info: '::1 - - [06/Aug/2021:09:42:50 +0000] "POST /api/user/login HTTP/1.1" 200 209 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:43:29+07:00 info: '::1 - - [06/Aug/2021:09:43:29 +0000] "GET /api/inquiry HTTP/1.1" 200 5736 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-06T16:49:20+07:00 info: '::1 - - [06/Aug/2021:09:49:20 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:49:20+07:00 info: '::1 - - [06/Aug/2021:09:49:20 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:49:20+07:00 info: '::1 - - [06/Aug/2021:09:49:20 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 55109 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:49:20+07:00 info: '::1 - - [06/Aug/2021:09:49:20 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:49:20+07:00 info: '::1 - - [06/Aug/2021:09:49:20 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:49:20+07:00 info: '::1 - - [06/Aug/2021:09:49:20 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:17+07:00 info: '::1 - - [06/Aug/2021:09:50:17 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:17+07:00 info: '::1 - - [06/Aug/2021:09:50:17 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:17+07:00 info: '::1 - - [06/Aug/2021:09:50:17 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:17+07:00 info: '::1 - - [06/Aug/2021:09:50:17 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:17+07:00 info: '::1 - - [06/Aug/2021:09:50:17 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 55271 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:18+07:00 info: '::1 - - [06/Aug/2021:09:50:18 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:50:49+07:00 info: '::1 - - [06/Aug/2021:09:50:49 +0000] "POST /api/user/login HTTP/1.1" 500 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:51:00+07:00 info: '::1 - - [06/Aug/2021:09:51:00 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:51:22+07:00 error: 'Token is missing'
+2021-08-06T16:51:22+07:00 info: '::1 - - [06/Aug/2021:09:51:22 +0000] "GET /api/inquiry/ HTTP/1.1" 401 31 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:52:34+07:00 info: '::1 - - [06/Aug/2021:09:52:34 +0000] "GET /api/inquiry/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T16:53:32+07:00 info: '::1 - - [06/Aug/2021:09:53:32 +0000] "GET /api/inquiry/get-by-customer-name/strin HTTP/1.1" 200 5324 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:01:04+07:00 error: 'uncaughtException: /home/dalang/GMV/SourceCode/backend/swagger.json: Unexpected token , in JSON at position 55940\n' +
+  'SyntaxError: /home/dalang/GMV/SourceCode/backend/swagger.json: Unexpected token , in JSON at position 55940\n' +
+  '    at parse (<anonymous>)\n' +
+  '    at Object.Module._extensions..json (internal/modules/cjs/loader.js:1106:22)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:43:25)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)'
+2021-08-06T17:02:32+07:00 info: '::1 - - [06/Aug/2021:10:02:32 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:02:32+07:00 info: '::1 - - [06/Aug/2021:10:02:32 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:02:32+07:00 info: '::1 - - [06/Aug/2021:10:02:32 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:02:32+07:00 info: '::1 - - [06/Aug/2021:10:02:32 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 56169 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:02:32+07:00 info: '::1 - - [06/Aug/2021:10:02:32 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:02:32+07:00 info: '::1 - - [06/Aug/2021:10:02:32 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:02:53+07:00 info: '::1 - - [06/Aug/2021:10:02:53 +0000] "POST /api/user/login HTTP/1.1" 500 37 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:03:06+07:00 info: '::1 - - [06/Aug/2021:10:03:06 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:03:52+07:00 info: '::1 - - [06/Aug/2021:10:03:52 +0000] "GET /api/user/information HTTP/1.1" 200 129 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:04:07+07:00 info: '::1 - - [06/Aug/2021:10:04:07 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:04:07+07:00 info: '::1 - - [06/Aug/2021:10:04:07 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:04:07+07:00 info: '::1 - - [06/Aug/2021:10:04:07 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:04:07+07:00 info: '::1 - - [06/Aug/2021:10:04:07 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:04:07+07:00 info: '::1 - - [06/Aug/2021:10:04:07 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:04:08+07:00 info: '::1 - - [06/Aug/2021:10:04:08 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:05:17+07:00 info: '::1 - - [06/Aug/2021:10:05:17 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:06:00+07:00 info: '::1 - - [06/Aug/2021:10:06:00 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:08:34+07:00 info: '::1 - - [06/Aug/2021:10:08:34 +0000] "GET /api/user/information HTTP/1.1" 200 46 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:15:27+07:00 info: '::1 - - [06/Aug/2021:10:15:27 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:15:29+07:00 info: '::1 - - [06/Aug/2021:10:15:29 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:15:36+07:00 info: '::1 - - [06/Aug/2021:10:15:36 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:15:46+07:00 error: 'Failed to authenticate token: JsonWebTokenError: jwt malformed'
+2021-08-06T17:15:46+07:00 info: '::1 - - [06/Aug/2021:10:15:46 +0000] "GET /api/user/information HTTP/1.1" 401 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:15:51+07:00 info: '::1 - - [06/Aug/2021:10:15:51 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:16:05+07:00 error: 'Failed to authenticate token: JsonWebTokenError: jwt malformed'
+2021-08-06T17:16:05+07:00 info: '::1 - - [06/Aug/2021:10:16:05 +0000] "GET /api/inquiry/ HTTP/1.1" 401 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:16:11+07:00 info: '::1 - - [06/Aug/2021:10:16:11 +0000] "GET /api/inquiry/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:16:30+07:00 info: '::1 - - [06/Aug/2021:10:16:30 +0000] "POST /api/user/login HTTP/1.1" 200 206 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:16:50+07:00 error: "Bad request.You don't have permission"
+2021-08-06T17:16:50+07:00 info: '::1 - - [06/Aug/2021:10:16:50 +0000] "GET /api/inquiry/ HTTP/1.1" 401 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:20:50+07:00 error: "uncaughtException: Unexpected token '='\n" +
+  '/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:7\n' +
+  "const  = require('../../middleware/verifyToken')\n" +
+  '       ^\n' +
+  '\n' +
+  "SyntaxError: Unexpected token '='\n" +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:22:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T17:21:03+07:00 error: 'uncaughtException: missing ) after argument list\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:49\n' +
+  "postApi.put('/:id',verifyToken,adminRole \n" +
+  '                               ^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: missing ) after argument list\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:22:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T17:21:09+07:00 error: 'uncaughtException: missing ) after argument list\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/post/postApi.js:63\n' +
+  "postApi.delete('/:id',verifyToken,adminRole \n" +
+  '                                  ^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: missing ) after argument list\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:22:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-06T17:32:47+07:00 info: '::1 - - [06/Aug/2021:10:32:47 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:32:47+07:00 info: '::1 - - [06/Aug/2021:10:32:47 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:32:47+07:00 info: '::1 - - [06/Aug/2021:10:32:47 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 59247 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:32:47+07:00 info: '::1 - - [06/Aug/2021:10:32:47 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:32:47+07:00 info: '::1 - - [06/Aug/2021:10:32:47 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:32:48+07:00 info: '::1 - - [06/Aug/2021:10:32:48 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:29+07:00 info: '::1 - - [06/Aug/2021:10:33:29 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:29+07:00 info: '::1 - - [06/Aug/2021:10:33:29 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:29+07:00 info: '::1 - - [06/Aug/2021:10:33:29 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:29+07:00 info: '::1 - - [06/Aug/2021:10:33:29 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:29+07:00 info: '::1 - - [06/Aug/2021:10:33:29 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 59250 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:30+07:00 info: '::1 - - [06/Aug/2021:10:33:30 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:35+07:00 info: '::1 - - [06/Aug/2021:10:33:35 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:33:52+07:00 info: '::1 - - [06/Aug/2021:10:33:52 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-06T17:34:21+07:00 info: '::1 - - [06/Aug/2021:10:34:21 +0000] "GET /api/inquiry/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'

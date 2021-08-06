@@ -6,6 +6,7 @@ const hotProductApi = express.Router();
 const mysqlDb = new MysqlDB();
 const hotProductService = new HotProductService(mysqlDb);
 const {checkRequiredFieldInBody} = require('../../middleware/index')
+const {verifyToken,adminRole} = require('../../middleware/verifyToken')
 
 
 hotProductApi.get('/', (req,res,next) => {
@@ -21,7 +22,7 @@ hotProductApi.get('/', (req,res,next) => {
 
 })
 
-hotProductApi.get('/set/:product_id', (req,res,next)=>{
+hotProductApi.get('/set/:product_id',verifyToken,adminRole, (req,res,next)=>{
     let {product_id} = req.params
     console.log(req.body)
     hotProductService
@@ -36,7 +37,7 @@ hotProductApi.get('/set/:product_id', (req,res,next)=>{
     })  
 })
 
-hotProductApi.get('/unset/:product_id', (req,res,next)=>{
+hotProductApi.get('/unset/:product_id',verifyToken,adminRole, (req,res,next)=>{
     let {product_id} = req.params
     hotProductService
     .unSetHotProduct(product_id)

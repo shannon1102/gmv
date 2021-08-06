@@ -4,6 +4,7 @@ const express = require('express')
 const MysqlDB = require('../../models/mysql')
 const {checkRequiredFieldInBody} = require('../../middleware')
 const CatergoryService = require('../../services/catergoryService/catergoryService')
+const { verifyToken,adminRole } = require('../../middleware/verifyToken')
 
 const catergoryApi = express.Router()
 const mysqlDb = new MysqlDB()
@@ -31,7 +32,7 @@ catergoryApi.get('/:id', async (req, res, next) => {
     }
 })
 
-catergoryApi.post('/',
+catergoryApi.post('/',verifyToken,adminRole,
     checkRequiredFieldInBody(['name','main_catergory_id']),
     async (req, res, next) => {
         try {
@@ -43,7 +44,7 @@ catergoryApi.post('/',
             return res.status(500).json({message: error})
         }
     })
-catergoryApi.put('/:id',
+catergoryApi.put('/:id',verifyToken,adminRole,
     checkRequiredFieldInBody(['name','main_catergory_id']),
     async (req, res, next) => {
         let {id} = req.params
@@ -56,7 +57,7 @@ catergoryApi.put('/:id',
         }
     })
 
-catergoryApi.delete('/:id',
+catergoryApi.delete('/:id',verifyToken,adminRole,
     async (req, res, next) => {
         let {id} = req.params   
         try {

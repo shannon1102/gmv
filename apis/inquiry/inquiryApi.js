@@ -5,10 +5,12 @@ const InquiryService = require('../../services/inquiryService/inquiryService');
 const inquiryApi = express.Router();
 const mysqlDb = new MysqlDB();
 const inquiryService = new InquiryService(mysqlDb);
-const {checkRequiredFieldInBody} = require('../../middleware/index')
+const {checkRequiredFieldInBody} = require('../../middleware/index');
+const {verifyToken,adminRole} = require('../../middleware/verifyToken');
 
 
 inquiryApi.get('/', (req,res,next) => {
+    console.log(req.user);
     let {itemsPerPage,pageNumber,orderType} = req.query;
     inquiryService
     .getInquiries(itemsPerPage,pageNumber,orderType)
@@ -38,6 +40,7 @@ inquiryApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
 
 inquiryApi.get('/get-by-customer-name/:name', (req,res,next) => {
     
+   
     let {name} = req.params
     console.log(name);
     let {search} = req.query;

@@ -2,7 +2,7 @@
 const express = require('express')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const { verifyToken } = require('../../middleware/verifyToken')
+const { verifyToken,adminRole } = require('../../middleware/verifyToken')
 
 const { checkRequiredFieldInBody } = require('../../middleware/index')
 const userApi = express.Router()
@@ -21,7 +21,6 @@ userApi.post('/signup', checkRequiredFieldInBody(['username', 'email', 'password
         });
     }
 
-    console.log("qua");
     const hashedPassword = bcrypt.hashSync(req.body.password, 8)
    
     console.log(req.body);
@@ -30,7 +29,6 @@ userApi.post('/signup', checkRequiredFieldInBody(['username', 'email', 'password
         username: req.body.username,
         password: hashedPassword
     }
-    console.log("vchhh")
     userService
         .signUp(newUser)
         .then(result => {
@@ -101,4 +99,16 @@ userApi.post('/login',checkRequiredFieldInBody(['username','password']), (req, r
             })
         })
 })
+userApi.get('/information', verifyToken, (req, res, next) => {
+    userService
+        .getUserInformation(req)
+        .then(user => {
+            return res.status(200).json(user)})
+        .catch(errMsg => {
+        return res.status(500).json({
+            message: errMsg
+        })
+    })
+})
+
 module.exports = userApi

@@ -5,6 +5,8 @@ const MysqlDB = require('../../models/mysql')
 const {checkRequiredFieldInBody} = require('../../middleware')
 const PostService = require('../../services/postService/postService')
 
+const { verifyToken,adminRole } = require('../../middleware/verifyToken')
+
 const postApi = express.Router()
 const mysqlDb = new MysqlDB()
 const postService = new PostService(mysqlDb)
@@ -31,7 +33,7 @@ postApi.get('/:id', async (req, res, next) => {
     }
 })
 
-postApi.post('/',
+postApi.post('/',verifyToken,adminRole,
     checkRequiredFieldInBody(['title', 'content','catergory_id']),
     async (req, res, next) => {
         try {
@@ -44,7 +46,7 @@ postApi.post('/',
         }
     })
 
-postApi.put('/:id',
+postApi.put('/:id',verifyToken,adminRole,
     checkRequiredFieldInBody(['title', 'content']),
     async (req, res, next) => {
         let {id} = req.params
@@ -58,7 +60,7 @@ postApi.put('/:id',
         }
     })
 
-postApi.delete('/:id',
+postApi.delete('/:id',verifyToken,adminRole,
     async (req, res, next) => {
         let {id} = req.params
         try {

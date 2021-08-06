@@ -6,7 +6,7 @@ const productApi = express.Router();
 const mysqlDb = new MysqlDB();
 const productService = new ProductService(mysqlDb);
 const {checkRequiredFieldInBody} = require('../../middleware/index')
-
+const {verifyToken,adminRole} = require('../../middleware/verifyToken')
 
 productApi.get('/', (req,res,next) => {
     let {productPerPage,pageNumber,orderType,search} = req.query;
@@ -63,7 +63,7 @@ productApi.get('/:id',(req,res,next)=>{
         return res.status(500).json({message : err})
     })  
 })
-productApi.post('/',checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size','catergory_id']), (req,res,next)=>{
+productApi.post('/',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size','catergory_id']), (req,res,next)=>{
     let {title,description,model_number,main_image_url,price,material,size, catergory_id} = req.body
     console.log(req.body)
     productService
@@ -77,7 +77,7 @@ productApi.post('/',checkRequiredFieldInBody(['title','description','model_numbe
         return res.status(500).json({message : err})
     })  
 })
-productApi.post('/upload-product-image/:id',checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
+productApi.post('/upload-product-image/:id',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
     let {id} = req.params
     let {title,description,model_number,main_image_url,price,material,size, catergory_id} = req.body
     console.log(description)
@@ -93,7 +93,7 @@ productApi.post('/upload-product-image/:id',checkRequiredFieldInBody(['title','d
         return res.status(500).json({message : err})
     })  
 })
-productApi.delete('/:id', (req,res,next)=>{
+productApi.delete('/:id',verifyToken,adminRole,(req,res,next)=>{
     let {id} = req.params
     productService
     .deleteProduct(id)
@@ -104,7 +104,7 @@ productApi.delete('/:id', (req,res,next)=>{
         return res.status(500).json({message : err})
     })  
 })
-productApi.post('/upload-image/:product_id', (req,res,next)=>{
+productApi.post('/upload-image/:product_id',verifyToken,adminRole, (req,res,next)=>{
     let {product_id} = req.params
     let {url_image1,url_image2,url_image3,url_image4} = req.body
     productService
@@ -118,7 +118,7 @@ productApi.post('/upload-image/:product_id', (req,res,next)=>{
         return res.status(500).json({message : err})
     })  
 })
-productApi.put('/update-image/:product_id', (req,res,next)=>{
+productApi.put('/update-image/:product_id',verifyToken,adminRole, (req,res,next)=>{
     console.log("ALOOOOOOOOOO");
     let {product_id} = req.params
     let {url_image1,url_image2,url_image3,url_image4} = req.body

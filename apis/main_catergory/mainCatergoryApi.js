@@ -4,10 +4,11 @@ const express = require('express')
 const MysqlDB = require('../../models/mysql')
 const {checkRequiredFieldInBody} = require('../../middleware')
 const MainCatergoryService = require('../../services/mainCatergoryService/mainCatergory')
-
 const mainCatergoryApi = express.Router()
 const mysqlDb = new MysqlDB()
 const mainCatergoryService = new MainCatergoryService(mysqlDb)
+const { verifyToken,adminRole } = require('../../middleware/verifyToken')
+
 
 mainCatergoryApi.get('/', async (req, res, next) => {
     try {
@@ -31,7 +32,7 @@ mainCatergoryApi.get('/:id', async (req, res, next) => {
     }
 })
 
-mainCatergoryApi.post('/',
+mainCatergoryApi.post('/',verifyToken,adminRole,
     checkRequiredFieldInBody(['name','description','url_image']),
     async (req, res, next) => {
         try {
@@ -43,7 +44,7 @@ mainCatergoryApi.post('/',
             return res.status(500).json({message: error})
         }
     })
-mainCatergoryApi.put('/:id',
+mainCatergoryApi.put('/:id',verifyToken,adminRole,
     checkRequiredFieldInBody(['name','description','url_image']),
     async (req, res, next) => {
         let {id} = req.params
@@ -56,7 +57,7 @@ mainCatergoryApi.put('/:id',
         }
     })
 
-mainCatergoryApi.delete('/:id',
+mainCatergoryApi.delete('/:id',verifyToken,adminRole,
     async (req, res, next) => {
         let {id} = req.params   
         try {

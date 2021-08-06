@@ -8,6 +8,7 @@ const logger = require('./logger')
 const bodyParser = require('body-parser')
 
 require('dotenv').config({path: path.join(__dirname, '.env')})
+const {verifyToken,adminRole} = require('./middleware/verifyToken')
 
 const app = express();
 app.use(bodyParser.json())
@@ -32,7 +33,7 @@ backendRoute.use('/product',productApi);
 backendRoute.use('/hot-product',hotProductApi);
 backendRoute.use('/catergory',catergoryApi);
 backendRoute.use('/main-catergory',mainCatergoryApi);
-backendRoute.use('/inquiry',inquiryApi);
+backendRoute.use('/inquiry',verifyToken,adminRole,inquiryApi);
 backendRoute.use('/user',userApi);
     
 app.use('/api', backendRoute);
