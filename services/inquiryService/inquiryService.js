@@ -91,26 +91,20 @@ class InquiryService {
             }
             try{
             const payload = {
-
                 customer_name : customer_name ? customer_name : "No Information",
                 email: email ? email : "No information",
                 phone: phone,
                 message: message,
                 product_id: product_id ? product_id : -1,
                 quantity: quantity ? quantity : 1 ,
-
             }
-            
-            console.log(payload);
-            await emailService.sendEmail('gmvmailer@gmail.com',payload);
+            await emailService.sendEmail(payload);
             if(err) {
-                reject(result1);
+                reject(err);
             }
-            // resolve(result1);
-
-            console.log("sendEmail successfully");
             }catch(err){
                 console.log(`Send mail failure: ${err}`);
+                reject(`${err}`)
 
             }
             return resolve(result?.insertId)

@@ -41,7 +41,7 @@ class HotProductService {
 
             });
     }
-    
+
     setHotProduct(product_id) {
         return new Promise(async (resolve, reject) => {
             try {

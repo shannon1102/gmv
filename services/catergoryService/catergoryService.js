@@ -121,6 +121,7 @@ class CatergoryService {
                     WHERE id = ${mysql.escape(id)}
                 `
                 let result = await this.mysqlDb.poolQuery(query)
+                console.log(result);
                 if (result.affectedRows === 0) {
                     return reject(`catergory with id ${id} not found`)
                 }
@@ -129,6 +130,7 @@ class CatergoryService {
                 logger.error(`[CatergoryService][deleteCatergory] errors: `, err)
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             }
+          
         })
     }
 

@@ -3,25 +3,23 @@ const nodemailer = require("nodemailer");
 require('dotenv').config()
 
 const {adminGMVEmail} = require('../../config/index')
-let sendEmail = async (receiverEmail,payload)=>{
-
-  console.log(process.env.RECV_EMAIL);
+let sendEmail = async (payload)=>{
   let transporter = nodemailer.createTransport({
     // host: "smtp.gmail.email",
     // port: 587,
     // secure: false, // true for 465, false for other ports
     service: 'gmail', 
     auth: {
-      user: process.env.RECV_EMAIL, // generated ethereal user
-      pass: process.env.RECV_PASSWORD, // generated ethereal password
+      user: process.env.AUTH_EMAIL, // generated ethereal user
+      pass: process.env.AUTH_PASSWORD, // generated ethereal password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '"Vanday" <gmvmailer@gmail.com>', // sender address
+    from: '"Giang Minh Viet Website" <gmvmailer@gmail.com>', // sender address
     //to: "receiverEmail", // list of receivers
-    to: "vanictk62@gmail.com",
+    to: ["vanict99@gmail.com",`${process.env.RECV_EMAIL}`],
     subject: "GVM website have new inquiry", // Subject line
     html: `
     <h2><b>Inquiry Information</b></h2>

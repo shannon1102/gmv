@@ -33,7 +33,7 @@ backendRoute.use('/product',productApi);
 backendRoute.use('/hot-product',hotProductApi);
 backendRoute.use('/catergory',catergoryApi);
 backendRoute.use('/main-catergory',mainCatergoryApi);
-backendRoute.use('/inquiry',verifyToken,adminRole,inquiryApi);
+backendRoute.use('/inquiry',inquiryApi);
 backendRoute.use('/user',userApi);
     
 app.use('/api', backendRoute);

@@ -14,7 +14,7 @@ catergoryApi.get('/', async (req, res, next) => {
     try {
         let {catergorysPerPage, pageNumber, orderType} = req.query
         const catergoryFounded = await catergoryService.getAllCatergory(catergorysPerPage, pageNumber, orderType)
-
+        console.log(catergoryFounded);
         return res.status(200).json(catergoryFounded)
     } catch (error) {
         return res.status(500).json({message: error})
@@ -38,7 +38,7 @@ catergoryApi.post('/',verifyToken,adminRole,
         try {
             let {name,main_catergory_id} = req.body
             const insertedId = await catergoryService.createCatergory(name,main_catergory_id)
-
+            console.log(insertedId)
             return res.status(200).json({message: 'create new catergory successfully', insertedId})
         } catch (error) {
             return res.status(500).json({message: error})

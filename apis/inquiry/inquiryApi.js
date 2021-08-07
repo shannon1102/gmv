@@ -9,7 +9,7 @@ const {checkRequiredFieldInBody} = require('../../middleware/index');
 const {verifyToken,adminRole} = require('../../middleware/verifyToken');
 
 
-inquiryApi.get('/', (req,res,next) => {
+inquiryApi.get('/',verifyToken,adminRole, (req,res,next) => {
     console.log(req.user);
     let {itemsPerPage,pageNumber,orderType} = req.query;
     inquiryService
@@ -22,7 +22,7 @@ inquiryApi.get('/', (req,res,next) => {
     })
 
 })
-inquiryApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
+inquiryApi.get('/get-by-catergory-id/:catergory_id',verifyToken,adminRole, (req,res,next) => {
     
     let {catergory_id} = req.params
     console.log(catergory_id);
@@ -54,7 +54,7 @@ inquiryApi.get('/get-by-customer-name/:name', (req,res,next) => {
     })
 
 })
-inquiryApi.get('/:id',(req,res,next)=>{
+inquiryApi.get('/:id',verifyToken,adminRole,(req,res,next)=>{
     let {id} = req.params
     console.log(id)
     inquiryService
@@ -67,6 +67,7 @@ inquiryApi.get('/:id',(req,res,next)=>{
     })  
 })
 inquiryApi.post('/',checkRequiredFieldInBody(['phone','product_id']), (req,res,next)=>{
+    
     let {customer_name,email,phone,message,product_id,quantity} = req.body
     console.log(req.body)
     inquiryService
@@ -81,7 +82,7 @@ inquiryApi.post('/',checkRequiredFieldInBody(['phone','product_id']), (req,res,n
     })  
 })
 
-inquiryApi.delete('/:id', (req,res,next)=>{
+inquiryApi.delete('/:id',verifyToken,adminRole, (req,res,next)=>{
     let {id} = req.params
     inquiryService
     .deleteInquiry(id)

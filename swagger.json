@@ -1767,12 +1767,6 @@
         ],
         "parameters": [
           {
-            "name": "x-access-token",
-            "in": "header",
-            "required": true,
-            "type": "string"
-          },
-          {
             "name": "body",
             "in": "body",
             "require": true,
@@ -1982,15 +1976,23 @@
           "200": {
             "description": "success",
             "schema": {
-              "#ref": "#definitions/user"
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                }
+              }
             }
-          }
-        },
+          },
         "500": {
           "description": "error",
           "schema": {
             "$ref": "#/definitions/error"
           }
+        }
         }
       }
     },
@@ -2037,8 +2039,11 @@
                 "message": {
                   "type": "string"
                 },
-                "insertedId": {
-                  "type": "integer"
+                "username": {
+                  "type": "string"
+                },
+                "access-token": {
+                  "type": "string"
                 }
               }
             }
@@ -2092,8 +2097,11 @@
                 "message": {
                   "type": "string"
                 },
-                "insertedId": {
-                  "type": "integer"
+                "username": {
+                  "type": "string"
+                },
+                "access-token": {
+                  "type": "string"
                 }
               }
             }
@@ -2205,6 +2213,12 @@
         },
         "image_url": {
           "type": "string"
+        },
+        "sub_catergory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/catergory"
+          }
         }
       }
     },
