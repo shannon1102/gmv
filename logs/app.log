@@ -2874,3 +2874,267 @@
   '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
   '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
 2021-08-07T11:24:00+07:00 info: '::1 - - [07/Aug/2021:04:24:00 +0000] "POST /api/inquiry/ HTTP/1.1" 200 43 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T15:59:54+07:00 error: "uncaughtException: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js:6:31)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-07T15:59:57+07:00 error: "uncaughtException: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js:6:31)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-07T16:00:33+07:00 error: "uncaughtException: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js:6:31)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-07T16:00:48+07:00 error: "uncaughtException: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js:6:31)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-07T16:00:53+07:00 error: "uncaughtException: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  "Error: Cannot find module '../../services/companyProfileService/companyProfile'\n" +
+  'Require stack:\n' +
+  '- /home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/server.js\n' +
+  '- /home/dalang/GMV/SourceCode/backend/index.js\n' +
+  '    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:725:27)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/companyProfile/companyProfileApi.js:6:31)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-08-07T16:02:18+07:00 info: '::1 - - [07/Aug/2021:09:02:18 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:02:18+07:00 info: '::1 - - [07/Aug/2021:09:02:18 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:02:18+07:00 info: '::1 - - [07/Aug/2021:09:02:18 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:02:18+07:00 info: '::1 - - [07/Aug/2021:09:02:18 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:02:18+07:00 info: '::1 - - [07/Aug/2021:09:02:18 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:04:54+07:00 info: '::1 - - [07/Aug/2021:09:04:54 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:04:55+07:00 info: '::1 - - [07/Aug/2021:09:04:55 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:04:55+07:00 info: '::1 - - [07/Aug/2021:09:04:55 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:04:55+07:00 info: '::1 - - [07/Aug/2021:09:04:55 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:04:55+07:00 info: '::1 - - [07/Aug/2021:09:04:55 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 59485 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:04:55+07:00 info: '::1 - - [07/Aug/2021:09:04:55 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:05:02+07:00 info: '::1 - - [07/Aug/2021:09:05:02 +0000] "GET /api/company-profile/ HTTP/1.1" 404 159 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:05:40+07:00 error: "[CompanyProfileService][getCompanyProfile] errors:  ER_BAD_FIELD_ERROR: Unknown column 'create_at' in 'order clause'"
+2021-08-07T16:05:40+07:00 info: '::1 - - [07/Aug/2021:09:05:40 +0000] "GET /api/company-profile/ HTTP/1.1" 500 58 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:06:34+07:00 info: '::1 - - [07/Aug/2021:09:06:34 +0000] "GET /api/company-profile/ HTTP/1.1" 200 2 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:06:35+07:00 info: '::1 - - [07/Aug/2021:09:06:35 +0000] "GET /api/company-profile/ HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:00+07:00 info: '::1 - - [07/Aug/2021:09:08:00 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:00+07:00 info: '::1 - - [07/Aug/2021:09:08:00 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:00+07:00 info: '::1 - - [07/Aug/2021:09:08:00 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:00+07:00 info: '::1 - - [07/Aug/2021:09:08:00 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:00+07:00 info: '::1 - - [07/Aug/2021:09:08:00 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 59744 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:01+07:00 info: '::1 - - [07/Aug/2021:09:08:01 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:08+07:00 error: 'Token is missing'
+2021-08-07T16:08:08+07:00 info: '::1 - - [07/Aug/2021:09:08:08 +0000] "POST /api/company-profile/ HTTP/1.1" 401 31 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:45+07:00 info: '::1 - - [07/Aug/2021:09:08:45 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:45+07:00 info: '::1 - - [07/Aug/2021:09:08:45 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:45+07:00 info: '::1 - - [07/Aug/2021:09:08:45 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:45+07:00 info: '::1 - - [07/Aug/2021:09:08:45 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:45+07:00 info: '::1 - - [07/Aug/2021:09:08:45 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 59906 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:08:46+07:00 info: '::1 - - [07/Aug/2021:09:08:46 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:09:47+07:00 info: '::1 - - [07/Aug/2021:09:09:47 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:09:47+07:00 info: '::1 - - [07/Aug/2021:09:09:47 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:09:47+07:00 info: '::1 - - [07/Aug/2021:09:09:47 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:09:47+07:00 info: '::1 - - [07/Aug/2021:09:09:47 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 60230 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:09:47+07:00 info: '::1 - - [07/Aug/2021:09:09:47 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:09:48+07:00 info: '::1 - - [07/Aug/2021:09:09:48 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:38+07:00 info: '::1 - - [07/Aug/2021:09:10:38 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:38+07:00 info: '::1 - - [07/Aug/2021:09:10:38 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:38+07:00 info: '::1 - - [07/Aug/2021:09:10:38 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 60489 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:38+07:00 info: '::1 - - [07/Aug/2021:09:10:38 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:38+07:00 info: '::1 - - [07/Aug/2021:09:10:38 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:38+07:00 info: '::1 - - [07/Aug/2021:09:10:38 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:10:57+07:00 info: '::1 - - [07/Aug/2021:09:10:57 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:11:22+07:00 info: '::1 - - [07/Aug/2021:09:11:22 +0000] "POST /api/company-profile/ HTTP/1.1" 500 40 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:13:22+07:00 info: '::1 - - [07/Aug/2021:09:13:22 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:13:38+07:00 info: '::1 - - [07/Aug/2021:09:13:38 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:14:09+07:00 info: '::1 - - [07/Aug/2021:09:14:09 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:14:42+07:00 info: '::1 - - [07/Aug/2021:09:14:42 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:17:07+07:00 info: '::1 - - [07/Aug/2021:09:17:07 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:18:49+07:00 info: '::1 - - [07/Aug/2021:09:18:49 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:19:01+07:00 info: '::1 - - [07/Aug/2021:09:19:01 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:20:01+07:00 info: '::1 - - [07/Aug/2021:09:20:01 +0000] "POST /api/company-profile/ HTTP/1.1" 500 14 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:21:11+07:00 error: "[CompanyProfileService][createCompanyProfile] errors:  ER_BAD_NULL_ERROR: Column 'zalo' cannot be null"
+2021-08-07T16:21:11+07:00 info: '::1 - - [07/Aug/2021:09:21:11 +0000] "POST /api/company-profile/ HTTP/1.1" 500 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:15+07:00 error: 'uncaughtException: /home/dalang/GMV/SourceCode/backend/swagger.json: Unexpected token } in JSON at position 37129\n' +
+  'SyntaxError: /home/dalang/GMV/SourceCode/backend/swagger.json: Unexpected token } in JSON at position 37129\n' +
+  '    at parse (<anonymous>)\n' +
+  '    at Object.Module._extensions..json (internal/modules/cjs/loader.js:1106:22)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:44:25)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)'
+2021-08-07T16:22:20+07:00 error: "[CompanyProfileService][createCompanyProfile] errors:  ER_BAD_NULL_ERROR: Column 'zalo' cannot be null"
+2021-08-07T16:22:20+07:00 info: '::1 - - [07/Aug/2021:09:22:20 +0000] "POST /api/company-profile/ HTTP/1.1" 500 42 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:22+07:00 info: '::1 - - [07/Aug/2021:09:22:22 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:22+07:00 info: '::1 - - [07/Aug/2021:09:22:22 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:22+07:00 info: '::1 - - [07/Aug/2021:09:22:22 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:22+07:00 info: '::1 - - [07/Aug/2021:09:22:22 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 60575 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:22+07:00 info: '::1 - - [07/Aug/2021:09:22:22 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:23+07:00 info: '::1 - - [07/Aug/2021:09:22:23 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:31+07:00 info: '::1 - - [07/Aug/2021:09:22:31 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:50+07:00 info: '::1 - - [07/Aug/2021:09:22:50 +0000] "POST /api/company-profile/ HTTP/1.1" 200 69 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:54+07:00 info: '::1 - - [07/Aug/2021:09:22:54 +0000] "POST /api/company-profile/ HTTP/1.1" 200 69 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:22:56+07:00 info: '::1 - - [07/Aug/2021:09:22:56 +0000] "POST /api/company-profile/ HTTP/1.1" 200 69 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:23:02+07:00 info: '::1 - - [07/Aug/2021:09:23:02 +0000] "GET /api/company-profile/ HTTP/1.1" 200 616 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:23:15+07:00 info: '::1 - - [07/Aug/2021:09:23:15 +0000] "GET /apicompany-profile/1 HTTP/1.1" 404 159 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:23:25+07:00 info: '::1 - - [07/Aug/2021:09:23:25 +0000] "GET /apicompany-profile/1 HTTP/1.1" 404 159 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:24:46+07:00 info: '::1 - - [07/Aug/2021:09:24:46 +0000] "GET /apicompany-profile/1 HTTP/1.1" 404 159 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:25:46+07:00 info: '::1 - - [07/Aug/2021:09:25:46 +0000] "POST /api/company-profile/ HTTP/1.1" 200 69 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:05+07:00 info: '::1 - - [07/Aug/2021:09:26:05 +0000] "GET /apicompany-profile/1 HTTP/1.1" 404 159 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:27+07:00 info: '::1 - - [07/Aug/2021:09:26:27 +0000] "GET /apicompany-profile/1 HTTP/1.1" 404 159 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:31+07:00 info: '::1 - - [07/Aug/2021:09:26:31 +0000] "GET /api/api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:31+07:00 info: '::1 - - [07/Aug/2021:09:26:31 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:31+07:00 info: '::1 - - [07/Aug/2021:09:26:31 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:31+07:00 info: '::1 - - [07/Aug/2021:09:26:31 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:31+07:00 info: '::1 - - [07/Aug/2021:09:26:31 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 60576 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:26:32+07:00 info: '::1 - - [07/Aug/2021:09:26:32 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:27:08+07:00 info: '::1 - - [07/Aug/2021:09:27:08 +0000] "GET /api/company-profile/1 HTTP/1.1" 500 23 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:27:51+07:00 info: '::1 - - [07/Aug/2021:09:27:51 +0000] "GET /api/company-profile/1 HTTP/1.1" 500 23 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:28:24+07:00 info: '::1 - - [07/Aug/2021:09:28:24 +0000] "GET /api/company-profile/1 HTTP/1.1" 500 23 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:30:17+07:00 info: '::1 - - [07/Aug/2021:09:30:17 +0000] "GET /api/company-profile/1 HTTP/1.1" 200 204 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:30:40+07:00 info: '::1 - - [07/Aug/2021:09:30:40 +0000] "GET /api/company-profile/1 HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:31:02+07:00 info: '::1 - - [07/Aug/2021:09:31:02 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:32:15+07:00 info: '::1 - - [07/Aug/2021:09:32:15 +0000] "PUT /api/company-profile/1 HTTP/1.1" 200 49 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T16:32:36+07:00 info: '::1 - - [07/Aug/2021:09:32:36 +0000] "DELETE /api/company-profile/3 HTTP/1.1" 200 58 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T17:03:48+07:00 error: 'uncaughtException: Invalid left-hand side in assignment\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:116\n' +
+  "        req.headers['authorization']?.split(' ')[1] = null \n" +
+  '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Invalid left-hand side in assignment\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:28:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-07T17:13:25+07:00 error: 'uncaughtException: Invalid left-hand side in assignment\n' +
+  '/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:116\n' +
+  "        req.headers['authorization']?.split(' ')[1] = null \n" +
+  '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+  '\n' +
+  'SyntaxError: Invalid left-hand side in assignment\n' +
+  '    at wrapSafe (internal/modules/cjs/loader.js:979:16)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1027:27)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:28:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-07T17:14:39+07:00 error: 'uncaughtException: router is not defined\n' +
+  'ReferenceError: router is not defined\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/apis/auth/userApi.js:113:1)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n' +
+  '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
+  '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
+  '    at Module.require (internal/modules/cjs/loader.js:952:19)\n' +
+  '    at require (internal/modules/cjs/helpers.js:88:18)\n' +
+  '    at Object.<anonymous> (/home/dalang/GMV/SourceCode/backend/server.js:28:17)\n' +
+  '    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n' +
+  '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)'
+2021-08-07T17:15:37+07:00 info: '::1 - - [07/Aug/2021:10:15:37 +0000] "POST /api/user/login HTTP/1.1" 200 209 "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T17:16:06+07:00 error: 'Failed to authenticate token: JsonWebTokenError: invalid token'
+2021-08-07T17:16:06+07:00 info: '::1 - - [07/Aug/2021:10:16:06 +0000] "POST /api/user/logout HTTP/1.1" 401 42 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:16:44+07:00 info: '::1 - - [07/Aug/2021:10:16:44 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:17:44+07:00 info: '::1 - - [07/Aug/2021:10:17:44 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:17:53+07:00 info: '::1 - - [07/Aug/2021:10:17:53 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:18:34+07:00 info: '::1 - - [07/Aug/2021:10:18:34 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:19:30+07:00 info: '::1 - - [07/Aug/2021:10:19:30 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:19:39+07:00 info: '::1 - - [07/Aug/2021:10:19:39 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:20:11+07:00 info: '::1 - - [07/Aug/2021:10:20:11 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:20:25+07:00 info: '::1 - - [07/Aug/2021:10:20:25 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:20:45+07:00 info: '::1 - - [07/Aug/2021:10:20:45 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:24:32+07:00 info: '::1 - - [07/Aug/2021:10:24:32 +0000] "POST /api/user/logout HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:25:18+07:00 info: '::1 - - [07/Aug/2021:10:25:18 +0000] "POST /api/user/logout HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:25:34+07:00 info: '::1 - - [07/Aug/2021:10:25:34 +0000] "POST /api/user/logout HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:26:04+07:00 info: '::1 - - [07/Aug/2021:10:26:04 +0000] "POST /api/user/logout HTTP/1.1" 500 2 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:31:57+07:00 info: '::1 - - [07/Aug/2021:10:31:57 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:32:01+07:00 info: '::1 - - [07/Aug/2021:10:32:01 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:32:41+07:00 info: '::1 - - [07/Aug/2021:10:32:41 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'
+2021-08-07T17:32:54+07:00 info: '::1 - - [07/Aug/2021:10:32:54 +0000] "POST /api/user/logout HTTP/1.1" 200 32 "-" "PostmanRuntime/7.26.8"\n'
+2021-08-07T17:33:07+07:00 info: '::1 - - [07/Aug/2021:10:33:07 +0000] "GET /api/user/information HTTP/1.1" 304 - "http://localhost:5000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"\n'

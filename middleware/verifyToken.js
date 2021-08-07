@@ -23,6 +23,7 @@ const verifyToken = (req,res,next) => {
             return res.status(401).json({message: 'Failed to authenticate token'})  
         }
         req.userId  = decoded.id
+        // req.token = token
         next()
     })
 }
