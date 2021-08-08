@@ -60,11 +60,8 @@ userApi.post('/signup', checkRequiredFieldInBody(['username', 'email', 'password
                 message: `server error , ${errMsg}`
             })
         })
-
-
-
-
 })
+
 userApi.post('/login',checkRequiredFieldInBody(['username','password']), (req, res, next) => {
     // check secret token for jwt
     if (!process.env.SECRET_KEY){

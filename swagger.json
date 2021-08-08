@@ -548,6 +548,71 @@
         }
       }
     },
+    "/product/get-by-catergory-and-material/": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "catergory_name",
+            "in": "query",
+            "description": "catergory_name of product",
+            "required": false
+          },
+          {
+            "name": "material",
+            "in": "query",
+            "description": "material of product",
+            "required": false
+          },
+          {
+            "name": "productsPerPage",
+            "in": "query",
+            "description": "Max products can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
+          }
+          
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get Products By Catergory anh Material For Filter",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
     "/product/{id}": {
       "get": {
         "consumes": [

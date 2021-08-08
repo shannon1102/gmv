@@ -36,6 +36,23 @@ productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
 
 })
 
+
+productApi.get('/get-by-catergory-and-material/', (req,res,next) => {
+    
+    let {catergory_name,material,productPerPage,pageNumber,orderType,search} = req.query;
+    console.log(">>>>>>>>");
+    productService
+    .getProductsByCatergoryAndMaterial(catergory_name,material,productPerPage,pageNumber,orderType,search)
+    .then(listProduct => {
+        res.status(200).json(listProduct)
+    })
+    .catch(err=>{   
+        return res.status(500).json({message: err})
+    })
+
+})
+
+
 productApi.get('/get-by-catergory-name/:name', (req,res,next) => {
     
     let {name} = req.params
@@ -119,7 +136,6 @@ productApi.post('/upload-image/:product_id',verifyToken,adminRole, (req,res,next
     })  
 })
 productApi.put('/update-image/:product_id',verifyToken,adminRole, (req,res,next)=>{
-    console.log("ALOOOOOOOOOO");
     let {product_id} = req.params
     let {url_image1,url_image2,url_image3,url_image4} = req.body
     productService

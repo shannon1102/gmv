@@ -292,8 +292,8 @@ ALTER TABLE `hot_product`
 --
 -- Các ràng buộc cho bảng `in_quiry`
 --
-ALTER TABLE `in_quiry`
-  ADD CONSTRAINT `in_quiry_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
+-- ALTER TABLE `in_quiry`
+--   ADD CONSTRAINT `in_quiry_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
 
 --
 -- Các ràng buộc cho bảng `post`

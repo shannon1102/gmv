@@ -111,6 +111,40 @@ class ProductService {
         });
 
     }
+    getProductsByCatergoryAndMaterial(catergory_name,material,productPerPage,pageNumber,orderType,search){
+        return new Promise(
+            async (resolve,reject) => {
+            let offsetDb = 0, orderByDb;
+            orderType = orderType ? orderType : 2
+            pageNumber = pageNumber ? pageNumber : 1
+            productPerPage = productPerPage ? productPerPage :10
+            offsetDb =  productPerPage * (pageNumber -1)
+            search = search ? search : ""
+            if (orderType == orderTypeSetting.ASC) {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
+            const query = 
+            `SELECT p.* FROM product as p
+            JOIN catergory ON p.catergory_id = catergory.id 
+            WHERE 
+            catergory.name = ${mysql.escape(catergory_name)}
+            AND p.material = ${mysql.escape(material)}
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+            LIMIT ${productPerPage}
+            OFFSET ${mysql.escape(offsetDb)}`
+            console.log(query)
+            let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
+            if(err) {
+                logger.error(`[productService][getProducts] errors : `,err)
+                return reject(err)
+            } else {
+                 return resolve(listProduct)
+            }
+
+        });
+    }
 
 
 
@@ -182,6 +216,13 @@ class ProductService {
                 if (!result1[0].numProduct) {
                     return reject(`Product with id ${id} not found`)
                 }
+
+                let query0 = `
+                DELETE FROM inquiry
+                WHERE  product_id = ${mysql.escape(id)}
+                `
+                let result0 = await this.mysqlDb.poolQuery(query0)
+
                 query = `
                 DELETE FROM product_image
                 WHERE  product_id = ${mysql.escape(id)}
