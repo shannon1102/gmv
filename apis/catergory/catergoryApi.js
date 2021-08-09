@@ -21,7 +21,10 @@ catergoryApi.get('/', async (req, res, next) => {
             data: catergoryFounded
         })
     } catch (error) {
-        return res.status(500).json({message: error})
+        return res.status(500).json({
+            status: 500,
+            message: error
+        })
     }
 })
 
@@ -30,9 +33,16 @@ catergoryApi.get('/:id', async (req, res, next) => {
         let {id} = req.params
         const catergoryFounded = await catergoryService.getCatergoryById(id)
 
-        return res.status(200).json(catergoryFounded)
+        return res.status(200).json({
+            status: 200,
+            message: "Success",
+            data: catergoryFounded
+        })
     } catch (error) {
-        return res.status(500).json({message: error})
+        return res.status(500).json({
+            status:500,
+            message: error
+        })
     }
 })
 
@@ -43,9 +53,15 @@ catergoryApi.post('/',verifyToken,adminRole,
             let {name,main_catergory_id} = req.body
             const insertedId = await catergoryService.createCatergory(name,main_catergory_id)
             console.log(insertedId)
-            return res.status(200).json({message: 'create new catergory successfully', insertedId})
+            return res.status(200).json({
+                status:200,
+                message: "Create catergory successfully"
+            })
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({
+                status:500,
+                message: error
+            })
         }
     })
 catergoryApi.put('/:id',verifyToken,adminRole,
@@ -55,9 +71,15 @@ catergoryApi.put('/:id',verifyToken,adminRole,
         try {
             let {name,main_catergory_id} = req.body
             await catergoryService.updateCatergory(id,name,main_catergory_id)
-            return res.status(200).json({message: 'updated catergory successfully'})
+            return res.status(200).json({
+                status:200,
+                message: 'Updated catergory successfully'
+            })
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({
+                status:500,
+                message: error
+            })
         }
     })
 
@@ -67,9 +89,12 @@ catergoryApi.delete('/:id',verifyToken,adminRole,
         try {
             await catergoryService.deleteCatergory(id)
 
-            return res.status(200).json({message: 'Remove Catergory successfully'})
+            return res.status(200).json({
+                status:200,
+                message: 'Remove catergory successfully'
+            })
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 
