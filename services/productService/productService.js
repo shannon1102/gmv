@@ -191,16 +191,15 @@ class ProductService {
             WHERE pi.product_id = ${mysql.escape(id)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
             let listImage = Object.assign(list_image_result)
-            const query1 = `
-                SELECT p.*,c.main_catergory_id
-                FROM product AS p
-                JOIN catergory AS c
-                ON c.id = p.catergory_id
-                JOIN main_catergory AS mc
-                ON mc.id = c.main_catergory_id
-                WHERE p.id = ${mysql.escape(id)}
-            `
-            console.log(query1);
+            const query1 = 
+            `SELECT p.*,c.main_catergory_id
+            FROM product AS p
+            JOIN catergory AS c
+            ON c.id = p.catergory_id
+            JOIN main_catergory AS mc
+            ON mc.id = c.main_catergory_id
+            WHERE p.id = ${mysql.escape(id)}`
+            
             const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
             if (err1) {
                 logger.error(`[productService][getProductById] errors: `, err)
