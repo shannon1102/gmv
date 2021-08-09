@@ -15,9 +15,9 @@ mainCatergoryApi.get('/', async (req, res, next) => {
         let {itemsPerPage, pageNumber, orderType} = req.query
         const result = await mainCatergoryService.getAllMainCatergory(itemsPerPage, pageNumber, orderType)
 
-        return res.status(200).json({status:200, message:"Success",data:mainCatergory})
+        return res.status(200).json({status:200, message:"Success",data:result})
     } catch (error) {
-        return res.status(500).json({status:200,message: error})
+        return res.status(500).json({status:500,message: error})
     }
 })
 
@@ -28,7 +28,7 @@ mainCatergoryApi.get('/:id', async (req, res, next) => {
 
         return res.status(200).json({status:200, message:"Success",data:mainCatergory})
     } catch (error) {
-        return res.status(500).json({status:200,message: error})
+        return res.status(500).json({status:500,message: error})
     }
 })
 
@@ -41,7 +41,7 @@ mainCatergoryApi.post('/',verifyToken,adminRole,
 
             return res.status(200).json({status:200,message: 'Create new main-catergory successfully'})
         } catch (error) {
-            return res.status(500).json({status:200,message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 mainCatergoryApi.put('/:id',verifyToken,adminRole,
@@ -53,7 +53,7 @@ mainCatergoryApi.put('/:id',verifyToken,adminRole,
             await mainCatergoryService.updateMainCatergory(id,name,description,url_image)
             return res.status(200).json({status:200,message: 'Updated main-catergory successfully'})
         } catch (error) {
-            return res.status(500).json({status:200,message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 
@@ -65,7 +65,7 @@ mainCatergoryApi.delete('/:id',verifyToken,adminRole,
 
             return res.status(200).json({status:200,message: `Remove main_catergory with id ${id} successfully`})
         } catch (error) {
-            return res.status(500).json({status:200,message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 
