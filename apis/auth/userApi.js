@@ -23,7 +23,7 @@ userApi.post('/signup', checkRequiredFieldInBody(['username', 'email', 'password
 
     const hashedPassword = bcrypt.hashSync(req.body.password, 8)
    
-    console.log(req.body);
+    console.log(req.body);  
     const newUser = {
         email: req.body.email,
         username: req.body.username,

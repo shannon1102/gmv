@@ -24,11 +24,6 @@ const development = {
         ASC:1,
         DESC:2
     },
-    adminEmail: {
-        account: process.env.RECV_EMAIL,
-        password: process.env.RECV_PASSWORD
-
-    }
 
 }
 
@@ -54,11 +49,7 @@ const production = {
         ASC:1,
         DESC:2
     },
-    adminGMVEmail: {
-        account: process.env.RECV_EMAIL,
-        password: process.env.RECV_PASSWORD
 
-    }
 }
 
 

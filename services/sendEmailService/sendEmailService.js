@@ -2,12 +2,8 @@ const nodemailer = require("nodemailer");
 
 require('dotenv').config()
 
-const {adminGMVEmail} = require('../../config/index')
 let sendEmail = async (payload)=>{
   let transporter = nodemailer.createTransport({
-    // host: "smtp.gmail.email",
-    // port: 587,
-    // secure: false, // true for 465, false for other ports
     service: 'gmail', 
     auth: {
       user: process.env.AUTH_EMAIL, // generated ethereal user

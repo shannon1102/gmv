@@ -9,9 +9,9 @@ const {checkRequiredFieldInBody} = require('../../middleware/index')
 const {verifyToken,adminRole} = require('../../middleware/verifyToken')
 
 productApi.get('/', (req,res,next) => {
-    let {productPerPage,pageNumber,orderType,search} = req.query;
+    let {productsPerPage,pageNumber,orderType,search} = req.query;
     productService
-    .getProducts(productPerPage,pageNumber,orderType,search)
+    .getProducts(productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
         res.status(200).json(listProduct)
     })
@@ -24,9 +24,24 @@ productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
     
     let {catergory_id} = req.params
     console.log(catergory_id);
-    let {productPerPage,pageNumber,orderType,search} = req.query;
+    let {productsPerPage,pageNumber,orderType,search} = req.query;
     productService
-    .getProductsByCatergoryId(catergory_id,productPerPage,pageNumber,orderType,search)
+    .getProductsByCatergoryId(catergory_id,productsPerPage,pageNumber,orderType,search)
+    .then(listProduct => {
+        res.status(200).json(listProduct)
+    })
+    .catch(err=>{
+        return res.status(500).json({message: err})
+    })
+
+})
+productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
+    
+    let {catergory_id} = req.params
+    console.log(catergory_id);
+    let {productsPerPage,pageNumber,orderType,search} = req.query;
+    productService
+    .getProductsByCatergoryId(catergory_id,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
         res.status(200).json(listProduct)
     })
@@ -37,12 +52,13 @@ productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
 })
 
 
+
 productApi.get('/get-by-catergory-and-material/', (req,res,next) => {
     
-    let {catergory_name,material,productPerPage,pageNumber,orderType,search} = req.query;
-    console.log(">>>>>>>>");
+    let {catergory_name,material,productsPerPage,pageNumber,orderType,search} = req.query;
+  
     productService
-    .getProductsByCatergoryAndMaterial(catergory_name,material,productPerPage,pageNumber,orderType,search)
+    .getProductsByCatergoryAndMaterial(catergory_name,material,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
         res.status(200).json(listProduct)
     })
@@ -57,9 +73,24 @@ productApi.get('/get-by-catergory-name/:name', (req,res,next) => {
     
     let {name} = req.params
     console.log(name);
-    let {productPerPage,pageNumber,orderType,search} = req.query;
+    let {productsPerPage,pageNumber,orderType,search} = req.query;
     productService
-    .getProductsByCatergoryName(name,productPerPage,pageNumber,orderType,search)
+    .getProductsByCatergoryName(name,productsPerPage,pageNumber,orderType,search)
+    .then(listProduct => {
+        res.status(200).json(listProduct)
+    })
+    .catch(err=>{
+        return res.status(500).json({message: err})
+    })
+
+})
+productApi.get('/get-by-main-catergory-id/:id', (req,res,next) => {
+    
+    let {id} = req.params
+    console.log(id);
+    let {productsPerPage,pageNumber,orderType,search} = req.query;
+    productService
+    .getProductsByMainCatergoryId(id,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
         res.status(200).json(listProduct)
     })

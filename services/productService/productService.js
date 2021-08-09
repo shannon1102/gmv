@@ -9,14 +9,14 @@ class ProductService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
     }
-    getProducts(productPerPage,pageNumber,orderType,search){
+    getProducts(productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productPerPage = productPerPage ? productPerPage :10
-            offsetDb =  productPerPage * (pageNumber -1)
+            productsPerPage = productsPerPage ? productsPerPage :10
+            offsetDb =  productsPerPage * (pageNumber -1)
             search = search ? search : ""
             if (orderType == orderTypeSetting.ASC) {
                 orderByDb = 'ASC'
@@ -28,7 +28,7 @@ class ProductService {
             WHERE p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')}
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
-            LIMIT ${productPerPage}
+            LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
             console.log(query)
             let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
@@ -41,14 +41,14 @@ class ProductService {
 
         });
     }
-    getProductsByCatergoryId(catergory_id,productPerPage,pageNumber,orderType,search){
+    getProductsByCatergoryId(catergory_id,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productPerPage = productPerPage ? productPerPage :10
-            offsetDb =  productPerPage * (pageNumber -1)
+            productsPerPage = productsPerPage ? productsPerPage :10
+            offsetDb =  productsPerPage * (pageNumber -1)
             search = search ? search : ""
             if (orderType == orderTypeSetting.ASC) {
                 orderByDb = 'ASC'
@@ -61,7 +61,41 @@ class ProductService {
             AND ( p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
-            LIMIT ${productPerPage}
+            LIMIT ${productsPerPage}
+            OFFSET ${mysql.escape(offsetDb)}`
+            console.log(query)
+            let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
+            if(err) {
+                logger.error(`[productService][getProducts] errors : `,err)
+                return reject(err)
+            } else {
+                 return resolve(listProduct)
+            }
+
+        });
+
+    }
+    getProductsByMainCatergoryId(id,productsPerPage,pageNumber,orderType,search){
+        return new Promise(
+            async (resolve,reject) => {
+            let offsetDb = 0, orderByDb;
+            orderType = orderType ? orderType : 2
+            pageNumber = pageNumber ? pageNumber : 1
+            productsPerPage = productsPerPage ? productsPerPage :10
+            offsetDb =  productsPerPage * (pageNumber -1)
+            search = search ? search : ""
+            if (orderType == orderTypeSetting.ASC) {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
+            const query = 
+            `SELECT p.* FROM product as p JOIN catergory as c ON p.catergory_id = c.id
+            WHERE c.main_catergory_id = ${mysql.escape(id)}
+            AND ( p.title LIKE ${mysql.escape('%'+search+'%')}
+            OR p.description LIKE ${mysql.escape('%'+search+'%')})
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+            LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
             console.log(query)
             let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
@@ -76,14 +110,14 @@ class ProductService {
 
     }
 
-    getProductsByCatergoryName(name,productPerPage,pageNumber,orderType,search){
+    getProductsByCatergoryName(name,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productPerPage = productPerPage ? productPerPage :10
-            offsetDb =  productPerPage * (pageNumber -1)
+            productsPerPage = productsPerPage ? productsPerPage :10
+            offsetDb =  productsPerPage * (pageNumber -1)
             search = search ? search : ""
             if (orderType == orderTypeSetting.ASC) {
                 orderByDb = 'ASC'
@@ -97,7 +131,7 @@ class ProductService {
             AND (p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
-            LIMIT ${productPerPage}
+            LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
             console.log(query)
             let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
@@ -111,14 +145,14 @@ class ProductService {
         });
 
     }
-    getProductsByCatergoryAndMaterial(catergory_name,material,productPerPage,pageNumber,orderType,search){
+    getProductsByCatergoryAndMaterial(catergory_name,material,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productPerPage = productPerPage ? productPerPage :10
-            offsetDb =  productPerPage * (pageNumber -1)
+            productsPerPage = productsPerPage ? productsPerPage :10
+            offsetDb =  productsPerPage * (pageNumber -1)
             search = search ? search : ""
             if (orderType == orderTypeSetting.ASC) {
                 orderByDb = 'ASC'
@@ -132,7 +166,7 @@ class ProductService {
             catergory.name = ${mysql.escape(catergory_name)}
             AND p.material = ${mysql.escape(material)}
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
-            LIMIT ${productPerPage}
+            LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
             console.log(query)
             let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
@@ -278,7 +312,7 @@ class ProductService {
             console.log(query);
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             console.log(result);
-            if (err) {
+            if (err) {  
                 logger.error(`[productService][updateProductImage] errors: `, err)
                 return reject(err)
             }
