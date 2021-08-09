@@ -8,6 +8,7 @@ class MainCatergoryService {
     }
 
     getAllMainCatergory(itemsPerPage, pageNumber, orderType) {
+        console.log("Main")
         return new Promise(async (resolve, reject) => {
             let offsetDb, orderByDb
             orderType = orderType ? orderType : 'newest'
@@ -24,7 +25,7 @@ class MainCatergoryService {
                 orderByDb = 'DESC'
             }
             const query = `
-                SELECT * FROM catergory
+                SELECT * FROM main_catergory
                 ORDER BY create_at ${mysql.escape(orderByDb).split(`'`)[1]}
                 LIMIT ${itemsPerPage}
                 OFFSET ${mysql.escape(offsetDb)}
