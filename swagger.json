@@ -13,7 +13,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "https://gmvbackend.herokuapp.com/",
+  "host": "gmvbackend.herokuapp.com",
   "basePath": "/api",
   "schemes": [
     "https"
