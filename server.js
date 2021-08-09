@@ -15,6 +15,7 @@ app.use(bodyParser.json())
 app.use(morgan('combined', {
     stream: logger.stream
 }))
+app.use(cors())
 
 const backendRoute = express.Router();
 
