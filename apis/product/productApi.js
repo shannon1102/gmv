@@ -13,10 +13,10 @@ productApi.get('/', (req,res,next) => {
     productService
     .getProducts(productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -28,10 +28,10 @@ productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
     productService
     .getProductsByCatergoryId(catergory_id,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -43,10 +43,10 @@ productApi.get('/get-by-catergory-id/:catergory_id', (req,res,next) => {
     productService
     .getProductsByCatergoryId(catergory_id,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -60,10 +60,10 @@ productApi.get('/get-by-catergory-and-material/', (req,res,next) => {
     productService
     .getProductsByCatergoryAndMaterial(catergory_name,material,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{   
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -77,10 +77,10 @@ productApi.get('/get-by-catergory-name/:name', (req,res,next) => {
     productService
     .getProductsByCatergoryName(name,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -92,10 +92,10 @@ productApi.get('/get-by-main-catergory-id/:id', (req,res,next) => {
     productService
     .getProductsByMainCatergoryId(id,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -105,10 +105,10 @@ productApi.get('/:id',(req,res,next)=>{
     productService
     .getProductById(id)
     .then(product=>{
-        res.status(200).json(product)
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
         })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 productApi.post('/',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size','catergory_id']), (req,res,next)=>{
@@ -117,12 +117,13 @@ productApi.post('/',verifyToken,adminRole,checkRequiredFieldInBody(['title','des
     productService
     .createProduct(title,description,model_number,main_image_url,price,material,size, catergory_id)
     .then(result => { 
-        res.status(200).json({
-            message: 'Post new Product successfully'
+        return res.status(200).json({
+            status:200,
+            message: 'Post new product successfully'
         })
     })
     .catch(err => {
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 productApi.post('/upload-product-image/:id',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size', 'catergory_id']), (req,res,next)=>{
@@ -132,13 +133,14 @@ productApi.post('/upload-product-image/:id',verifyToken,adminRole,checkRequiredF
     productService
     .updateProduct(id,title,description,model_number,main_image_url,price,material,size, catergory_id)
     .then(result=>{
-        res.status(200).json({
-            message: 'Update product sucessfully',
+        return res.status(200).json({
+            status:200,
+            message: 'Update product-image sucessfully',
             product: result
             })
         })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 productApi.delete('/:id',verifyToken,adminRole,(req,res,next)=>{
@@ -146,10 +148,14 @@ productApi.delete('/:id',verifyToken,adminRole,(req,res,next)=>{
     productService
     .deleteProduct(id)
     .then(result=>{
-        res.status(200).json(result)
+        return res.status(200).json({
+            status:200,
+            message: 'Detele product sucessfully',
+            })
+        
     })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 productApi.post('/upload-image/:product_id',verifyToken,adminRole, (req,res,next)=>{
@@ -158,12 +164,14 @@ productApi.post('/upload-image/:product_id',verifyToken,adminRole, (req,res,next
     productService
     .uploadProductImage(product_id,url_image1,url_image2,url_image3,url_image4)
     .then(result=>{
-        res.status(200).json({
-            message: result,
+        return res.status(200).json({
+            status:200,
+            message: "Upload image successfully",
+            data: result
           })
         })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 productApi.put('/update-image/:product_id',verifyToken,adminRole, (req,res,next)=>{
@@ -172,12 +180,14 @@ productApi.put('/update-image/:product_id',verifyToken,adminRole, (req,res,next)
     productService
     .updateProductImage(product_id,url_image1,url_image2,url_image3,url_image4)
     .then(result=>{
-        res.status(200).json({  
-            message: result,
+        return res.status(200).json({  
+            status:200,
+            message: "Update product-image successfully",
+            data:result
             })
         })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 

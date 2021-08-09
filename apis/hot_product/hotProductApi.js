@@ -14,10 +14,10 @@ hotProductApi.get('/', (req,res,next) => {
     hotProductService
     .getHotProducts(productPerPage,pageNumber,orderType,search)
     .then(listProduct => {
-        res.status(200).json(listProduct)
+        res.status(200).json({status:200,message:"Success",data: listProduct})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:500,message: err})
     })
 
 })
@@ -29,11 +29,12 @@ hotProductApi.get('/set/:product_id',verifyToken,adminRole, (req,res,next)=>{
     .setHotProduct(product_id)
     .then(result => { 
         res.status(200).json({
-            message: 'Add new Hot-Product successfully'
+            status:200,
+            message: 'Add new hot-product successfully'
         })
     })
     .catch(err => {
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 
@@ -43,10 +44,10 @@ hotProductApi.get('/unset/:product_id',verifyToken,adminRole, (req,res,next)=>{
     .unSetHotProduct(product_id)
     .then(result=>{
         
-        res.status(200).json({result:result, message: 'Remove Hot-Product successfully'})
+        res.status(200).json({status:200, message: 'Remove hot-product successfully'})
     })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:500,message: err})
     })  
 })
 

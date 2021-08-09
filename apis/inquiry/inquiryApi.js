@@ -4,7 +4,7 @@ const MysqlDB = require('../../models/mysql');
 const InquiryService = require('../../services/inquiryService/inquiryService');
 const inquiryApi = express.Router();
 const mysqlDb = new MysqlDB();
-const inquiryService = new InquiryService(mysqlDb);
+const inquiryService = new InquiryService(mysqlDb); 
 const {checkRequiredFieldInBody} = require('../../middleware/index');
 const {verifyToken,adminRole} = require('../../middleware/verifyToken');
 
@@ -15,10 +15,10 @@ inquiryApi.get('/',verifyToken,adminRole, (req,res,next) => {
     inquiryService
     .getInquiries(itemsPerPage,pageNumber,orderType)
     .then(listInquiry => {
-        res.status(200).json(listInquiry)
+        res.status(200).json({status:200, message:"Success",data: listInquiry})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:200,message: err})
     })
 
 })
@@ -30,10 +30,10 @@ inquiryApi.get('/get-by-catergory-id/:catergory_id',verifyToken,adminRole, (req,
     inquiryService
     .getinquirysByCatergoryId(catergory_id,inquiryPerPage,pageNumber,orderType,search)
     .then(listinquiry => {
-        res.status(200).json(listinquiry)
+        res.status(200).json({status:200,message:"Success",data:listinquiry})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:200,message: err})
     })
 
 })
@@ -47,10 +47,10 @@ inquiryApi.get('/get-by-customer-name/:name', (req,res,next) => {
     inquiryService
     .getInquirysByCustomerName(name,search)
     .then(listinquiry => {
-        res.status(200).json(listinquiry)
+        res.status(200).json({status:200, message:"Success",data:listinquiry})
     })
     .catch(err=>{
-        return res.status(500).json({message: err})
+        return res.status(500).json({status:200,message: err})
     })
 
 })
@@ -60,10 +60,10 @@ inquiryApi.get('/:id',verifyToken,adminRole,(req,res,next)=>{
     inquiryService
     .getInquiryById(id)
     .then(inquiry=>{
-        res.status(200).json(inquiry)
+        res.status(200).json({status:200,message:"Success",data:inquiry})
         })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:200,message: err})
     })  
 })
 inquiryApi.post('/',checkRequiredFieldInBody(['phone','product_id']), (req,res,next)=>{
@@ -74,11 +74,12 @@ inquiryApi.post('/',checkRequiredFieldInBody(['phone','product_id']), (req,res,n
     .createInquiry(customer_name,email,phone,message,product_id,quantity)
     .then(result => { 
         res.status(200).json({
-            message: 'Post new inquiry successfully'
+            status:200,
+            message: 'Post new inquiry successfully',
         })
     })
     .catch(err => {
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:200,message: err})
     })  
 })
 
@@ -87,10 +88,10 @@ inquiryApi.delete('/:id',verifyToken,adminRole, (req,res,next)=>{
     inquiryService
     .deleteInquiry(id)
     .then(result=>{
-        res.status(200).json(result)
+        res.status(200).json({status:200,message:"Delete successfully"})
     })
     .catch(err=>{
-        return res.status(500).json({message : err})
+        return res.status(500).json({status:200,message: err})
     })  
 })
 

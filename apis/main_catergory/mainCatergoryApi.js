@@ -15,9 +15,9 @@ mainCatergoryApi.get('/', async (req, res, next) => {
         let {itemsPerPage, pageNumber, orderType} = req.query
         const result = await mainCatergoryService.getAllMainCatergory(itemsPerPage, pageNumber, orderType)
 
-        return res.status(200).json(result)
+        return res.status(200).json({status:200, message:"Success",data:mainCatergory})
     } catch (error) {
-        return res.status(500).json({message: error})
+        return res.status(500).json({status:200,message: error})
     }
 })
 
@@ -26,9 +26,9 @@ mainCatergoryApi.get('/:id', async (req, res, next) => {
         let {id} = req.params
         const mainCatergory = await mainCatergoryService.getMainCatergoryById(id)
 
-        return res.status(200).json(mainCatergory)
+        return res.status(200).json({status:200, message:"Success",data:mainCatergory})
     } catch (error) {
-        return res.status(500).json({message: error})
+        return res.status(500).json({status:200,message: error})
     }
 })
 
@@ -39,9 +39,9 @@ mainCatergoryApi.post('/',verifyToken,adminRole,
             let {name,description,url_image} = req.body
             const insertedId = await mainCatergoryService.createMainCatergory(name,description,url_image)
 
-            return res.status(200).json({message: 'create new main-catergory successfully', insertedId})
+            return res.status(200).json({status:200,message: 'Create new main-catergory successfully'})
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:200,message: error})
         }
     })
 mainCatergoryApi.put('/:id',verifyToken,adminRole,
@@ -51,9 +51,9 @@ mainCatergoryApi.put('/:id',verifyToken,adminRole,
         try {
             let {name,description,url_image} = req.body
             await mainCatergoryService.updateMainCatergory(id,name,description,url_image)
-            return res.status(200).json({message: 'updated main-catergory successfully'})
+            return res.status(200).json({status:200,message: 'Updated main-catergory successfully'})
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:200,message: error})
         }
     })
 
@@ -63,9 +63,9 @@ mainCatergoryApi.delete('/:id',verifyToken,adminRole,
         try {
             await mainCatergoryService.deleteMainCatergory(id)
 
-            return res.status(200).json({message: `Remove MainCatergory with id ${id} successfully`})
+            return res.status(200).json({status:200,message: `Remove main_catergory with id ${id} successfully`})
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:200,message: error})
         }
     })
 

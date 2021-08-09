@@ -16,9 +16,9 @@ postApi.get('/', async (req, res, next) => {
         let {postsPerPage, pageNumber, orderType} = req.query
         const postsFounded = await postService.getPosts(postsPerPage, pageNumber, orderType)
 
-        return res.status(200).json(postsFounded)
+        return res.status(200).json({status:200,message:"Success",data: postsFounded})
     } catch (error) {
-        return res.status(500).json({message: error})
+        return res.status(500).json({status:500,message: error})
     }
 })
 
@@ -27,9 +27,9 @@ postApi.get('/:id', async (req, res, next) => {
         let {id} = req.params
         const postFounded = await postService.getPostById(id)
 
-        return res.status(200).json(postFounded)
+        return res.status(200).json({status:200,message:"Success",data:postFounded})
     } catch (error) {
-        return res.status(500).json({message: error})
+        return res.status(500).json({status:500,message: error})
     }
 })
 
@@ -40,9 +40,9 @@ postApi.post('/',verifyToken,adminRole,
             let {title,image,description, content,catergory_id} = req.body
             const insertedId = await postService.createPost(title,image,description, content,catergory_id)
 
-            return res.status(200).json({message: 'create new post successfully', insertedId})
+            return res.status(200).json({status:200,message: 'Create new post successfully'})
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 
@@ -56,7 +56,7 @@ postApi.put('/:id',verifyToken,adminRole,
 
             return res.status(200).json({message: 'updated post successfully'})
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 
@@ -68,7 +68,7 @@ postApi.delete('/:id',verifyToken,adminRole,
 
             return res.status(200).json({message: 'removed post successfully'})
         } catch (error) {
-            return res.status(500).json({message: error})
+            return res.status(500).json({status:500,message: error})
         }
     })
 
