@@ -183,16 +183,24 @@ class ProductService {
 
 
     getProductById(id) {
+        
         return new Promise(async (resolve, reject) => {
+            console.log("dsdas");
             const query = `
             SELECT * FROM product_image AS pi
             WHERE pi.product_id = ${mysql.escape(id)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
             let listImage = Object.assign(list_image_result)
             const query1 = `
-                SELECT p.* FROM product AS p
+                SELECT p.*,c.main_catergory_id
+                FROM product AS p
+                JOIN catergory AS c
+                ON c.id = p.catergory_id
+                JOIN main_catergory AS mc
+                ON mc.id = c.main_catergory_id
                 WHERE p.id = ${mysql.escape(id)}
             `
+            console.log(query1);
             const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
             if (err1) {
                 logger.error(`[productService][getProductById] errors: `, err)
@@ -201,7 +209,9 @@ class ProductService {
             if (!productResult.length) {
                 return reject(`product with id ${id} not found`)
             }
+            
             productResult[0].list_product_images = listImage;
+            console.log(productResult[0])
             return resolve(productResult[0])
         })
     }
