@@ -41,7 +41,7 @@ class ProductService {
 
         });
     }
-    getProductsByCatergoryId(catergory_id,productsPerPage,pageNumber,orderType,search){
+    getProductsByCategoryId(category_id,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
@@ -57,7 +57,7 @@ class ProductService {
             }
             const query = 
             `SELECT p.* FROM product as p
-            WHERE p.catergory_id = ${mysql.escape(catergory_id)}
+            WHERE p.category_id = ${mysql.escape(category_id)}
             AND ( p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -75,7 +75,7 @@ class ProductService {
         });
 
     }
-    getProductsByMainCatergoryId(id,productsPerPage,pageNumber,orderType,search){
+    getProductsByMainCategoryId(id,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
@@ -90,8 +90,8 @@ class ProductService {
                 orderByDb = 'DESC'
             }
             const query = 
-            `SELECT p.* FROM product as p JOIN catergory as c ON p.catergory_id = c.id
-            WHERE c.main_catergory_id = ${mysql.escape(id)}
+            `SELECT p.* FROM product as p JOIN category as c ON p.category_id = c.id
+            WHERE c.main_category_id = ${mysql.escape(id)}
             AND ( p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -110,7 +110,7 @@ class ProductService {
 
     }
 
-    getProductsByCatergoryName(name,productsPerPage,pageNumber,orderType,search){
+    getProductsByCategoryName(name,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
@@ -126,8 +126,8 @@ class ProductService {
             }
             const query = 
             `SELECT p.* FROM product as p
-            JOIN catergory ON p.catergory_id = catergory.id 
-            WHERE catergory.name = ${mysql.escape(name)}
+            JOIN category ON p.category_id = category.id 
+            WHERE category.name = ${mysql.escape(name)}
             AND (p.title LIKE ${mysql.escape('%'+search+'%')}
             OR p.description LIKE ${mysql.escape('%'+search+'%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
@@ -145,7 +145,7 @@ class ProductService {
         });
 
     }
-    getProductsByCatergoryAndMaterial(catergory_name,material,productsPerPage,pageNumber,orderType,search){
+    getProductsByCategoryAndMaterial(category_name,material,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
             let offsetDb = 0, orderByDb;
@@ -161,9 +161,9 @@ class ProductService {
             }
             const query = 
             `SELECT p.* FROM product as p
-            JOIN catergory ON p.catergory_id = catergory.id 
+            JOIN category ON p.category_id = category.id 
             WHERE 
-            catergory.name = ${mysql.escape(catergory_name)}
+            category.name = ${mysql.escape(category_name)}
             AND p.material = ${mysql.escape(material)}
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productsPerPage}
@@ -192,12 +192,12 @@ class ProductService {
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
             let listImage = Object.assign(list_image_result)
             const query1 = 
-            `SELECT p.*,c.main_catergory_id
+            `SELECT p.*,c.main_category_id
             FROM product AS p
-            JOIN catergory AS c
-            ON c.id = p.catergory_id
-            JOIN main_catergory AS mc
-            ON mc.id = c.main_catergory_id
+            JOIN category AS c
+            ON c.id = p.category_id
+            JOIN main_category AS mc
+            ON mc.id = c.main_category_id
             WHERE p.id = ${mysql.escape(id)}`
             
             const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
@@ -214,10 +214,10 @@ class ProductService {
             return resolve(productResult[0])
         })
     }
-    createProduct(title,description,model_number,main_image_url,price,material,size, catergory_id){
+    createProduct(title,description,model_number,main_image_url,price,material,size, category_id){
          return new Promise(async (resolve,reject)=>{
-            const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, catergory_id) 
-            VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(catergory_id)})
+            const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, category_id) 
+            VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)})
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -228,7 +228,7 @@ class ProductService {
 
          })
     }
-    updateProduct(id,title,description,model_number,main_image_url,price,material,size, catergory_id){
+    updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id){
             return new Promise(async (resolve,reject)=>{
                const query = `UPDATE product
                SET title = ${mysql.escape(title)},
@@ -238,7 +238,7 @@ class ProductService {
                price = ${mysql.escape(price)},
                material= ${mysql.escape(material)},
                size= ${mysql.escape(size)},
-               catergory_id = ${mysql.escape(catergory_id)}
+               category_id = ${mysql.escape(category_id)}
                WHERE id = ${mysql.escape(id)}
                `
                const [err, result] = await to(this.mysqlDb.poolQuery(query))

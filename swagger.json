@@ -103,7 +103,7 @@
                 "content": {
                   "type": "string"
                 },
-                "catergory_id": {
+                "category_id": {
                   "type": "integer"
                 }
               }
@@ -215,7 +215,7 @@
                 "content": {
                   "type": "string"
                 },
-                "catergory_id": {
+                "category_id": {
                   "type": "integer"
                 }
               }
@@ -383,7 +383,7 @@
                 "material": {
                   "type": "string"
                 },
-                "catergory_id": {
+                "category_id": {
                   "type": "integer"
                 }
               }
@@ -419,7 +419,7 @@
         }
       }
     },
-    "/product/get-by-catergory-id/{catergory_id}": {
+    "/product/get-by-category-id/{category_id}": {
       "get": {
         "consumes": [
           "application/json"
@@ -429,7 +429,7 @@
         ],
         "parameters": [
           {
-            "name": "catergory_id",
+            "name": "category_id",
             "type": "integer",
             "in": "path",
             "required": true
@@ -462,7 +462,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Products By Catergory",
+        "summary": "Get Products By Category",
         "description": "",
         "responses": {
           "200": {
@@ -483,7 +483,7 @@
         }
       }
     },
-    "/product/get-by-main-catergory-id/{id}": {
+    "/product/get-by-main-category-id/{id}": {
       "get": {
         "consumes": [
           "application/json"
@@ -526,7 +526,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Products By Main Catergory Id",
+        "summary": "Get Products By Main Category Id",
         "description": "",
         "responses": {
           "200": {
@@ -547,7 +547,7 @@
         }
       }
     },
-    "/product/get-by-catergory-name/{name}": {
+    "/product/get-by-category-name/{name}": {
       "get": {
         "consumes": [
           "application/json"
@@ -560,7 +560,7 @@
             "name": "name",
             "type": "string",
             "in": "path",
-            "description": "catergory_name",
+            "description": "category_name",
             "required": true
           },
           {
@@ -591,7 +591,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Products By Catergory",
+        "summary": "Get Products By Category",
         "description": "",
         "responses": {
           "200": {
@@ -612,7 +612,7 @@
         }
       }
     },
-    "/product/get-by-catergory-and-material/": {
+    "/product/get-by-category-and-material/": {
       "get": {
         "consumes": [
           "application/json"
@@ -622,9 +622,9 @@
         ],
         "parameters": [
           {
-            "name": "catergory_name",
+            "name": "category_name",
             "in": "query",
-            "description": "catergory_name of product",
+            "description": "category_name of product",
             "required": false
           },
           {
@@ -656,7 +656,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Products By Catergory anh Material For Filter",
+        "summary": "Get Products By Category anh Material For Filter",
         "description": "",
         "responses": {
           "200": {
@@ -762,7 +762,7 @@
                 "material": {
                   "type": "string"
                 },
-                "catergory_id": {
+                "category_id": {
                   "type": "integer"
                 }
               }
@@ -1107,7 +1107,7 @@
         }
       }
     },
-    "/main-catergory/": {
+    "/main-category/": {
       "get": {
         "consumes": [
           "application/json"
@@ -1117,9 +1117,9 @@
         ],
         "parameters": [
           {
-            "name": "main-catergoryPerPage",
+            "name": "main-categoryPerPage",
             "in": "query",
-            "description": "Max main-catergory can be display in one page",
+            "description": "Max main-category can be display in one page",
             "required": false
           },
           {
@@ -1136,9 +1136,9 @@
           }
         ],
         "tags": [
-          "Main-Catergory Api"
+          "Main-Category Api"
         ],
-        "summary": "Get Main-Catergory",
+        "summary": "Get Main-Category",
         "description": "",
         "responses": {
           "200": {
@@ -1146,7 +1146,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/main-catergory"
+                "$ref": "#/definitions/main-category"
               }
             }
           },
@@ -1193,9 +1193,9 @@
           }
         ],
         "tags": [
-          "Main-Catergory Api"
+          "Main-Category Api"
         ],
-        "summary": "Create Main-Catergory",
+        "summary": "Create Main-Category",
         "description": "",
         "responses": {
           "200": {
@@ -1221,7 +1221,7 @@
         }
       }
     },
-    "/main-catergory/{id}": {
+    "/main-category/{id}": {
       "get": {
         "consumes": [
           "application/json"
@@ -1238,15 +1238,15 @@
           }
         ],
         "tags": [
-          "Main-Catergory Api"
+          "Main-Category Api"
         ],
-        "summary": "Get Main-Catergory by Id",
+        "summary": "Get Main-Category by Id",
         "description": "",
         "responses": {
           "200": {
             "description": "success",
             "schema": {
-              "$ref": "#/definitions/main-catergory"
+              "$ref": "#/definitions/main-category"
             }
           },
           "500": {
@@ -1299,9 +1299,9 @@
           }
         ],
         "tags": [
-          "Main-Catergory Api"
+          "Main-Category Api"
         ],
-        "summary": "Update Main-Catergory by ID",
+        "summary": "Update Main-Category by ID",
         "description": "",
         "responses": {
           "200": {
@@ -1340,9 +1340,9 @@
           }
         ],
         "tags": [
-          "Main-Catergory Api"
+          "Main-Category Api"
         ],
-        "summary": "Delete Main-Catergory by ID",
+        "summary": "Delete Main-Category by ID",
         "description": "",
         "responses": {
           "200": {
@@ -1360,7 +1360,7 @@
         }
       }
     },
-    "/catergory/": {
+    "/category/": {
       "get": {
         "consumes": [
           "application/json"
@@ -1370,9 +1370,9 @@
         ],
         "parameters": [
           {
-            "name": "catergoryPerPage",
+            "name": "categoryPerPage",
             "in": "query",
-            "description": "Max catergory can be display in one page",
+            "description": "Max category can be display in one page",
             "required": false
           },
           {
@@ -1389,9 +1389,9 @@
           }
         ],
         "tags": [
-          "Catergory Api"
+          "Category Api"
         ],
-        "summary": "Get Catergory",
+        "summary": "Get Category",
         "description": "",
         "responses": {
           "200": {
@@ -1399,7 +1399,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/catergory"
+                "$ref": "#/definitions/category"
               }
             }
           },
@@ -1435,7 +1435,7 @@
                 "name": {
                   "type": "string"
                 },
-                "main_catergory_id": {
+                "main_category_id": {
                   "type": "integer"
                 }
               }
@@ -1443,9 +1443,9 @@
           }
         ],
         "tags": [
-          "Catergory Api"
+          "Category Api"
         ],
-        "summary": "Create Catergory",
+        "summary": "Create Category",
         "description": "",
         "responses": {
           "200": {
@@ -1471,7 +1471,7 @@
         }
       }
     },
-    "/catergory/{id}": {
+    "/category/{id}": {
       "get": {
         "consumes": [
           "application/json"
@@ -1488,15 +1488,15 @@
           }
         ],
         "tags": [
-          "Catergory Api"
+          "Category Api"
         ],
-        "summary": "Get Catergory by Id",
+        "summary": "Get Category by Id",
         "description": "",
         "responses": {
           "200": {
             "description": "success",
             "schema": {
-              "$ref": "#/definitions/catergory"
+              "$ref": "#/definitions/category"
             }
           },
           "500": {
@@ -1525,7 +1525,7 @@
             "name": "id",
             "type": "integer",
             "in": "path",
-            "description": "ID of catergory",
+            "description": "ID of category",
             "required": true
           },
           {
@@ -1538,7 +1538,7 @@
                 "name": {
                   "type": "string"
                 },
-                "main_catergory_id": {
+                "main_category_id": {
                   "type": "integer"
                 }
               }
@@ -1546,9 +1546,9 @@
           }
         ],
         "tags": [
-          "Catergory Api"
+          "Category Api"
         ],
-        "summary": "Update Catergory by ID",
+        "summary": "Update Category by ID",
         "description": "",
         "responses": {
           "200": {
@@ -1587,9 +1587,9 @@
           }
         ],
         "tags": [
-          "Catergory Api"
+          "Category Api"
         ],
-        "summary": "Delete Catergory by ID",
+        "summary": "Delete Category by ID",
         "description": "",
         "responses": {
           "200": {
@@ -2300,8 +2300,8 @@
         "image": {
           "type": "string"
         },
-        "catergory_id": {
-          "$ref": "#/definitions/catergory"
+        "category_id": {
+          "$ref": "#/definitions/category"
         },
         "created_at": {
           "type": "string",
@@ -2340,8 +2340,8 @@
         "material": {
           "type": "string"
         },
-        "catergory_id": {
-          "$ref": "#/definitions/catergory"
+        "category_id": {
+          "$ref": "#/definitions/category"
         },
         "created_at": {
           "type": "string",
@@ -2364,7 +2364,7 @@
         }
       }
     },
-    "main-catergory": {
+    "main-category": {
       "type": "object",
       "properties": {
         "id": {
@@ -2379,15 +2379,15 @@
         "image_url": {
           "type": "string"
         },
-        "sub_catergory": {
+        "sub_category": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/catergory"
+            "$ref": "#/definitions/category"
           }
         }
       }
     },
-    "catergory": {
+    "category": {
       "type": "object",
       "properties": {
         "id": {
@@ -2396,8 +2396,8 @@
         "name": {
           "type": "string"
         },
-        "main_catergory": {
-          "$ref": "#/definitions/main-catergory"
+        "main_category": {
+          "$ref": "#/definitions/main-category"
         }
       }
     },

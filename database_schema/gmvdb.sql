@@ -25,13 +25,13 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `catergory`
+-- Cấu trúc bảng cho bảng `category`
 --
 
-CREATE TABLE `catergory` (
+CREATE TABLE `category` (
   `id` int NOT NULL,
   `name` varchar(100) NOT NULL,
-  `main_catergory_id` int NOT NULL
+  `main_category_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -80,10 +80,10 @@ CREATE TABLE `in_quiry` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `main_catergory`
+-- Cấu trúc bảng cho bảng `main_category`
 --
 
-CREATE TABLE `main_catergory` (
+CREATE TABLE `main_category` (
   `id` int NOT NULL,
   `name` varchar(100) NOT NULL,
   `description` varchar(255) NOT NULL,
@@ -102,7 +102,7 @@ CREATE TABLE `post` (
   `image` varchar(100) NOT NULL,
   `description` varchar(255) NOT NULL,
   `content` text NOT NULL,
-  `catergory_id` int NOT NULL
+  `category_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -120,7 +120,7 @@ CREATE TABLE `product` (
   `price` varchar(50) NOT NULL,
   `material` varchar(50) NOT NULL,
   `size` varchar(50) NOT NULL,
-  `catergory_id` int NOT NULL
+  `category_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -156,11 +156,11 @@ CREATE TABLE `user` (
 --
 
 --
--- Chỉ mục cho bảng `catergory`
+-- Chỉ mục cho bảng `category`
 --
-ALTER TABLE `catergory`
+ALTER TABLE `category`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `main_catergory_id` (`main_catergory_id`);
+  ADD KEY `main_category_id` (`main_category_id`);
 
 --
 -- Chỉ mục cho bảng `company_profile`
@@ -183,9 +183,9 @@ ALTER TABLE `in_quiry`
   ADD KEY `product_id` (`product_id`);
 
 --
--- Chỉ mục cho bảng `main_catergory`
+-- Chỉ mục cho bảng `main_category`
 --
-ALTER TABLE `main_catergory`
+ALTER TABLE `main_category`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -193,14 +193,14 @@ ALTER TABLE `main_catergory`
 --
 ALTER TABLE `post`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `catergory_id` (`catergory_id`);
+  ADD KEY `category_id` (`category_id`);
 
 --
 -- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `catergory_id` (`catergory_id`);
+  ADD KEY `category_id` (`category_id`);
 
 --
 -- Chỉ mục cho bảng `product_image`
@@ -220,9 +220,9 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT cho bảng `catergory`
+-- AUTO_INCREMENT cho bảng `category`
 --
-ALTER TABLE `catergory`
+ALTER TABLE `category`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
@@ -244,9 +244,9 @@ ALTER TABLE `in_quiry`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `main_catergory`
+-- AUTO_INCREMENT cho bảng `main_category`
 --
-ALTER TABLE `main_catergory`
+ALTER TABLE `main_category`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
@@ -278,10 +278,10 @@ ALTER TABLE `user`
 --
 
 --
--- Các ràng buộc cho bảng `catergory`
+-- Các ràng buộc cho bảng `category`
 --
-ALTER TABLE `catergory`
-  ADD CONSTRAINT `catergory_ibfk_1` FOREIGN KEY (`main_catergory_id`) REFERENCES `main_catergory` (`id`);
+ALTER TABLE `category`
+  ADD CONSTRAINT `category_ibfk_1` FOREIGN KEY (`main_category_id`) REFERENCES `main_category` (`id`);
 
 --
 -- Các ràng buộc cho bảng `hot_product`
@@ -299,13 +299,13 @@ ALTER TABLE `hot_product`
 -- Các ràng buộc cho bảng `post`
 --
 ALTER TABLE `post`
-  ADD CONSTRAINT `post_ibfk_1` FOREIGN KEY (`catergory_id`) REFERENCES `catergory` (`id`);
+  ADD CONSTRAINT `post_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`);
 
 --
 -- Các ràng buộc cho bảng `product`
 --
 ALTER TABLE `product`
-  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`catergory_id`) REFERENCES `catergory` (`id`);
+  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`);
 
 --
 -- Các ràng buộc cho bảng `product_image`

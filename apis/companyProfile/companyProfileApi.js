@@ -51,7 +51,7 @@ companyProfileApi.put('/:id',verifyToken,adminRole,
         try {
             let { name,address, basic_information,phone,zalo, url_image} = req.body
             await companyProfileService.updateCompanyProfile(id, name,address, basic_information,phone,zalo, url_image)
-            return res.status(200).json({status: 200,message: 'Updated main-catergory successfully'})
+            return res.status(200).json({status: 200,message: 'Updated main-category successfully'})
         } catch (error) {
             return res.status(500).json({status:500,message: error})
         }

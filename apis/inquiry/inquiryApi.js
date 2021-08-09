@@ -22,13 +22,13 @@ inquiryApi.get('/',verifyToken,adminRole, (req,res,next) => {
     })
 
 })
-inquiryApi.get('/get-by-catergory-id/:catergory_id',verifyToken,adminRole, (req,res,next) => {
+inquiryApi.get('/get-by-category-id/:category_id',verifyToken,adminRole, (req,res,next) => {
     
-    let {catergory_id} = req.params
-    console.log(catergory_id);
+    let {category_id} = req.params
+    console.log(category_id);
     let {inquiryPerPage,pageNumber,orderType,search} = req.query;
     inquiryService
-    .getinquirysByCatergoryId(catergory_id,inquiryPerPage,pageNumber,orderType,search)
+    .getinquirysByCategoryId(category_id,inquiryPerPage,pageNumber,orderType,search)
     .then(listinquiry => {
         res.status(200).json({status:200,message:"Success",data:listinquiry})
     })

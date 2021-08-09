@@ -71,11 +71,11 @@ class PostService {
             return resolve(postResult)
         })
     }
-    createPost(title,image,description, content,catergory_id) {
+    createPost(title,image,description, content,category_id) {
         return new Promise(async (resolve, reject) => {
             const query = `
-                INSERT INTO post(title,image,description, content,catergory_id)
-                VALUES(${mysql.escape(title)},${mysql.escape(image)},${mysql.escape(description)},${mysql.escape(content)},${mysql.escape(catergory_id)})
+                INSERT INTO post(title,image,description, content,category_id)
+                VALUES(${mysql.escape(title)},${mysql.escape(image)},${mysql.escape(description)},${mysql.escape(content)},${mysql.escape(category_id)})
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -86,7 +86,7 @@ class PostService {
             return resolve(result?.insertId)
         })
     }
-    updatePost(id, title,image,description, content,catergory_id) {
+    updatePost(id, title,image,description, content,category_id) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE post SET 
@@ -94,7 +94,7 @@ class PostService {
                 description = ${mysql.escape(description)},
                 content = ${mysql.escape(content)},
                 image = ${mysql.escape(image)},
-                catergory_id = ${mysql.escape(catergory_id)}
+                category_id = ${mysql.escape(category_id)}
                 WHERE id = ${mysql.escape(id)}
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))

@@ -34,11 +34,11 @@ postApi.get('/:id', async (req, res, next) => {
 })
 
 postApi.post('/',verifyToken,adminRole,
-    checkRequiredFieldInBody(['title', 'content','catergory_id']),
+    checkRequiredFieldInBody(['title', 'content','category_id']),
     async (req, res, next) => {
         try {
-            let {title,image,description, content,catergory_id} = req.body
-            const insertedId = await postService.createPost(title,image,description, content,catergory_id)
+            let {title,image,description, content,category_id} = req.body
+            const insertedId = await postService.createPost(title,image,description, content,category_id)
 
             return res.status(200).json({status:200,message: 'Create new post successfully'})
         } catch (error) {
@@ -51,8 +51,8 @@ postApi.put('/:id',verifyToken,adminRole,
     async (req, res, next) => {
         let {id} = req.params
         try {
-            let {title,image,description, content,catergory_id} = req.body
-            await postService.updatePost(id, title,image,description, content,catergory_id)
+            let {title,image,description, content,category_id} = req.body
+            await postService.updatePost(id, title,image,description, content,category_id)
 
             return res.status(200).json({message: 'updated post successfully'})
         } catch (error) {
