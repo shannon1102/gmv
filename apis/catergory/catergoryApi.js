@@ -15,7 +15,11 @@ catergoryApi.get('/', async (req, res, next) => {
         let {catergorysPerPage, pageNumber, orderType} = req.query
         const catergoryFounded = await catergoryService.getAllCatergory(catergorysPerPage, pageNumber, orderType)
         console.log(catergoryFounded);
-        return res.status(200).json(catergoryFounded)
+        return res.status(200).json({
+            status: 200,
+            message: "Success",
+            data: catergoryFounded
+        })
     } catch (error) {
         return res.status(500).json({message: error})
     }
