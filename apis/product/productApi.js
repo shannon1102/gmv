@@ -104,7 +104,7 @@ productApi.get('/:id',(req,res,next)=>{
     console.log(id)
     productService
     .getProductById(id)
-    .then(product=>{
+    .then(listProduct=>{
         return res.status(200).json({status:200,message:"Success",data: listProduct})
         })
     .catch(err=>{
