@@ -258,7 +258,7 @@ class ProductService {
             const query = `
             SELECT * FROM product_image AS pi
             JOIN product AS p ON pi.product_id = p.id
-            WHERE pi.model_number = ${mysql.escape(model_number)}`
+            WHERE p.model_number = ${mysql.escape(model_number)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
             let listImage = Object.assign(list_image_result)
             const query1 = 
@@ -292,7 +292,7 @@ class ProductService {
             const query = `
             SELECT * FROM product_image AS pi
             JOIN product AS p ON pi.product_id = p.id
-            WHERE pi.title = ${mysql.escape(title)}`
+            WHERE p.title = ${mysql.escape(title)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
             let listImage = Object.assign(list_image_result)
             const query1 = 
