@@ -51,8 +51,6 @@ productApi.get('/get-by-category-id/:category_id', (req,res,next) => {
 
 })
 
-
-
 productApi.get('/get-by-category-and-material/', (req,res,next) => {
     
     let {category_name,material,productsPerPage,pageNumber,orderType,search} = req.query;
@@ -113,7 +111,7 @@ productApi.get('/:id',(req,res,next)=>{
 })
 productApi.get('/get-by-model-number/:code',(req,res,next)=>{
     let {code} = req.params
-    console.log(id)
+    console.log(code)
     productService
     .getProductByCode(code)
     .then(listProduct=>{
@@ -123,7 +121,8 @@ productApi.get('/get-by-model-number/:code',(req,res,next)=>{
         return res.status(500).json({status:500,message: err})
     })  
 })
-productApi.get('/get-by-tilte/:title',(req,res,next)=>{
+productApi.get('/get-by-title/:title',(req,res,next)=>{
+    console.log("title")
     let {title} = req.params
     console.log(title)
     productService
@@ -161,6 +160,22 @@ productApi.post('/upload-product-image/:id',verifyToken,adminRole,checkRequiredF
             status:200,
             message: 'Update product-image sucessfully',
             product: result
+            })
+        })
+    .catch(err=>{
+        return res.status(500).json({status:500,message: err})
+    })  
+})
+productApi.put('/:id',verifyToken,adminRole, (req,res,next)=>{
+    let {id} = req.params
+    let {title,description,model_number,main_image_url,price,material,size, category_id} = req.body
+    productService
+    .updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id)
+    .then(result=>{
+        return res.status(200).json({  
+            status:200,
+            message: "Update product successfully",
+            data:result
             })
         })
     .catch(err=>{

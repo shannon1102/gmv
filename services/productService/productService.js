@@ -256,10 +256,12 @@ class ProductService {
         return new Promise(async (resolve, reject) => {
             console.log("dsdas");
             const query = `
-            SELECT * FROM product_image AS pi
+            SELECT pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4
+            FROM product_image AS pi
             JOIN product AS p ON pi.product_id = p.id
             WHERE p.model_number = ${mysql.escape(model_number)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
+            console.log(list_image_result)
             let listImage = Object.assign(list_image_result)
             const query1 = 
             `SELECT p.*,c.main_category_id
@@ -277,11 +279,11 @@ class ProductService {
                 return reject(err)
             }
             if (!productResult.length) {
-                return reject(`product with id ${model_number} not found`)
+                return reject(`product with model number ${model_number} not found`)
             }
             
             productResult[0].list_product_images = listImage;
-            console.log(productResult[0])
+            // console.log(productResult[0])
             return resolve(productResult[0])
         })
     }
@@ -290,7 +292,8 @@ class ProductService {
         return new Promise(async (resolve, reject) => {
             console.log("dsdas");
             const query = `
-            SELECT * FROM product_image AS pi
+            SELECT pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4
+            FROM product_image AS pi
             JOIN product AS p ON pi.product_id = p.id
             WHERE p.title = ${mysql.escape(title)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
