@@ -125,7 +125,7 @@ productApi.get('/get-by-model-number/:code',(req,res,next)=>{
 })
 productApi.get('/get-by-tilte/:title',(req,res,next)=>{
     let {title} = req.params
-    console.log(id)
+    console.log(title)
     productService
     .getProductByTitle(title)
     .then(listProduct=>{

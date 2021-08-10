@@ -13,10 +13,11 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "gmvbackend.herokuapp.com",
+ 
+  "host": "localhost:5000",
   "basePath": "/api",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/post/": {
@@ -887,7 +888,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Product By model-number ",
+        "summary": "Get Product By title ",
         "description": "",
         "responses": {
           "200": {
