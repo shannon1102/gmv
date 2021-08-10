@@ -111,6 +111,30 @@ productApi.get('/:id',(req,res,next)=>{
         return res.status(500).json({status:500,message: err})
     })  
 })
+productApi.get('/get-by-model-number/:code',(req,res,next)=>{
+    let {code} = req.params
+    console.log(id)
+    productService
+    .getProductByCode(code)
+    .then(listProduct=>{
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
+        })
+    .catch(err=>{
+        return res.status(500).json({status:500,message: err})
+    })  
+})
+productApi.get('/get-by-tilte/:title',(req,res,next)=>{
+    let {title} = req.params
+    console.log(id)
+    productService
+    .getProductByTitle(title)
+    .then(listProduct=>{
+        return res.status(200).json({status:200,message:"Success",data: listProduct})
+        })
+    .catch(err=>{
+        return res.status(500).json({status:500,message: err})
+    })  
+})
 productApi.post('/',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size','category_id']), (req,res,next)=>{
     let {title,description,model_number,main_image_url,price,material,size, category_id} = req.body
     console.log(req.body)

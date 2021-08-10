@@ -75,6 +75,40 @@ class ProductService {
         });
 
     }
+     getProductsByCategoryId(category_id,productsPerPage,pageNumber,orderType,search){
+        return new Promise(
+            async (resolve,reject) => {
+            let offsetDb = 0, orderByDb;
+            orderType = orderType ? orderType : 2
+            pageNumber = pageNumber ? pageNumber : 1
+            productsPerPage = productsPerPage ? productsPerPage :10
+            offsetDb =  productsPerPage * (pageNumber -1)
+            search = search ? search : ""
+            if (orderType == orderTypeSetting.ASC) {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
+            const query = 
+            `SELECT p.* FROM product as p
+            WHERE p.category_id = ${mysql.escape(category_id)}
+            AND ( p.title LIKE ${mysql.escape('%'+search+'%')}
+            OR p.description LIKE ${mysql.escape('%'+search+'%')})
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+            LIMIT ${productsPerPage}
+            OFFSET ${mysql.escape(offsetDb)}`
+            console.log(query)
+            let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
+            if(err) {
+                logger.error(`[productService][getProducts] errors : `,err)
+                return reject(err)
+            } else {
+                 return resolve(listProduct)
+            }
+
+        });
+
+    }
     getProductsByMainCategoryId(id,productsPerPage,pageNumber,orderType,search){
         return new Promise(
             async (resolve,reject) => {
@@ -199,6 +233,71 @@ class ProductService {
             JOIN main_category AS mc
             ON mc.id = c.main_category_id
             WHERE p.id = ${mysql.escape(id)}`
+            
+            const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
+            if (err1) {
+                logger.error(`[productService][getProductById] errors: `, err)
+                return reject(err)
+            }
+            if (!productResult.length) {
+                return reject(`product with id ${id} not found`)
+            }
+            
+            productResult[0].list_product_images = listImage;
+            console.log(productResult[0])
+            return resolve(productResult[0])
+        })
+    }
+
+    getProductByCode(model_number) {
+        
+        return new Promise(async (resolve, reject) => {
+            console.log("dsdas");
+            const query = `
+            SELECT * FROM product_image AS pi
+            WHERE pi.product_id = ${mysql.escape(id)}`
+            const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
+            let listImage = Object.assign(list_image_result)
+            const query1 = 
+            `SELECT p.*,c.main_category_id
+            FROM product AS p
+            JOIN category AS c
+            ON c.id = p.category_id
+            JOIN main_category AS mc
+            ON mc.id = c.main_category_id
+            WHERE p.model_number = ${mysql.escape(model_number)}`
+            
+            const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
+            if (err1) {
+                logger.error(`[productService][getProductById] errors: `, err)
+                return reject(err)
+            }
+            if (!productResult.length) {
+                return reject(`product with id ${id} not found`)
+            }
+            
+            productResult[0].list_product_images = listImage;
+            console.log(productResult[0])
+            return resolve(productResult[0])
+        })
+    }
+    getProductByTitle(title) {
+        
+        return new Promise(async (resolve, reject) => {
+            console.log("dsdas");
+            const query = `
+            SELECT * FROM product_image AS pi
+            WHERE pi.product_id = ${mysql.escape(id)}`
+            const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
+            let listImage = Object.assign(list_image_result)
+            const query1 = 
+            `SELECT p.*,c.main_category_id
+            FROM product AS p
+            JOIN category AS c
+            ON c.id = p.category_id
+            JOIN main_category AS mc
+            ON mc.id = c.main_category_id
+            WHERE p.title = ${mysql.escape(title)}`
             
             const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
             if (err1) {
