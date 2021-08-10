@@ -14,7 +14,7 @@
     }
   },
  
-  "host": "gmvbackend.herokuapp.com/",
+  "host": "gmvbackend.herokuapp.com",
   "basePath": "/api",
   "schemes": [
     "https"
