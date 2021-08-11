@@ -386,9 +386,6 @@
                 },
                 "category_id": {
                   "type": "integer"
-                },
-                "slug": {
-                  "type": "string"
                 }
               }
             }
