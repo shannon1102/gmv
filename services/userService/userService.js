@@ -3,8 +3,6 @@ const logger = require('../../logger/index')
 const bcrypt = require('bcryptjs')
 const { to } = require('../../helper/to')
 const mysql = require('mysql')
-const { Container } = require('winston')
-const { resolve } = require('app-root-path')
 
 class UserService {
     constructor(mysqlDb) {
@@ -72,7 +70,7 @@ class UserService {
         })
     }
     getUserInformation(req) {
-        return new Promise(async (resolve,refect)=>{
+        return new Promise(async (resolve,reject)=>{
             const userId = req.userId
             const query = `SELECT * FROM user WHERE id = ${mysql.escape(userId)}`;
             const [err,result] = await to(this.mysqlDb.poolQuery(query))

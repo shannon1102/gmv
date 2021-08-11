@@ -2,7 +2,6 @@
 const mysql = require('mysql');
 const logger = require('../../logger');
 const { to } = require('../../helper/to');
-const { query } = require('winston');
 class CategoryService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb

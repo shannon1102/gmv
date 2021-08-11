@@ -38,7 +38,6 @@ companyProfileApi.post('/',verifyToken,adminRole,
            
             let {name,address, basic_information,phone,zalo, url_image} = req.body
             const insertedId = await companyProfileService.createCompanyProfile(name,address, basic_information,phone,zalo,url_image)
-            console.log("AKKKKKKKKK");
             return res.status(200).json({status:200,message: 'Create new comppany_profile successfully'})
         } catch (error) {
             return res.status(500).json({status:500,message: error})

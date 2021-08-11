@@ -5,7 +5,7 @@ const ProductService = require('../../services/productService/productService');
 const productApi = express.Router();
 const mysqlDb = new MysqlDB();
 const productService = new ProductService(mysqlDb);
-const {checkRequiredFieldInBody} = require('../../middleware/index')
+const {checkRequiredFieldInBody,checkRequiredFieldInQuery} = require('../../middleware/index')
 const {verifyToken,adminRole} = require('../../middleware/verifyToken')
 
 productApi.get('/', (req,res,next) => {
@@ -51,7 +51,7 @@ productApi.get('/get-by-category-id/:category_id', (req,res,next) => {
 
 })
 
-productApi.get('/get-by-category-and-material/', (req,res,next) => {
+productApi.get('/get-by-category-and-material/',checkRequiredFieldInQuery(['main_category_name','category_name','material']), (req,res,next) => {
     
     let {main_category_name,category_name,material,productsPerPage,pageNumber,orderType,search} = req.query;
   
@@ -67,7 +67,7 @@ productApi.get('/get-by-category-and-material/', (req,res,next) => {
 })
 
 
-productApi.get('/get-by-category-name/', (req,res,next) => {
+productApi.get('/get-by-category-name/',checkRequiredFieldInQuery(['main_category', 'category']), (req,res,next) => {
     
     let {main_category, category,productsPerPage,pageNumber,orderType,search} = req.query;
     productService

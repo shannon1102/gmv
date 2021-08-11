@@ -56,7 +56,6 @@ inquiryApi.get('/get-by-customer-name/:name', (req,res,next) => {
 })
 inquiryApi.get('/:id',verifyToken,adminRole,(req,res,next)=>{
     let {id} = req.params
-    console.log(id)
     inquiryService
     .getInquiryById(id)
     .then(inquiry=>{
