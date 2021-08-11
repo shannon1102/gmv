@@ -10,9 +10,9 @@ const {verifyToken,adminRole} = require('../../middleware/verifyToken')
 
 
 hotProductApi.get('/', (req,res,next) => {
-    let {productPerPage,pageNumber,orderType,search} = req.query;
+    let {productsPerPage,pageNumber,orderType,search} = req.query;
     hotProductService
-    .getHotProducts(productPerPage,pageNumber,orderType,search)
+    .getHotProducts(productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
         res.status(200).json({status:200,message:"Success",data: listProduct})
     })

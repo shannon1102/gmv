@@ -8,14 +8,14 @@ class HotProductService {
     constructor(mysqlDb) {
         this.mysqlDb = mysqlDb
     }
-    getHotProducts(productPerPage, pageNumber, orderType, search) {
+    getHotProducts(productsPerPage, pageNumber, orderType, search) {
         return new Promise(
             async (resolve, reject) => {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productPerPage = productPerPage ? productPerPage : 10
-                offsetDb = productPerPage * (pageNumber - 1)
+                productsPerPage = productsPerPage ? productsPerPage : 10
+                offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 if (orderType == orderTypeSetting.ASC) {
                     orderByDb = 'ASC'
@@ -24,12 +24,13 @@ class HotProductService {
                 }
                 const query =
                     `SELECT p.* FROM product as p  JOIN hot_product as hp
-            ON p.id = hp.product_id 
-            WHERE p.title LIKE ${mysql.escape('%' + search + '%')}
-            OR p.description LIKE ${mysql.escape('%' + search + '%')}
-            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
-            LIMIT ${productPerPage}
-            OFFSET ${mysql.escape(offsetDb)}`
+                    ON p.id = hp.product_id 
+                    WHERE 
+                    (p.title LIKE ${mysql.escape('%' + search + '%')}
+                    OR p.description LIKE ${mysql.escape('%' + search + '%')})
+                    ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+                    LIMIT ${productsPerPage}
+                    OFFSET ${mysql.escape(offsetDb)}`
                 console.log(query)
                 let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
                 if (err) {
