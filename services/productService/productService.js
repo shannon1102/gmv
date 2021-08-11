@@ -323,8 +323,7 @@ class ProductService {
         })
     }
     createProduct(title,description,model_number,main_image_url,price,material,size, category_id){
-        try{
-            
+   
             const slug = title.trim().replaceAll(' ','_') + Date.now();
             console.log(slug); 
             return new Promise(async (resolve,reject)=>{
@@ -338,13 +337,7 @@ class ProductService {
             }
             return resolve(result)
 
-         })
-
-        }catch(error) {
-            console.log(err)
-        }
-
-        
+         })        
     }
     updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id,slug){
             return new Promise(async (resolve,reject)=>{
