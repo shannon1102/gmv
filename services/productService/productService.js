@@ -47,7 +47,7 @@ class ProductService {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productsPerPage = productsPerPage ? productsPerPage :10
+            productsPerPage = productsPerPage ? productsPerPage :100
             offsetDb =  productsPerPage * (pageNumber -1)
             search = search ? search : ""
             if (orderType == orderTypeSetting.ASC) {
@@ -81,7 +81,7 @@ class ProductService {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productsPerPage = productsPerPage ? productsPerPage :10
+            productsPerPage = productsPerPage ? productsPerPage :100
             offsetDb =  productsPerPage * (pageNumber -1)
             search = search ? search : ""
             if (orderType == orderTypeSetting.ASC) {
@@ -97,7 +97,7 @@ class ProductService {
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
-            console.log(query)
+
             let [err,listProduct] = await to(this.mysqlDb.poolQuery(query))
             if(err) {
                 logger.error(`[productService][getProducts] errors : `,err)
@@ -251,28 +251,27 @@ class ProductService {
         })
     }
 
-    getProductByCode(model_number) {
+    getProductByCode(model_number,productsPerPage,pageNumber,orderType) {
         
         return new Promise(async (resolve, reject) => {
-            console.log("dsdas");
-            const query = `
-            SELECT pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4
-            FROM product_image AS pi
-            JOIN product AS p ON pi.product_id = p.id
-            WHERE p.model_number = ${mysql.escape(model_number)}`
-            const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
-            console.log(list_image_result)
-            let listImage = Object.assign(list_image_result)
+            let offsetDb = 0, orderByDb;
+            orderType = orderType ? orderType : 2
+            pageNumber = pageNumber ? pageNumber : 1
+            productsPerPage = productsPerPage ? productsPerPage :100
+            offsetDb =  productsPerPage * (pageNumber -1)
+            if (orderType == orderTypeSetting.ASC) {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
             const query1 = 
-            `SELECT p.*,c.main_category_id
+            `SELECT *
             FROM product AS p
-            JOIN category AS c
-            ON c.id = p.category_id
-            JOIN main_category AS mc
-            ON mc.id = c.main_category_id
             WHERE p.model_number = ${mysql.escape(model_number)}
-            LIMIT 1`
-            
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+            LIMIT ${productsPerPage}
+            OFFSET ${mysql.escape(offsetDb)}
+            `
             const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
             if (err1) {
                 logger.error(`[productService][getProductById] errors: `, err)
@@ -281,32 +280,29 @@ class ProductService {
             if (!productResult.length) {
                 return reject(`product with model number ${model_number} not found`)
             }
-            
-            productResult[0].list_product_images = listImage;
-            // console.log(productResult[0])
-            return resolve(productResult[0])
+            return resolve(productResult)
         })
     }
-    getProductByTitle(title) {
-        console.log("????")
+    getProductByTitle(title,productsPerPage,pageNumber,orderType) {
         return new Promise(async (resolve, reject) => {
-            console.log("dsdas");
-            const query = `
-            SELECT pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4
-            FROM product_image AS pi
-            JOIN product AS p ON pi.product_id = p.id
-            WHERE p.title = ${mysql.escape(title)}`
-            const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
-            let listImage = Object.assign(list_image_result)
+            let offsetDb = 0, orderByDb;
+            orderType = orderType ? orderType : 2
+            pageNumber = pageNumber ? pageNumber : 1
+            productsPerPage = productsPerPage ? productsPerPage :100
+            offsetDb =  productsPerPage * (pageNumber -1)
+            if (orderType == orderTypeSetting.ASC) {
+                orderByDb = 'ASC'
+            } else {
+                orderByDb = 'DESC'
+            }
             const query1 = 
-            `SELECT p.*,c.main_category_id
+            `SELECT *
             FROM product AS p
-            JOIN category AS c
-            ON c.id = p.category_id
-            JOIN main_category AS mc
-            ON mc.id = c.main_category_id
             WHERE p.title = ${mysql.escape(title)}
-            LIMIT 1`
+            ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
+            LIMIT ${productsPerPage}
+            OFFSET ${mysql.escape(offsetDb)}
+            `
             
             const [err1, productResult] = await to(this.mysqlDb.poolQuery(query1))
             if (err1) {
@@ -316,19 +312,16 @@ class ProductService {
             if (!productResult.length) {
                 return reject(`product with title ${title} not found`)
             }
-            
-            productResult[0].list_product_images = listImage;
-            console.log(productResult[0])
-            return resolve(productResult[0])
+            console.log(productResult)
+            return resolve(productResult)
         })
     }
     createProduct(title,description,model_number,main_image_url,price,material,size, category_id){
    
-            const slug = title.trim().replaceAll(' ','_') + Date.now();
-            console.log(slug); 
+            const slug = title.trim().split(' ').join('_') +'_'+ Date.now();
             return new Promise(async (resolve,reject)=>{
             const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, category_id,slug) 
-            VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)}))
+            VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -402,7 +395,6 @@ class ProductService {
         })
     }
     updateProductImage(product_id,url_image1,url_image2,url_image3,url_image4) {
-        console.log("Vao update");
         return new Promise(async (resolve,reject)=>{
             const query = `UPDATE product_image
             SET url_image1 = ${mysql.escape(url_image1)},
@@ -413,7 +405,7 @@ class ProductService {
             `
            
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
-            console.log(result);
+
             if (err) {
                 logger.error(`[productService][updateProductImage] errors: `, err)
                 return reject(err)

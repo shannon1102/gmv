@@ -111,9 +111,9 @@ productApi.get('/:id',(req,res,next)=>{
 })
 productApi.get('/get-by-model-number/:code',(req,res,next)=>{
     let {code} = req.params
-    console.log(code)
+    let {productsPerPage,pageNumber,orderType} = req.query
     productService
-    .getProductByCode(code)
+    .getProductByCode(code,productsPerPage,pageNumber,orderType)
     .then(listProduct=>{
         return res.status(200).json({status:200,message:"Success",data: listProduct})
         })
@@ -122,11 +122,11 @@ productApi.get('/get-by-model-number/:code',(req,res,next)=>{
     })  
 })
 productApi.get('/get-by-title/:title',(req,res,next)=>{
-    console.log("title")
     let {title} = req.params
-    console.log(title)
+    let {productsPerPage,pageNumber,orderType} = req.query;
+
     productService
-    .getProductByTitle(title)
+    .getProductByTitle(title,productsPerPage,pageNumber,orderType)
     .then(listProduct=>{
         return res.status(200).json({status:200,message:"Success",data: listProduct})
         })
@@ -168,9 +168,9 @@ productApi.post('/upload-product-image/:id',verifyToken,adminRole,checkRequiredF
 })
 productApi.put('/:id',verifyToken,adminRole, (req,res,next)=>{
     let {id} = req.params
-    let {title,description,model_number,main_image_url,price,material,size, category_id} = req.body
+    let {title,description,model_number,main_image_url,price,material,size, category_id,slug} = req.body
     productService
-    .updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id)
+    .updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id,slug)
     .then(result=>{
         return res.status(200).json({  
             status:200,

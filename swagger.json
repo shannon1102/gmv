@@ -767,7 +767,7 @@
                   "type": "integer"
                 },
                 "slug": {
-                  "type": "integer"
+                  "type": "string"
                 }
               }
             }
@@ -849,6 +849,23 @@
             "type": "string",
             "in": "path",
             "required": true
+          },{
+            "name": "productsPerPage",
+            "in": "query",
+            "description": "Max products can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
           }
         ],
         "tags": [
@@ -886,6 +903,23 @@
             "type": "string",
             "in": "path",
             "required": true
+          },{
+            "name": "productsPerPage",
+            "in": "query",
+            "description": "Max products can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
           }
         ],
         "tags": [
