@@ -548,7 +548,7 @@
         }
       }
     },
-    "/product/get-by-category-name/{name}": {
+    "/product/get-by-main-category-name/{name}": {
       "get": {
         "consumes": [
           "application/json"
@@ -561,7 +561,78 @@
             "name": "name",
             "type": "string",
             "in": "path",
-            "description": "category_name",
+            "required": true
+          },
+          {
+            "name": "productsPerPage",
+            "in": "query",
+            "description": "Max products can be display in one page",
+            "required": false
+          },
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Page number",
+            "required": false
+          },
+          {
+            "name": "orderType",
+            "in": "query",
+            "description": "Order type to display: 1-oldest 2-newest ",
+            "required": false
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "for search request for Front End",
+            "required": false
+          }
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get Products By Main Category Name",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
+    "/product/get-by-category-name/": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "main_category",
+            "type": "string",
+            "in": "query",
+            "description": "main category name",
+            "required": true
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "in": "query",
+            "description": "category name",
             "required": true
           },
           {
@@ -613,6 +684,47 @@
         }
       }
     },
+    "/product/get-by-slug/{slug}": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "slug",
+            "type": "string",
+            "in": "path",
+            "description": "slug of product",
+            "required": true
+          }
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get Products By Slug",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
     "/product/get-by-category-and-material/": {
       "get": {
         "consumes": [
@@ -622,6 +734,12 @@
           "application/json"
         ],
         "parameters": [
+          {
+            "name": "main_category_name",
+            "in": "query",
+            "description": "main category name of product",
+            "required": false
+          },
           {
             "name": "category_name",
             "in": "query",
