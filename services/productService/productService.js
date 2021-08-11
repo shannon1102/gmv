@@ -323,9 +323,13 @@ class ProductService {
         })
     }
     createProduct(title,description,model_number,main_image_url,price,material,size, category_id){
-         return new Promise(async (resolve,reject)=>{
-            const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, category_id) 
-            VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)})
+        try{
+            
+            const slug = title.trim().replaceAll(' ','_') + Date.now();
+            console.log(slug); 
+            return new Promise(async (resolve,reject)=>{
+            const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, category_id,slug) 
+            VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)}))
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -335,8 +339,14 @@ class ProductService {
             return resolve(result)
 
          })
+
+        }catch(error) {
+            console.log(err)
+        }
+
+        
     }
-    updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id){
+    updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id,slug){
             return new Promise(async (resolve,reject)=>{
                const query = `UPDATE product
                SET title = ${mysql.escape(title)},
@@ -346,7 +356,8 @@ class ProductService {
                price = ${mysql.escape(price)},
                material= ${mysql.escape(material)},
                size= ${mysql.escape(size)},
-               category_id = ${mysql.escape(category_id)}
+               category_id = ${mysql.escape(category_id)},
+               slug = ${mysql.escape(slug)}
                WHERE id = ${mysql.escape(id)}
                `
                const [err, result] = await to(this.mysqlDb.poolQuery(query))
