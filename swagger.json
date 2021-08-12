@@ -1074,7 +1074,7 @@
         "tags": [
           "Product Api"
         ],
-        "summary": "Get Product By title ",
+        "summary": "Get List Material",
         "description": "",
         "responses": {
           "200": {
@@ -1082,8 +1082,6 @@
             "schema": {
               "$ref": "#/definitions/success"
             }
-            
-            
           },
           "500": {
             "description": "error",
