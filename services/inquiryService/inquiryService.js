@@ -83,6 +83,7 @@ class InquiryService {
                 INSERT INTO inquiry(customer_name,email,phone,message,product_name,product_id,product_link,quantity)
                 VALUES(${mysql.escape(customer_name)},${mysql.escape(email)},${mysql.escape(phone)},${mysql.escape(message)},${mysql.escape(product_name)},${mysql.escape(product_id)},${mysql.escape(product_link)},${mysql.escape(quantity)})
             `
+            console.log(query)
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
                 console.log(err);

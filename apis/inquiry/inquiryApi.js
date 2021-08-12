@@ -67,10 +67,10 @@ inquiryApi.get('/:id',verifyToken,adminRole,(req,res,next)=>{
 })
 inquiryApi.post('/',checkRequiredFieldInBody(['phone','product_id']), (req,res,next)=>{
     
-    let {customer_name,email,phone,message,product_id,quantity} = req.body
-    console.log(req.body)
+    let {customer_name,email,phone,message,product_name,product_id,product_link,quantity} = req.body
+    console.log(product_link);
     inquiryService
-    .createInquiry(customer_name,email,phone,message,product_id,quantity)
+    .createInquiry(customer_name,email,phone,message,product_name,product_id,product_link,quantity)
     .then(result => { 
         res.status(200).json({
             status:200,
