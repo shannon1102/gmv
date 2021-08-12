@@ -192,6 +192,9 @@ class ProductService {
                 productsPerPage = productsPerPage ? productsPerPage : 10
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
+                main_category_name = main_category_name ? main_category_name : ""
+                category_name = category_name ? category_name : ""
+                material = material ? material : ""
                 if (orderType == orderTypeSetting.ASC) {
                     orderByDb = 'ASC'
                 } else {
@@ -202,9 +205,9 @@ class ProductService {
             JOIN category ON p.category_id = category.id 
             JOIN main_category ON main_category.id = category.main_category_id
             WHERE 
-            main_category.name = ${mysql.escape(main_category_name)}
-            AND category.name = ${mysql.escape(category_name)}
-            AND p.material = ${mysql.escape(material)}
+            main_category.name LIKE ${mysql.escape('%'+main_category_name+'%')}
+            AND category.name LIKE ${mysql.escape('%' + category_name +'%' )}
+            AND p.material LIKE ${mysql.escape('%' + material + '%')})
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
@@ -487,6 +490,20 @@ class ProductService {
             }
             return resolve(`Upload product-image with id ${product_id} sucessfully`)
         })
+    }
+    getListMaterial(){
+       return new Promise(async (resolve,reject)=>{
+        const query = `
+        SELECT material FORM product GROUP BY material;  
+        `
+        const [err,listMaterial] = await to(this.mysqlDb.poolQuery(query));
+
+          if (err) {
+                logger.error(`[productService][getMaterial] errors: `, err)
+                return reject(err)
+            }
+            return resolve(listMaterial)
+       }) 
     }
 }
 

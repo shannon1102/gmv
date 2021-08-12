@@ -738,19 +738,19 @@
             "name": "main_category_name",
             "in": "query",
             "description": "main category name of product",
-            "required": true
+            "required": false
           },
           {
             "name": "category_name",
             "in": "query",
             "description": "category_name of product",
-            "required": true
+            "required": false
           },
           {
             "name": "material",
             "in": "query",
             "description": "material of product",
-            "required": true
+            "required": false
           },
           {
             "name": "productsPerPage",
@@ -1051,6 +1051,39 @@
             "schema": {
               "$ref": "#/definitions/product"
             }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
+    "/product/get-list-material/": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get Product By title ",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "$ref": "#/definitions/success"
+            }
+            
+            
           },
           "500": {
             "description": "error",
