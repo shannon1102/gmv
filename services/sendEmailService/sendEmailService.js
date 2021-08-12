@@ -24,7 +24,9 @@ let sendEmail = async (payload)=>{
     <p><b>Cutosmer Email:</b> ${payload.email} <p>
     <p><b>Cutosmer Phone</b>: ${payload.phone} <p>
     <p><b>Message:</b> ${payload.message} <p>
+    <p><b>Product_id :</b> ${payload.product_name} <p>
     <p><b>Product_id :</b> ${payload.product_id} <p>
+    <p><b>Product_id :</b> ${payload.product_link} <p>
     <p><b>Quantity:</b> ${payload.quantity} <p>
     </div>
     <div>
