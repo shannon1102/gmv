@@ -51,7 +51,7 @@ productApi.get('/get-by-category-id/:category_id', (req,res,next) => {
 
 })
 
-productApi.get('/get-by-category-and-material/',checkRequiredFieldInQuery(['main_category_name','category_name','material']), (req,res,next) => {
+productApi.get('/get-by-category-and-material/', (req,res,next) => {
     
     let {main_category_name,category_name,material,productsPerPage,pageNumber,orderType,search} = req.query;
   
@@ -158,7 +158,8 @@ productApi.get('/get-by-title/:title',(req,res,next)=>{
         return res.status(500).json({status:500,message: err})
     })  
 })
-productApi.get('/get-list-material/',(req,res,next)=>{
+productApi.get('/get-all-material/list/',(req,res,next)=>{
+    console.log("Sadsdada")
     productService
     .getListMaterial()
     .then(listMaterial=>{

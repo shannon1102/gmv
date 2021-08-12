@@ -207,7 +207,7 @@ class ProductService {
             WHERE 
             main_category.name LIKE ${mysql.escape('%'+main_category_name+'%')}
             AND category.name LIKE ${mysql.escape('%' + category_name +'%' )}
-            AND p.material LIKE ${mysql.escape('%' + material + '%')})
+            AND p.material LIKE ${mysql.escape('%' + material + '%')}
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
@@ -493,11 +493,13 @@ class ProductService {
     }
     getListMaterial(){
        return new Promise(async (resolve,reject)=>{
+           console.log("ALLLLLLLL");
         const query = `
-        SELECT material FORM product GROUP BY material;  
+        SELECT material FROM product GROUP BY material;  
         `
+        console.log(query)
         const [err,listMaterial] = await to(this.mysqlDb.poolQuery(query));
-
+        console.log(listMaterial)
           if (err) {
                 logger.error(`[productService][getMaterial] errors: `, err)
                 return reject(err)

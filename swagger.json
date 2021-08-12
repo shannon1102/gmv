@@ -796,6 +796,37 @@
         }
       }
     },
+    "/product/get-all-material/list/": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "tags": [
+          "Product Api"
+        ],
+        "summary": "Get List Material",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "$ref": "#/definitions/success"
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
+    },
     "/product/{id}": {
       "get": {
         "consumes": [
@@ -1061,37 +1092,7 @@
         }
       }
     },
-    "/product/get-list-material/": {
-      "get": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-        ],
-        "tags": [
-          "Product Api"
-        ],
-        "summary": "Get List Material",
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "success",
-            "schema": {
-              "$ref": "#/definitions/success"
-            }
-          },
-          "500": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/error"
-            }
-          }
-        }
-      }
-    },
+   
     "/product/update-image/{product_id}": {
       "put": {
         "consumes": [
