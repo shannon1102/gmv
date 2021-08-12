@@ -8,7 +8,6 @@ class MainCategoryService {
     }
 
     getAllMainCategory(itemsPerPage, pageNumber, orderType) {
-        console.log("Main")
         return new Promise(async (resolve, reject) => {
             let offsetDb, orderByDb
             orderType = orderType ? orderType : 'newest'
