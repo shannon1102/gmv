@@ -95,7 +95,7 @@ class InquiryService {
                 customer_name : customer_name ? customer_name : "No Information",
                 email: email ? email : "No information",
                 phone: phone,
-                message: message,
+                message: message ? message : "",
                 product_name: product_name ? product_name : "No information",
                 product_id: product_id ? product_id : -1,
                 product_link: product_link ? product_link : "No information",
