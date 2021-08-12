@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { verifyToken,adminRole } = require('../../middleware/verifyToken')
 
-const { checkRequiredFieldInBody } = require('../../middleware/index')
+const { checkRequiredFieldInBody,checkRequiredFieldInQuery } = require('../../middleware/index')
 const userApi = express.Router()
 const MysqlDB = require('../../models/mysql')
 const mysqlDb = new MysqlDB()

@@ -15,7 +15,7 @@ let sendEmail = async (payload)=>{
   let info = await transporter.sendMail({
     from: '"Giang Minh Viet Website" <gmvmailer@gmail.com>', // sender address
     //to: "receiverEmail", // list of receivers
-    to: ["vanict99@gmail.com",`${process.env.RECV_EMAIL}`],
+    to: [`${process.env.RECV_EMAIL_SALE}`,`${process.env.RECV_EMAIL_BOSS}`],
     subject: "GVM website have new inquiry", // Subject line
     html: `
     <h2><b>Inquiry Information</b></h2>
