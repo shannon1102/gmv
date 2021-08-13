@@ -44,7 +44,7 @@ class CategoryService {
         return new Promise(async (resolve, reject) => {
             try {  
                 const query2 = `
-                SELECT * FROM category JOIN main_category 
+                SELECT category.*,main_category.name AS main_category_name FROM category JOIN main_category 
                 ON category.main_category_id = main_category.id 
                 WHERE category.id = ${mysql.escape(id)}
                 `

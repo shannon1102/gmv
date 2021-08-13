@@ -396,9 +396,10 @@ class ProductService {
         })
     }
     createProduct(title, description, model_number, main_image_url, price, material, size, category_id) {
-
+        console.log("Alooo",title);
         const slug = title.trim().split(' ').join('_') + '_' + Date.now();
         return new Promise(async (resolve, reject) => {
+            
             const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, category_id,slug) 
             VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
             `

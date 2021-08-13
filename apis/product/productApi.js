@@ -54,7 +54,7 @@ productApi.get('/get-by-category-id/:category_id', (req,res,next) => {
 productApi.get('/get-by-category-and-material/', (req,res,next) => {
     
     let {main_category_name,category_name,material,productsPerPage,pageNumber,orderType,search} = req.query;
-  
+    
     productService
     .getProductsByCategoryAndMaterial(main_category_name,category_name,material,productsPerPage,pageNumber,orderType,search)
     .then(listProduct => {
@@ -170,7 +170,7 @@ productApi.get('/get-all-material/list/',(req,res,next)=>{
 })
 productApi.post('/',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size','category_id']), (req,res,next)=>{
     let {title,description,model_number,main_image_url,price,material,size, category_id} = req.body
-    console.log(req.body)
+    console.log("sdadda",req.body)
     productService
     .createProduct(title,description,model_number,main_image_url,price,material,size, category_id)
     .then(result => { 
