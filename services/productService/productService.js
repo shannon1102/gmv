@@ -184,6 +184,17 @@ class ProductService {
 
     }
     getProductsByCategoryAndMaterial(main_category_name,category_name, material, productsPerPage, pageNumber, orderType, search) {
+        
+        if(!main_category_name || main_category_name.toLowerCase() ==='all') {
+            main_category_name = ""
+        }
+        if(!category_name || category_name.toLowerCase() === 'all') {
+            category_name = ""
+        }
+        if(!material || material.toLowerCase() === 'all') {
+            material = ""
+        }
+
         return new Promise(
             async (resolve, reject) => {
                 let offsetDb = 0, orderByDb;
@@ -192,9 +203,9 @@ class ProductService {
                 productsPerPage = productsPerPage ? productsPerPage : 10
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
-                main_category_name = main_category_name ? main_category_name : ""
-                category_name = category_name ? category_name : ""
-                material = material ? material : ""
+                console.log(main_category_name);
+                console.log(category_name);
+                console.log(material);
                 if (orderType == orderTypeSetting.ASC) {
                     orderByDb = 'ASC'
                 } else {

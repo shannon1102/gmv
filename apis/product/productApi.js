@@ -66,7 +66,6 @@ productApi.get('/get-by-category-and-material/', (req,res,next) => {
 
 })
 
-
 productApi.get('/get-by-category-name/',checkRequiredFieldInQuery(['main_category', 'category']), (req,res,next) => {
     
     let {main_category, category,productsPerPage,pageNumber,orderType,search} = req.query;
