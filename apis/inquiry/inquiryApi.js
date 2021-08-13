@@ -10,7 +10,6 @@ const {verifyToken,adminRole} = require('../../middleware/verifyToken');
 
 
 inquiryApi.get('/',verifyToken,adminRole, (req,res,next) => {
-    console.log(req.user);
     let {itemsPerPage,pageNumber,orderType} = req.query;
     inquiryService
     .getInquiries(itemsPerPage,pageNumber,orderType)

@@ -4,6 +4,7 @@ const { orderTypeSetting } = require('../../config/index');
 const logger = require('../../logger');
 const { to } = require('../../helper/to');
 const { resolve } = require('app-root-path');
+const { ConsoleTransportOptions } = require('winston/lib/winston/transports');
 
 class ProductService {
     constructor(mysqlDb) {
@@ -17,16 +18,24 @@ class ProductService {
                 pageNumber = pageNumber ? pageNumber : 1
                 productsPerPage = productsPerPage ? productsPerPage : 100
                 offsetDb = productsPerPage * (pageNumber - 1)
-                search = search ? search : ""
+                // search = search ? search : ""
+                if(search){
+                    var stringSearch = search.split(' ').map(element => {
+                        return `p.title LIKE ${mysql.escape('%' + element + '%')} OR p.description LIKE ${mysql.escape('%' + element + '%')}`
+                    }).join(' OR ')
+                    console.log(stringSearch);
+                }else {
+                    stringSearch = `p.title LIKE ${mysql.escape('%' + "" + '%')} OR p.description LIKE ${mysql.escape('%' + "" + '%')}`
+                }
                 if (orderType == orderTypeSetting.ASC) {
                     orderByDb = 'ASC'
                 } else {
                     orderByDb = 'DESC'
                 }
+                
                 const query =
-                    `SELECT p.* FROM product as p
-            WHERE p.title LIKE ${mysql.escape('%' + search + '%')}
-            OR p.description LIKE ${mysql.escape('%' + search + '%')}
+            `SELECT p.* FROM product as p
+            WHERE ${stringSearch}
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
@@ -398,6 +407,15 @@ class ProductService {
                 logger.error(`[productService][createProduct] errors: `, err)
                 return reject(err)
             }
+            console.log(result);
+            // const insertedID = result.insertedID;
+            // const query2 = `INSERT INTO product_image (product_id,url_image1,url_image2,url_image3,url_image4) 
+            // VALUES (${mysql.escape(insertedID)},${mysql.escape(url_image1)},${mysql.escape(url_image2)},${mysql.escape(url_image3)},${mysql.escape(url_image4)})`
+            // const [err2, result2] = await to(this.mysqlDb.poolQuery(query))
+            // if (err2) {
+            //     logger.error(`[productService][createProduct] errors: `, err2)
+            //     return reject(err)
+            // }
             return resolve(result)
 
         })

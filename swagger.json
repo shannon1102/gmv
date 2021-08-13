@@ -14,10 +14,10 @@
     }
   },
  
-  "host": "gmvbackend.herokuapp.com",
+  "host": "localhost:5000",
   "basePath": "/api",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/post/": {
