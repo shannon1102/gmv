@@ -9,7 +9,7 @@ const  {to} = require('../helper/to')
 
 const verifyToken = (req,res,next) => {
 
-    const token = req.headers['authorization']?.split(' ')[1] || req.headers['x-access-token'] || null
+    const token = req.headers['authorization'].split(' ')[1] || req.headers['x-access-token'] || null
     
     if(!token) {
         logger.error('Token is missing');
