@@ -311,13 +311,13 @@ class ProductService {
                 const [error, result0] = await to(this.mysqlDb.poolQuery(query0))
                 console.log(result0)
                 const id = result0[0].id
-                console.log(id)
-
                 const query = `
                 SELECT * FROM product_image AS pi
                 WHERE pi.product_id = ${mysql.escape(id)}`
                 const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
-                let listImage = Object.assign(list_image_result)
+                let listImage =  [list_image_result[0].url_image1,list_image_result[0].url_image2,list_image_result[0].url_image3,list_image_result[0].url_image4].filter(e=>
+                    (e !== null && e?.length > 0)
+                );
 
                 const query1 =
                     `SELECT p.*,c.main_category_id
