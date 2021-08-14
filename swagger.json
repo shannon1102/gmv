@@ -14,7 +14,7 @@
     }
   },
  
-  "host": "localhost:5000",
+  "host": "103.163.118.206:4000",
   "basePath": "/api",
   "schemes": [
     "http"
@@ -373,6 +373,18 @@
                   "type": "string"
                 },
                 "main_image_url": {
+                  "type": "string"
+                },
+                "url_image1": {
+                  "type": "string"
+                },
+                "url_image2": {
+                  "type": "string"
+                },
+                "url_image3": {
+                  "type": "string"
+                },
+                "url_image4": {
                   "type": "string"
                 },
                 "price": {
@@ -901,6 +913,18 @@
                   "type": "string"
                 },
                 "main_image_url": {
+                  "type": "string"
+                },
+                "url_image1": {
+                  "type": "string"
+                },
+                "url_image2": {
+                  "type": "string"
+                },
+                "url_image3": {
+                  "type": "string"
+                },
+                "url_image4": {
                   "type": "string"
                 },
                 "price": {

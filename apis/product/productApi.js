@@ -169,10 +169,10 @@ productApi.get('/get-all-material/list/',(req,res,next)=>{
     })  
 })
 productApi.post('/',verifyToken,adminRole,checkRequiredFieldInBody(['title','description','model_number','main_image_url','price','material','size','category_id']), (req,res,next)=>{
-    let {title,description,model_number,main_image_url,price,material,size, category_id} = req.body
+    let {title,description,model_number,main_image_url,url_image1,url_image2,url_image3,url_image4,price,material,size, category_id} = req.body
     console.log("sdadda",req.body)
     productService
-    .createProduct(title,description,model_number,main_image_url,price,material,size, category_id)
+    .createProduct(title,description,model_number,main_image_url,url_image1,url_image2,url_image3,url_image4,price,material,size, category_id)
     .then(result => { 
         return res.status(200).json({
             status:200,
@@ -202,9 +202,10 @@ productApi.post('/upload-product-image/:id',verifyToken,adminRole,checkRequiredF
 })
 productApi.put('/:id',verifyToken,adminRole, (req,res,next)=>{
     let {id} = req.params
-    let {title,description,model_number,main_image_url,price,material,size, category_id,slug} = req.body
+    let {title,description,model_number,main_image_url,url_image1,url_image2,url_image3,url_image4,price,material,size, category_id,slug} = req.body
+    console.log(req.body)
     productService
-    .updateProduct(id,title,description,model_number,main_image_url,price,material,size, category_id,slug)
+    .updateProduct(id,title,description,model_number,main_image_url,url_image1,url_image2,url_image3,url_image4,price,material,size, category_id,slug)
     .then(result=>{
         return res.status(200).json({  
             status:200,

@@ -34,18 +34,36 @@ class ProductService {
                 }
                 
                 const query =
-            `SELECT p.* FROM product as p
+            `SELECT p.*,pi.url_image1,pi.url_image2,pi.url_image3,pi.url_image4 FROM product as p
+            JOIN product_image AS pi ON p.id = pi.product_id
             WHERE ${stringSearch}
             ORDER BY p.create_at ${mysql.escape(orderByDb).split(`'`)[1]}
             LIMIT ${productsPerPage}
             OFFSET ${mysql.escape(offsetDb)}`
                 console.log(query)
                 let [err, listProduct] = await to(this.mysqlDb.poolQuery(query))
+                let listProductReturn = listProduct.map(e=>{
+                    return {
+                        "id": e.id,
+                        "title": e.title,
+                        "description": e.description,
+                        "model_number": e.model_number,
+                        "main_image_url": e.main_image_url,
+                        "price": e.price,
+                        "material": e.material,
+                        "size": e.size,
+                        "category_id": e.category_id,
+                        "slug": e.slug,
+                        "create_at": e.create_at,
+                        "update_at": e.update_at,
+                        "list_product_images": [e.url_image1,e.url_image2,e.url_image3,e.url_image4].filter(e1=>(e1 !== null && e1?.length > 0))
+                    }
+                })
                 if (err) {
                     logger.error(`[productService][getProducts] errors : `, err)
                     return reject(err)
                 } else {
-                    return resolve(listProduct)
+                    return resolve(listProductReturn)
                 }
 
             });
@@ -250,7 +268,12 @@ class ProductService {
             SELECT * FROM product_image AS pi
             WHERE pi.product_id = ${mysql.escape(id)}`
             const [err, list_image_result] = await to(this.mysqlDb.poolQuery(query))
-            let listImage = Object.assign(list_image_result)
+            const listImageReturn = 
+            [list_image_result[0].url_image1,list_image_result[0].url_image2,list_image_result[0].url_image3,list_image_result[0].url_image4].filter(e=>
+                (e !== null && e?.length > 0)
+            );
+            console.log(listImageReturn);
+      
             const query1 =
                 `SELECT p.*,c.main_category_id
             FROM product AS p
@@ -271,7 +294,7 @@ class ProductService {
                 return reject(`product with id ${id} not found`)
             }
 
-            productResult[0].list_product_images = listImage;
+            productResult[0].list_product_images = listImageReturn;
             console.log(productResult[0])
             return resolve(productResult[0])
         })
@@ -395,34 +418,48 @@ class ProductService {
             return resolve(productResult)
         })
     }
-    createProduct(title, description, model_number, main_image_url, price, material, size, category_id) {
-        console.log("Alooo",title);
+    createProduct(title, description, model_number, main_image_url, url_image1,url_image2,url_image3,url_image4,price, material, size, category_id) {
+        console.log("Alooo",url_image1);
         const slug = title.trim().split(' ').join('_') + '_' + Date.now();
         return new Promise(async (resolve, reject) => {
-            
+            try {
+            await this.mysqlDb.beginTransaction()
             const query = `INSERT INTO product(title,description,model_number,main_image_url,price,material,size, category_id,slug) 
             VALUES (${mysql.escape(title)},${mysql.escape(description)},${mysql.escape(model_number)},${mysql.escape(main_image_url)},${mysql.escape(price)},${mysql.escape(material)},${mysql.escape(size)},${mysql.escape(category_id)},${mysql.escape(slug)})
             `
-            const [err, result] = await to(this.mysqlDb.poolQuery(query))
-            if (err) {
+            const [err0, result] = await to(this.mysqlDb.poolQuery(query))
+            if (err0) {
                 logger.error(`[productService][createProduct] errors: `, err)
-                return reject(err)
+                return reject(err0)
             }
             console.log(result);
-            // const insertedID = result.insertedID;
-            // const query2 = `INSERT INTO product_image (product_id,url_image1,url_image2,url_image3,url_image4) 
-            // VALUES (${mysql.escape(insertedID)},${mysql.escape(url_image1)},${mysql.escape(url_image2)},${mysql.escape(url_image3)},${mysql.escape(url_image4)})`
-            // const [err2, result2] = await to(this.mysqlDb.poolQuery(query))
-            // if (err2) {
-            //     logger.error(`[productService][createProduct] errors: `, err2)
-            //     return reject(err)
-            // }
-            return resolve(result)
+            const insertId = result.insertId;
+
+            const query2 = `INSERT INTO product_image (product_id,url_image1,url_image2,url_image3,url_image4) 
+            VALUES (${mysql.escape(insertId)},${mysql.escape(url_image1)},${mysql.escape(url_image2)},${mysql.escape(url_image3)},${mysql.escape(url_image4)})`
+            const [err2, result2] = await to(this.mysqlDb.poolQuery(query2))
+            console.log(query2)
+            if (err2) {
+                logger.error(`[productService][createProduct] errors: `, err2)
+                return reject(err2)
+            }
+            await this.mysqlDb.commit()
+            return resolve()
+                
+            } catch (error) {
+                logger.error(`[productService][createProduct] errors: `, error)
+                await this.mysqlDb.rollback()
+                return reject(error.sqlMessage)
+            }
+            
 
         })
     }
-    updateProduct(id, title, description, model_number, main_image_url, price, material, size, category_id, slug) {
+    updateProduct(id, title, description, model_number, main_image_url, url_image1,url_image2,url_image3,url_image4, price, material, size, category_id, slug) {
+        
         return new Promise(async (resolve, reject) => {
+            try {
+                await this.mysqlDb.beginTransaction()
             const query = `UPDATE product
                SET title = ${mysql.escape(title)},
                description = ${mysql.escape(description)},
@@ -440,8 +477,28 @@ class ProductService {
                 logger.error(`[productService][updateProduct] errors: `, err)
                 return reject(err)
             }
-            return resolve(result)
+            const query1 = `UPDATE product_image
+            SET url_image1 = ${mysql.escape(url_image1)},
+            url_image2 = ${mysql.escape(url_image2)},
+            url_image3 = ${mysql.escape(url_image3)},
+            url_image4 = ${mysql.escape(url_image4)}
+            WHERE product_id = ${mysql.escape(id)}
+            `
+            const [err1, result1] = await to(this.mysqlDb.poolQuery(query1))
+            if (err1) {
+                logger.error(`[productService][updateProductImage] errors: `, err1)
+                return reject(err1)
+            }
+            await this.mysqlDb.commit()
+            return resolve()
+
+        }catch(error){
+            logger.error(`[productService][createProduct] errors: `, error)
+            await this.mysqlDb.rollback()
+            return reject(error.sqlMessage)
+        }
         })
+   
     }
     deleteProduct(id) {
         return new Promise(async (resolve, reject) => {
