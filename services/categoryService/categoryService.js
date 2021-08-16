@@ -117,6 +117,7 @@ class CategoryService {
     deleteCategory(id) {
         return new Promise(async (resolve, reject) => {
             try {
+                await this.mysqlDb.beginTransaction()
                 const query = `
                     DELETE FROM category
                     WHERE id = ${mysql.escape(id)}
@@ -126,9 +127,11 @@ class CategoryService {
                 if (result.affectedRows === 0) {
                     return reject(`category with id ${id} not found`)
                 }
+                await this.mysqlDb.commit()
                 return resolve(`delete successfully`);
             } catch (err) {
                 logger.error(`[CategoryService][deleteCategory] errors: `, err)
+                await this.mysqlDb.rollback()
                 return reject(err?.sqlMessage ? err.sqlMessage : err)
             }
           

@@ -510,18 +510,6 @@ class ProductService {
                 if (!result1[0].numProduct) {
                     return reject(`Product with id ${id} not found`)
                 }
-
-                let query0 = `
-                DELETE FROM inquiry
-                WHERE  product_id = ${mysql.escape(id)}
-                `
-                let result0 = await this.mysqlDb.poolQuery(query0)
-
-                query = `
-                DELETE FROM product_image
-                WHERE  product_id = ${mysql.escape(id)}
-                `
-                let result2 = await this.mysqlDb.poolQuery(query)
                 query = `
                 DELETE FROM product
                 WHERE id = ${mysql.escape(id)}
