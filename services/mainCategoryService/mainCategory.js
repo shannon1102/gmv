@@ -84,11 +84,11 @@ class MainCategoryService {
             return resolve(categoryResult)
         })
     }
-    createMainCategory(name, description, url_image) {
+    createMainCategory(name, description, url_image,sub_image) {
         return new Promise(async (resolve, reject) => {
             const query = `
-                INSERT INTO main_category(name,description,url_image)
-                VALUES(${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(url_image)})`
+                INSERT INTO main_category(name,description,url_image,sub_image)
+                VALUES(${mysql.escape(name)},${mysql.escape(description)},${mysql.escape(url_image)},${mysql.escape(sub_image)})`
 
             const [err, result] = await to(this.mysqlDb.poolQuery(query))
             if (err) {
@@ -99,13 +99,14 @@ class MainCategoryService {
             return resolve(result?.insertId)
         })
     }
-    updateMainCategory(id, name, description, url_image) {
+    updateMainCategory(id, name, description, url_image, sub_image) {
         return new Promise(async (resolve, reject) => {
             const query = `
                 UPDATE main_category SET 
                 name = ${mysql.escape(name)},
                 description = ${mysql.escape(description)},
-                url_image = ${mysql.escape(url_image)}
+                url_image = ${mysql.escape(url_image)},
+                sub_image = ${mysql.escape(sub_image)}
                 WHERE id = ${mysql.escape(id)}
             `
             const [err, result] = await to(this.mysqlDb.poolQuery(query))

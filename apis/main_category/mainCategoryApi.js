@@ -36,8 +36,8 @@ mainCategoryApi.post('/',verifyToken,adminRole,
     checkRequiredFieldInBody(['name','description','url_image']),
     async (req, res, next) => {
         try {
-            let {name,description,url_image} = req.body
-            const insertedId = await mainCategoryService.createMainCategory(name,description,url_image)
+            let {name,description,url_image,sub_image} = req.body
+            const insertedId = await mainCategoryService.createMainCategory(name,description,url_image,sub_image)
 
             return res.status(200).json({status:200,message: 'Create new main-category successfully'})
         } catch (error) {
@@ -49,8 +49,8 @@ mainCategoryApi.put('/:id',verifyToken,adminRole,
     async (req, res, next) => {
         let {id} = req.params
         try {
-            let {name,description,url_image} = req.body
-            await mainCategoryService.updateMainCategory(id,name,description,url_image)
+            let {name,description,url_image,sub_image} = req.body
+            await mainCategoryService.updateMainCategory(id,name,description,url_image,sub_image)
             return res.status(200).json({status:200,message: 'Updated main-category successfully'})
         } catch (error) {
             return res.status(500).json({status:500,message: error})
