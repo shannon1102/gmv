@@ -108,4 +108,37 @@ userApi.get('/information', verifyToken, (req, res, next) => {
     })
 })
 
+userApi.post('/change-password',verifyToken,adminRole,checkRequiredFieldInBody(['oldPassword','newPassword']), (req, res, next) => {
+    // check secret token for jwt
+    console.log(req.body)
+    if (!process.env.SECRET_KEY){
+        return res.status(500).json({message:'Secret key not found, cannot login'})
+    }
+    if(req.body.oldPassword === req.body.newPassword){
+        return res.status(404).json({
+            status:404,
+            message: 'New password must not be same with old password '
+        })
+    }
+    const setPassword = {
+        userId: req.userId,
+        oldPassword: req.body.oldPassword,
+        newPassword: req.body.newPassword
+    }
+  
+    userService
+        .changePassword(setPassword)
+        .then(() => {
+            res.status(200).json({
+                status:200,
+                message: 'Change password successfully',
+            })
+        })
+        .catch(errMsg => {
+            return res.status(500).json({
+                status:500,
+                message: errMsg
+            })
+        })
+})
 module.exports = userApi

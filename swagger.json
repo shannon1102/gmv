@@ -14,7 +14,7 @@
     }
   },
  
-  "host": "103.163.118.206:4000",
+  "host": "localhost:4000",
   "basePath": "/api",
   "schemes": [
     "http"
@@ -2577,7 +2577,72 @@
           }
         }
       }
+    },
+    "/user/change-password": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "x-access-token",
+            "in": "header",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "oldPassword": {
+                  "type": "string"
+                },
+                "newPassword": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "tags": [
+          "User Api"
+        ],
+        "summary": "Admin change password",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "access-token": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "error",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        }
+      }
     }
+
   },
   "definitions": {
     "post": {

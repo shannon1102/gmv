@@ -1,6 +1,7 @@
 'use strict'
 const logger = require('../../logger/index')
 const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
 const { to } = require('../../helper/to')
 const mysql = require('mysql')
 
@@ -84,6 +85,44 @@ class UserService {
                 return reject(err);
             }
             resolve(returnUser)
+        }
+        )
+    }
+    changePassword(setPassword) {
+        return new Promise(async (resolve,reject)=>{
+            console.log(setPassword)
+            const userId = setPassword.userId
+            const query = `SELECT * FROM user WHERE id = ${mysql.escape(userId)}`;
+            const [err,userFoundArray] = await to(this.mysqlDb.poolQuery(query))
+
+            if (err) {
+                logger.error(`[userService][login] err: ${err}`)
+                return reject(err)
+            }
+
+            if (userFoundArray.length !== 0) {
+                let userFound = userFoundArray[0]
+                if (bcrypt.compareSync(setPassword.oldPassword, userFound.password)) {
+                    
+                    const newHashedPassword = bcrypt.hashSync(setPassword.newPassword, 8)
+   
+                    const query1 = `UPDATE  user SET password = ${mysql.escape(newHashedPassword)}`;
+                    
+                    const [err1,result] = await to(this.mysqlDb.poolQuery(query1)) 
+                    
+                    if(err1) {
+                        logger.error(`[userService][changePassword] err: ${err1}`)
+                        return reject(err1)
+                    }
+
+                    resolve('Change password successfully')
+                } else {
+                    reject('Enter password is wrong')
+                }
+            } else {
+                reject('User not exist')
+            }
+
         }
         )
     }
