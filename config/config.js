@@ -18,7 +18,8 @@ const development = {
     },
 
     serverSettings: {
-        port: process.env.PORT || 5000
+        port: process.env.PORT,
+        ssl: require('./ssl')
     },
     orderTypeSetting: {
         ASC:1,
@@ -43,7 +44,8 @@ const production = {
     },
 
     serverSettings: {
-        port: process.env.PORT
+        port: process.env.PORT,
+        ssl: require('./ssl')
     },
     orderTypeSetting: {
         ASC:1,

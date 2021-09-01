@@ -21,11 +21,13 @@ class ProductService {
                 // search = search ? search : ""
                 if(search){
                     var stringSearch = search.split(' ').map(element => {
-                        return `p.title LIKE ${mysql.escape('%' + element + '%')} OR p.description LIKE ${mysql.escape('%' + element + '%')}`
+                        return `p.title LIKE ${mysql.escape('%' + element + '%')} OR p.description LIKE ${mysql.escape('%' + element + '%')} 
+                        OR p.model_number LIKE ${mysql.escape('%' + element + '%')}`
                     }).join(' OR ')
                     console.log(stringSearch);
                 }else {
-                    stringSearch = `p.title LIKE ${mysql.escape('%' + "" + '%')} OR p.description LIKE ${mysql.escape('%' + "" + '%')}`
+                    stringSearch = `p.title LIKE ${mysql.escape('%' + "" + '%')} OR p.description LIKE ${mysql.escape('%' + "" + '%')} 
+                    OR p.model_number LIKE ${mysql.escape('%' + element + '%')}`
                 }
                 if (orderType == orderTypeSetting.ASC) {
                     orderByDb = 'ASC'
@@ -227,7 +229,7 @@ class ProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 10
+                productsPerPage = productsPerPage ? productsPerPage : 1000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 console.log(main_category_name);

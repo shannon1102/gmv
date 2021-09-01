@@ -89,7 +89,7 @@ userApi.post('/login',checkRequiredFieldInBody(['username','password']), (req, r
                 username: user.username,
                 'access-token': accessToken
             })
-        })
+        })  
         .catch(errMsg => {
             return res.status(500).json({
                 message: errMsg
