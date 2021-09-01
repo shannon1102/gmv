@@ -19,8 +19,9 @@ class ProductService {
                 productsPerPage = productsPerPage ? productsPerPage : 100
                 offsetDb = productsPerPage * (pageNumber - 1)
                 // search = search ? search : ""
+                let stringSearch= ''
                 if(search){
-                    var stringSearch = search.split(' ').map(element => {
+                    stringSearch = search.split(' ').map(element => {
                         return `p.title LIKE ${mysql.escape('%' + element + '%')} OR p.description LIKE ${mysql.escape('%' + element + '%')} 
                         OR p.model_number LIKE ${mysql.escape('%' + element + '%')}`
                     }).join(' OR ')
