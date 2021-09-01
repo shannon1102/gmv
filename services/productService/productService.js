@@ -28,7 +28,7 @@ class ProductService {
                     console.log(stringSearch);
                 }else {
                     stringSearch = `p.title LIKE ${mysql.escape('%' + "" + '%')} OR p.description LIKE ${mysql.escape('%' + "" + '%')} 
-                    OR p.model_number LIKE ${mysql.escape('%' + element + '%')}`
+                    OR p.model_number LIKE ${mysql.escape('%' + "" + '%')}`
                 }
                 if (orderType == orderTypeSetting.ASC) {
                     orderByDb = 'ASC'
