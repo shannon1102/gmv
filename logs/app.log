@@ -4053,3 +4053,9 @@
   '    at Module.load (internal/modules/cjs/loader.js:928:32)\n' +
   '    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n' +
   '    at Module.require (internal/modules/cjs/loader.js:952:19)'
+2021-09-04T22:21:41+07:00 info: '::1 - - [04/Sep/2021:15:21:41 +0000] "GET /api/api-docs/ HTTP/1.1" 200 3104 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-04T22:21:41+07:00 info: '::1 - - [04/Sep/2021:15:21:41 +0000] "GET /api/api-docs/swagger-ui-init.js HTTP/1.1" 200 73886 "http://localhost:4000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-04T22:21:41+07:00 info: '::1 - - [04/Sep/2021:15:21:41 +0000] "GET /api/api-docs/swagger-ui.css HTTP/1.1" 200 143669 "http://localhost:4000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-04T22:21:41+07:00 info: '::1 - - [04/Sep/2021:15:21:41 +0000] "GET /api/api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 338084 "http://localhost:4000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-04T22:21:41+07:00 info: '::1 - - [04/Sep/2021:15:21:41 +0000] "GET /api/api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1100495 "http://localhost:4000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'
+2021-09-04T22:21:42+07:00 info: '::1 - - [04/Sep/2021:15:21:42 +0000] "GET /api/api-docs/favicon-32x32.png HTTP/1.1" 200 628 "http://localhost:4000/api/api-docs/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"\n'

@@ -4,7 +4,6 @@ const { orderTypeSetting } = require('../../config/index');
 const logger = require('../../logger');
 const { to } = require('../../helper/to');
 const { resolve } = require('app-root-path');
-const { ConsoleTransportOptions } = require('winston/lib/winston/transports');
 
 class ProductService {
     constructor(mysqlDb) {
@@ -16,7 +15,7 @@ class ProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 100
+                productsPerPage = productsPerPage ? productsPerPage : 1000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 // search = search ? search : ""
                 let stringSearch= ''
@@ -77,7 +76,7 @@ class ProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 100
+                productsPerPage = productsPerPage ? productsPerPage : 1000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 if (orderType == orderTypeSetting.ASC) {
@@ -111,7 +110,7 @@ class ProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 10
+                productsPerPage = productsPerPage ? productsPerPage : 1000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 if (orderType == orderTypeSetting.ASC) {
@@ -145,7 +144,7 @@ class ProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 10
+                productsPerPage = productsPerPage ? productsPerPage : 1000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 if (orderType == orderTypeSetting.ASC) {
@@ -182,7 +181,7 @@ class ProductService {
                 let offsetDb = 0, orderByDb;
                 orderType = orderType ? orderType : 2
                 pageNumber = pageNumber ? pageNumber : 1
-                productsPerPage = productsPerPage ? productsPerPage : 10
+                productsPerPage = productsPerPage ? productsPerPage : 1000
                 offsetDb = productsPerPage * (pageNumber - 1)
                 search = search ? search : ""
                 if (orderType == orderTypeSetting.ASC) {
@@ -362,7 +361,7 @@ class ProductService {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productsPerPage = productsPerPage ? productsPerPage : 100
+            productsPerPage = productsPerPage ? productsPerPage : 1000
             offsetDb = productsPerPage * (pageNumber - 1)
             if (orderType == orderTypeSetting.ASC) {
                 orderByDb = 'ASC'
@@ -393,7 +392,7 @@ class ProductService {
             let offsetDb = 0, orderByDb;
             orderType = orderType ? orderType : 2
             pageNumber = pageNumber ? pageNumber : 1
-            productsPerPage = productsPerPage ? productsPerPage : 100
+            productsPerPage = productsPerPage ? productsPerPage : 1000
             offsetDb = productsPerPage * (pageNumber - 1)
             if (orderType == orderTypeSetting.ASC) {
                 orderByDb = 'ASC'
@@ -454,8 +453,6 @@ class ProductService {
                 await this.mysqlDb.rollback()
                 return reject(error.sqlMessage)
             }
-            
-
         })
     }
     updateProduct(id, title, description, model_number, main_image_url, url_image1,url_image2,url_image3,url_image4, price, material, size, category_id, slug) {
@@ -571,7 +568,6 @@ class ProductService {
     }
     getListMaterial(){
        return new Promise(async (resolve,reject)=>{
-           console.log("ALLLLLLLL");
         const query = `
         SELECT material FROM product GROUP BY material;  
         `

@@ -14,10 +14,10 @@
     }
   },
  
-  "host": "localhost:4000",
+  "host": "api.giangminhviet.com",
   "basePath": "/api",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/post/": {
